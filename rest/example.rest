@@ -1,8 +1,8 @@
 ###
-GET http://localhost/api/
+GET https://localhost/api/
 
 ###
-GET http://localhost/api/example
+GET https://localhost/api/example
 
 ###
-GET http://192.168.1.123/api/example
+GET https://192.168.1.123/api/example
