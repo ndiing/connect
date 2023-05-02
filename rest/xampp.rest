@@ -1,0 +1,51 @@
+### Tambah Jabber Center
+POST http://localhost/api/xmpp
+Content-Type: application/json
+
+{
+    "username":"connect_center@jabb.im",
+    "password":"vMmj2_DZhknhc4b",
+    "startup_login":1
+}
+
+### Jabber Center
+GET http://localhost/api/xmpp
+
+### Jabber Center Account
+GET http://localhost/api/xmpp/connect_center@jabb.im
+
+### Setting Account
+PATCH http://localhost/api/xmpp/connect_center@jabb.im
+Content-Type: application/json
+
+{
+    "username":"connect_center@jabb.im",
+    "password":"vMmj2_DZhknhc4b",
+    "startup_login":1
+}
+
+### Remove Account
+DELETE http://localhost/api/xmpp/connect_center@jabb.im
+
+
+
+
+
+
+### Login
+GET http://localhost/api/xmpp/start/connect_center@jabb.im
+
+### Logout
+GET http://localhost/api/xmpp/stop/connect_center@jabb.im
+
+### Kirim pesan
+POST http://localhost/api/xmpp/send/connect_center@jabb.im
+Content-Type: application/json
+
+{
+    "penerima":"connect_client@jabb.im",
+    "pesan":"pesan"
+}
+
+### Kirim pesan
+GET http://localhost/api/xmpp/send/connect_center@jabb.im?penerima=connect_client@jabb.im&pesan=pesan

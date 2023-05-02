@@ -1,5 +1,5 @@
 
-###
+### Registration
 POST https://localhost/api/auth/signup
 Authorization: Basic token
 Content-Type: application/json
@@ -8,7 +8,7 @@ Content-Type: application/json
     "username": "+62812345678912"
 }
 
-###
+### Login
 POST https://localhost/api/auth/signin
 Authorization: Basic token
 Content-Type: application/json
@@ -17,7 +17,7 @@ Content-Type: application/json
     "username": "+6281935155404"
 }
 
-### 
+### Verify / Create token
 POST https://localhost/api/auth/challenge
 Authorization: Basic token
 Content-Type: application/json
@@ -27,10 +27,10 @@ Content-Type: application/json
     "password": "995532"
 }
 
-###
+### Refresh / Renew token
 GET https://localhost/api/auth/refresh
 Authorization: Bearer {{refresh_token}}
 
-###
+### Logout / Revoke token
 GET https://localhost/api/auth/signout
 Authorization: Bearer {{access_token}}
