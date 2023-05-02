@@ -17,18 +17,15 @@ Content-Type: application/json
     "username": "+6281935155404"
 }
 
-### 339237 Jangan memberikan OTP kepada siapa pun.OTP Anda adalah 339237. Kadaluarsa dalam 5 menit.
+### 
 POST https://localhost/api/auth/challenge
 Authorization: Basic token
 Content-Type: application/json
 
 {
     "username": "+6281935155404",
-    "password": "339237"
+    "password": "995532"
 }
-
-###
-GET https://localhost/api/auth/refresh
 
 ###
 GET https://localhost/api/auth/refresh
@@ -37,10 +34,3 @@ Authorization: Bearer {{refresh_token}}
 ###
 GET https://localhost/api/auth/signout
 Authorization: Bearer {{access_token}}
-
-### Should be error `invalid_request`
-GET https://localhost/api/auth/signout
-
-### Should be error `invalid_token`
-GET https://localhost/api/auth/signout
-Authorization: Bearer {{refresh_token}}

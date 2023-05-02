@@ -326,7 +326,7 @@ Authorization: Bearer {{access_token}}
 
 
 ### Transaksi pengisian pulsa 
-GET https://localhost/api/otomax/inbox/transaksi14?kodeproduk=AIGO1&counter=1&tujuan=0877758437457&pin=1234
+GET https://localhost/api/otomax/inbox/transaksi14?kodeproduk=AIGO1&counter=3&tujuan=0877758437457&pin=1234
 Authorization: Bearer {{access_token}}
 
 
