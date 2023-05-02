@@ -1,0 +1,46 @@
+
+###
+POST http://localhost/api/auth/signup
+Authorization: Basic token
+Content-Type: application/json
+
+{
+    "username": "+62812345678912"
+}
+
+###
+POST http://localhost/api/auth/signin
+Authorization: Basic token
+Content-Type: application/json
+
+{
+    "username": "+6281935155404"
+}
+
+###
+POST http://localhost/api/auth/challenge
+Authorization: Basic token
+Content-Type: application/json
+
+{
+    "username": "+6281935155404",
+    "password": "492236"
+}
+
+###
+GET http://localhost/api/auth/refresh
+
+###
+GET http://localhost/api/auth/refresh
+Authorization: Bearer {{refresh_token}}
+
+###
+GET http://localhost/api/auth/signout
+Authorization: Bearer {{access_token}}
+
+### Should be error `invalid_request`
+GET http://localhost/api/auth/signout
+
+### Should be error `invalid_token`
+GET http://localhost/api/auth/signout
+Authorization: Bearer {{refresh_token}}

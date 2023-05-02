@@ -1,0 +1,8 @@
+###
+GET http://localhost/api/
+
+###
+GET http://localhost/api/example
+
+###
+GET http://192.168.1.123/api/example

@@ -92,5 +92,7 @@ typings/
 out/
 
 *
+!rest/
+!rest/*
 !.gitignore
 !README.md
