@@ -3,9 +3,9 @@ POST http://localhost/api/messenger
 Content-Type: application/json
 
 {
-    "username":"connect_center@jabb.im",
-    "password":"vMmj2_DZhknhc4b",
-    "service":"xmpp",
+    "username":"6281935155404",
+    "password":"",
+    "service":"whatsapp",
     "startup_login":1
 }
 
@@ -13,38 +13,38 @@ Content-Type: application/json
 GET http://localhost/api/messenger
 
 ### Center account
-GET http://localhost/api/messenger?username=connect_center@jabb.im
+GET http://localhost/api/messenger?username=6281935155404
 
 ### Setting...
 PATCH http://localhost/api/messenger
 Content-Type: application/json
 
 {
-    "username":"connect_center@jabb.im",
-    "password":"vMmj2_DZhknhc4b",
-    "service":"xmpp",
+    "username":"6281935155404",
+    "password":"",
+    "service":"whatsapp",
     "startup_login":1
 }
 
 ### Remove
-DELETE http://localhost/api/messenger?username=connect_center@jabb.im
+DELETE http://localhost/api/messenger?username=6281935155404
 
 ### Login
-GET http://localhost/api/messenger/start?username=connect_center@jabb.im
+GET http://localhost/api/messenger/start?username=6281935155404
 
 ### Logout
-GET http://localhost/api/messenger/stop?username=connect_center@jabb.im
+GET http://localhost/api/messenger/stop?username=6281935155404
 
 ### Kirim
 POST http://localhost/api/messenger/send
 Content-Type: application/json
 
 {
-    "username":"connect_center@jabb.im",
-    "service":"xmpp",
-    "penerima":"connect_client@jabb.im",
+    "username":"6281935155404",
+    "service":"whatsapp",
+    "penerima":"6281935155404",
     "pesan":"This message from server"
 }
 
 ### Kirim
-GET http://localhost/api/messenger/send?username=connect_center@jabb.im&service=xmpp&penerima=connect_client@jabb.im&pesan=This message from server
+GET http://localhost/api/messenger/send?username=6281935155404&service=whatsapp&penerima=6281935155404&pesan=This message from server
