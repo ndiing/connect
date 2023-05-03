@@ -91,8 +91,13 @@ typings/
 # Electron-Forge
 out/
 
-*
-!rest/
-!rest/*
-!.gitignore
-!README.md
+src
+forge.config.js
+nodemon.json
+package-lock.json
+package.json
+webpack.main.config.js
+webpack.plugins.js
+webpack.renderer.config.js
+webpack.rules.js
+yarn.lock
