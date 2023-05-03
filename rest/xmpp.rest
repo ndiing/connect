@@ -1,0 +1,50 @@
+### Tambah center
+POST http://localhost/api/messenger
+Content-Type: application/json
+
+{
+    "username":"connect_center@jabb.im",
+    "password":"vMmj2_DZhknhc4b",
+    "service":"xmpp",
+    "startup_login":1
+}
+
+### Center
+GET http://localhost/api/messenger
+
+### Center account
+GET http://localhost/api/messenger?username=connect_center@jabb.im
+
+### Setting...
+PATCH http://localhost/api/messenger
+Content-Type: application/json
+
+{
+    "username":"connect_center@jabb.im",
+    "password":"vMmj2_DZhknhc4b",
+    "service":"xmpp",
+    "startup_login":1
+}
+
+### Remove
+DELETE http://localhost/api/messenger?username=connect_center@jabb.im
+
+### Login
+GET http://localhost/api/messenger/start?username=connect_center@jabb.im
+
+### Logout
+GET http://localhost/api/messenger/stop?username=connect_center@jabb.im
+
+### Kirim
+POST http://localhost/api/messenger/send
+Content-Type: application/json
+
+{
+    "username":"connect_center@jabb.im",
+    "service":"xmpp",
+    "penerima":"connect_client@jabb.im",
+    "pesan":"This message from server"
+}
+
+### Kirim
+GET http://localhost/api/messenger/send?username=connect_center@jabb.im&service=xmpp&penerima=connect_client@jabb.im&pesan=This message from server
