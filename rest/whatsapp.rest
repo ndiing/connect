@@ -5,8 +5,7 @@ Content-Type: application/json
 {
     "username":"6281938064470",
     "password":"",
-    "service":"whatsapp",
-    "startup_login":1
+    "service":"whatsapp"
 }
 
 ### Center
