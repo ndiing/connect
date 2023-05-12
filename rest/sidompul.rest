@@ -40,57 +40,57 @@ Content-Type: application/json
     "getTransactionHistorydetail": {}
 }
 
-### token
+### Authorization
 GET http://localhost/api/sidompul/token?grant_type=&client_id=&client_secret=
 
-### postEncrypt
+### Get Token
 GET http://localhost/api/sidompul/postEncrypt?data=
 
-### postPackage
+### Purchase Package
 GET http://localhost/api/sidompul/postPackage?msisdn=&pin=&productCode=
 
-### getTransactionhistory
+### Transaction History
 GET http://localhost/api/sidompul/getTransactionhistory?
 
-### postW2p
+### Reload Pulsa (W2P)
 GET http://localhost/api/sidompul/postW2p?msisdn=&pin=&denom=
 
-### getDompulBalance
+### Get Dompul Balance
 GET http://localhost/api/sidompul/getDompulBalance?
 
-### getPulsaBalance
+### Get Pulsa Balance
 GET http://localhost/api/sidompul/getPulsaBalance?
 
-### getProductList
+### Get List Product Code
 GET http://localhost/api/sidompul/getProductList?
 
-### postPackagePulsa
+### Purchase Package Deduct Pulsa
 GET http://localhost/api/sidompul/postPackagePulsa?msisdn=&pin=&productCode=
 
-### getAwgStock
+### AWG Get Stock
 GET http://localhost/api/sidompul/getAwgStock?
 
-### getAwgTransactioninfo
+### AWG Get Info Transaction
 GET http://localhost/api/sidompul/getAwgTransactioninfo?
 
-### postAwgTransactionInfoDetail
+### AWG Get Info Transaction Detail
 GET http://localhost/api/sidompul/postAwgTransactionInfoDetail?command=&masterTrxId=
 
-### postAwgTembak
+### AWG Inject Stock
 GET http://localhost/api/sidompul/postAwgTembak?target=&pin=&vId=&command=&allowType=
 
-### getXwgStock
+### XWG Get Stock
 GET http://localhost/api/sidompul/getXwgStock?
 
-### getXwgTransactioninfo
+### XWG Get Info Transaction
 GET http://localhost/api/sidompul/getXwgTransactioninfo?
 
-### postXwgTransactionInfoDetail
+### XWG Get Info Transaction Detail
 GET http://localhost/api/sidompul/postXwgTransactionInfoDetail?command=&masterTrxId=
 
-### postXwgTembak
+### XWG Inject Stock
 GET http://localhost/api/sidompul/postXwgTembak?allowType=&command=&pin=&target=&vId=
 
-### getTransactionHistorydetail
+### Transaction History Detail
 GET http://localhost/api/sidompul/getTransactionHistorydetail
 
