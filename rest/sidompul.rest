@@ -14,11 +14,7 @@ Content-Type: application/json
     "getProductList": {},
     "postPackagePulsa": {},
     "getAwgStock": {},
-    "getAwgTransactioninfo": {
-        "API": "",
-        "API-ID": "",
-        "CLIENT-ID": ""
-    },
+    "getAwgTransactioninfo": {},
     "postAwgTransactionInfoDetail": {
         "API": "",
         "API-ID": "",
