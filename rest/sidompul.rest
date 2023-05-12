@@ -1,0 +1,96 @@
+### config
+GET http://localhost/api/sidompul/config
+
+### config
+POST http://localhost/api/sidompul/config
+Content-Type: application/json
+
+{
+    "postPackage": {},
+    "getTransactionhistory": {},
+    "postW2p": {},
+    "getDompulBalance": {},
+    "getPulsaBalance": {},
+    "getProductList": {},
+    "postPackagePulsa": {},
+    "getAwgStock": {},
+    "getAwgTransactioninfo": {
+        "API": "",
+        "API-ID": "",
+        "CLIENT-ID": ""
+    },
+    "postAwgTransactionInfoDetail": {
+        "API": "",
+        "API-ID": "",
+        "CLIENT-ID": ""
+    },
+    "postAwgTembak": {},
+    "getXwgStock": {},
+    "getXwgTransactioninfo": {},
+    "postXwgTransactionInfoDetail": {
+        "API": "",
+        "API-ID": "",
+        "CLIENT-ID": ""
+    },
+    "postXwgTembak": {
+        "API": "",
+        "API-ID": "",
+        "CLIENT-ID": ""
+    },
+    "getTransactionHistorydetail": {}
+}
+
+### token
+GET http://localhost/api/sidompul/token?grant_type=&client_id=&client_secret=
+
+### postEncrypt
+GET http://localhost/api/sidompul/postEncrypt?data=
+
+### postPackage
+GET http://localhost/api/sidompul/postPackage?msisdn=&pin=&productCode=
+
+### getTransactionhistory
+GET http://localhost/api/sidompul/getTransactionhistory?
+
+### postW2p
+GET http://localhost/api/sidompul/postW2p?msisdn=&pin=&denom=
+
+### getDompulBalance
+GET http://localhost/api/sidompul/getDompulBalance?
+
+### getPulsaBalance
+GET http://localhost/api/sidompul/getPulsaBalance?
+
+### getProductList
+GET http://localhost/api/sidompul/getProductList?
+
+### postPackagePulsa
+GET http://localhost/api/sidompul/postPackagePulsa?msisdn=&pin=&productCode=
+
+### getAwgStock
+GET http://localhost/api/sidompul/getAwgStock?
+
+### getAwgTransactioninfo
+GET http://localhost/api/sidompul/getAwgTransactioninfo?
+
+### postAwgTransactionInfoDetail
+GET http://localhost/api/sidompul/postAwgTransactionInfoDetail?command=&masterTrxId=
+
+### postAwgTembak
+GET http://localhost/api/sidompul/postAwgTembak?target=&pin=&vId=&command=&allowType=
+
+### getXwgStock
+GET http://localhost/api/sidompul/getXwgStock?
+
+### getXwgTransactioninfo
+GET http://localhost/api/sidompul/getXwgTransactioninfo?
+
+### postXwgTransactionInfoDetail
+GET http://localhost/api/sidompul/postXwgTransactionInfoDetail?command=&masterTrxId=
+
+### postXwgTembak
+GET http://localhost/api/sidompul/postXwgTembak?allowType=&command=&pin=&target=&vId=
+
+### getTransactionHistorydetail
+GET http://localhost/api/sidompul/getTransactionHistorydetail
+
