@@ -133,7 +133,7 @@ GET http://localhost/api/sidompul/postAwgTransactionInfoDetail?command=&masterTr
 GET http://localhost/api/sidompul/postAwgTembak?target=&pin=&vId=&command=&allowType=
 
 ### XWG Get Stock
-GET http://localhost/api/sidompul/getXwgStock?roType=
+GET http://localhost/api/sidompul/getXwgStock?roType=MINI-GROSIR
 
 ### XWG Get Info Transaction
 GET http://localhost/api/sidompul/getXwgTransactioninfo?beginDate=&endDate=&servicetype=
