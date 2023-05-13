@@ -103,7 +103,7 @@ GET http://localhost/api/sidompul/postEncrypt?data=123456
 GET http://localhost/api/sidompul/postPackage?msisdn=&pin=&productCode=
 
 ### Transaction History
-GET http://localhost/api/sidompul/getTransactionhistory?
+GET http://localhost/api/sidompul/getTransactionhistory?startdate=&enddate=
 
 ### Reload Pulsa (W2P)
 GET http://localhost/api/sidompul/postW2p?msisdn=&pin=&denom=
@@ -124,7 +124,7 @@ GET http://localhost/api/sidompul/postPackagePulsa?msisdn=&pin=&productCode=
 GET http://localhost/api/sidompul/getAwgStock?
 
 ### AWG Get Info Transaction
-GET http://localhost/api/sidompul/getAwgTransactioninfo?
+GET http://localhost/api/sidompul/getAwgTransactioninfo?beginDate=&endDate=&servicetype=
 
 ### AWG Get Info Transaction Detail
 GET http://localhost/api/sidompul/postAwgTransactionInfoDetail?command=&masterTrxId=
@@ -133,10 +133,10 @@ GET http://localhost/api/sidompul/postAwgTransactionInfoDetail?command=&masterTr
 GET http://localhost/api/sidompul/postAwgTembak?target=&pin=&vId=&command=&allowType=
 
 ### XWG Get Stock
-GET http://localhost/api/sidompul/getXwgStock?
+GET http://localhost/api/sidompul/getXwgStock?roType=
 
 ### XWG Get Info Transaction
-GET http://localhost/api/sidompul/getXwgTransactioninfo?
+GET http://localhost/api/sidompul/getXwgTransactioninfo?beginDate=&endDate=&servicetype=
 
 ### XWG Get Info Transaction Detail
 GET http://localhost/api/sidompul/postXwgTransactionInfoDetail?command=&masterTrxId=
@@ -145,5 +145,5 @@ GET http://localhost/api/sidompul/postXwgTransactionInfoDetail?command=&masterTr
 GET http://localhost/api/sidompul/postXwgTembak?allowType=&command=&pin=&target=&vId=
 
 ### Transaction History Detail
-GET http://localhost/api/sidompul/getTransactionHistorydetail
+GET http://localhost/api/sidompul/getTransactionHistorydetail?transactionId=&msisdnB=&orderStatus=
 
