@@ -6,41 +6,98 @@ POST http://localhost/api/sidompul/config
 Content-Type: application/json
 
 {
-    "postPackage": {},
-    "getTransactionhistory": {},
-    "postW2p": {},
-    "getDompulBalance": {},
-    "getPulsaBalance": {},
-    "getProductList": {},
-    "postPackagePulsa": {},
-    "getAwgStock": {},
-    "getAwgTransactioninfo": {},
+    "postEncrypt": {
+        "API": "",
+        "API-ID": "",
+        "API-KEY": ""
+    },
+    "postPackage": {
+        "API": "",
+        "API-ID": "",
+        "API-KEY": ""
+    },
+    "getTransactionhistory": {
+        "API": "",
+        "API-ID": "",
+        "API-KEY": ""
+    },
+    "postW2p": {
+        "API": "",
+        "API-ID": "",
+        "API-KEY": ""
+    },
+    "getDompulBalance": {
+        "API": "",
+        "API-ID": "",
+        "API-KEY": ""
+    },
+    "getPulsaBalance": {
+        "API": "",
+        "API-ID": "",
+        "API-KEY": ""
+    },
+    "getProductList": {
+        "API": "",
+        "API-ID": "",
+        "API-KEY": ""
+    },
+    "postPackagePulsa": {
+        "API": "",
+        "API-ID": "",
+        "API-KEY": ""
+    },
+    "getAwgStock": {
+        "API": "",
+        "API-ID": "",
+        "API-KEY": ""
+    },
+    "getAwgTransactioninfo": {
+        "API": "",
+        "API-ID": "",
+        "API-KEY": ""
+    },
     "postAwgTransactionInfoDetail": {
         "API": "",
         "API-ID": "",
-        "CLIENT-ID": ""
+        "API-KEY": ""
     },
-    "postAwgTembak": {},
-    "getXwgStock": {},
-    "getXwgTransactioninfo": {},
+    "postAwgTembak": {
+        "API": "",
+        "API-ID": "",
+        "API-KEY": ""
+    },
+    "getXwgStock": {
+        "API": "",
+        "API-ID": "",
+        "API-KEY": ""
+    },
+    "getXwgTransactioninfo": {
+        "API": "",
+        "API-ID": "",
+        "API-KEY": ""
+    },
     "postXwgTransactionInfoDetail": {
         "API": "",
         "API-ID": "",
-        "CLIENT-ID": ""
+        "API-KEY": ""
     },
     "postXwgTembak": {
         "API": "",
         "API-ID": "",
-        "CLIENT-ID": ""
+        "API-KEY": ""
     },
-    "getTransactionHistorydetail": {}
+    "getTransactionHistorydetail": {
+        "API": "",
+        "API-ID": "",
+        "API-KEY": ""
+    }
 }
 
-### Authorization
-GET http://localhost/api/sidompul/token?grant_type=&client_id=&client_secret=
-
 ### Get Token
-GET http://localhost/api/sidompul/postEncrypt?data=
+GET http://localhost/api/sidompul/token?grant_type=client_credentials&client_id={{client_id}}&client_secret={{client_secret}}
+
+### Encrypt
+GET http://localhost/api/sidompul/postEncrypt?data=123456
 
 ### Purchase Package
 GET http://localhost/api/sidompul/postPackage?msisdn=&pin=&productCode=
