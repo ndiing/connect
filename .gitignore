@@ -92,6 +92,7 @@ typings/
 out/
 
 src
+resources
 forge.config.js
 nodemon.json
 package-lock.json
