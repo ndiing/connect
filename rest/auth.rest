@@ -18,7 +18,6 @@ Content-Type: application/json
 }
 
 ### Verify / Create token
-### 699860 Jangan memberikan OTP kepada siapa pun.OTP Anda adalah 699860. Kadaluarsa dalam 5 menit.
 POST https://localhost/api/auth/challenge
 Authorization: Basic token
 Content-Type: application/json
