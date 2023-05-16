@@ -23,7 +23,7 @@ Content-Type: application/json
     "username":"5924975288",
     "password":"5924975288:AAE6uNUymvOBhpHyX1mY6GctqmcZR1YxOWA",
     "service":"telegram",
-    "startup_login":1
+    "startup_login":0
 }
 
 ### Remove

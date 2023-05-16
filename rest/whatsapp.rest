@@ -5,7 +5,8 @@ Content-Type: application/json
 {
     "username":"6281938064470",
     "password":"",
-    "service":"whatsapp"
+    "service":"whatsapp",
+    "startup_login":1
 }
 
 ### Center
@@ -22,7 +23,7 @@ Content-Type: application/json
     "username":"6281938064470",
     "password":"",
     "service":"whatsapp",
-    "startup_login":1
+    "startup_login":0
 }
 
 ### Remove

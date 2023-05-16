@@ -23,7 +23,7 @@ Content-Type: application/json
     "username":"connect_center@jabb.im",
     "password":"vMmj2_DZhknhc4b",
     "service":"xmpp",
-    "startup_login":1
+    "startup_login":0
 }
 
 ### Remove
