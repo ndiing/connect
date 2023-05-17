@@ -47,4 +47,4 @@ Content-Type: application/json
 }
 
 ### Kirim
-GET http://192.168.1.3/api/messenger/send?username=6281938064470&service=whatsapp&penerima=6281935155404&pesan=This message from server
+GET http://localhost/api/messenger/send?username=6281938064470&service=whatsapp&penerima=6281935155404&pesan=This message from server
