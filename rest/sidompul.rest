@@ -94,7 +94,7 @@ Content-Type: application/json
 }
 
 ### Get Token
-GET http://localhost/api/sidompul/token?grant_type=client_credentials&client_id={{client_id}}&client_secret={{client_secret}}
+GET http://localhost/api/sidompul/token?grant_type=client_credentials&client_id={{sidompul_client_id}}&client_secret={{sidompul_client_secret}}
 
 ### Encrypt
 GET http://localhost/api/sidompul/postEncrypt?data=123456

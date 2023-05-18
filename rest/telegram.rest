@@ -3,8 +3,8 @@ POST http://localhost/api/messenger
 Content-Type: application/json
 
 {
-    "username":"5924975288",
-    "password":"5924975288:AAE6uNUymvOBhpHyX1mY6GctqmcZR1YxOWA",
+    "username":"{{telegram_username}}",
+    "password":"{{telegram_password}}",
     "service":"telegram",
     "startup_login":1,
     "center":1
@@ -14,39 +14,39 @@ Content-Type: application/json
 GET http://localhost/api/messenger
 
 ### Center account
-GET http://localhost/api/messenger?username=5924975288
+GET http://localhost/api/messenger?username={{telegram_username}}
 
 ### Setting...
 PATCH http://localhost/api/messenger
 Content-Type: application/json
 
 {
-    "username":"5924975288",
-    "password":"5924975288:AAE6uNUymvOBhpHyX1mY6GctqmcZR1YxOWA",
+    "username":"{{telegram_username}}",
+    "password":"{{telegram_password}}",
     "service":"telegram",
     "startup_login":1,
     "center":1
 }
 
 ### Remove
-DELETE http://localhost/api/messenger?username=5924975288
+DELETE http://localhost/api/messenger?username={{telegram_username}}
 
 ### Login
-GET http://localhost/api/messenger/start?username=5924975288
+GET http://localhost/api/messenger/start?username={{telegram_username}}
 
 ### Logout
-GET http://localhost/api/messenger/stop?username=5924975288
+GET http://localhost/api/messenger/stop?username={{telegram_username}}
 
 ### Kirim
 POST http://localhost/api/messenger/send
 Content-Type: application/json
 
 {
-    "username":"5924975288",
+    "username":"{{telegram_username}}",
     "service":"telegram",
     "penerima":"1344008938",
     "pesan":"This message from server"
 }
 
 ### Kirim
-GET http://localhost/api/messenger/send?username=5924975288&service=telegram&penerima=1344008938&pesan=This message from server
+GET http://localhost/api/messenger/send?username={{telegram_username}}&service=telegram&penerima=1344008938&pesan=This message from server

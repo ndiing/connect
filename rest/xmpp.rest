@@ -3,8 +3,8 @@ POST http://localhost/api/messenger
 Content-Type: application/json
 
 {
-    "username":"connect_center@jabb.im",
-    "password":"vMmj2_DZhknhc4b",
+    "username":"{{xmpp_username}}",
+    "password":"{{xmpp_password}}",
     "service":"xmpp",
     "startup_login":1,
     "center":1
@@ -14,39 +14,39 @@ Content-Type: application/json
 GET http://localhost/api/messenger
 
 ### Center account
-GET http://localhost/api/messenger?username=connect_center@jabb.im
+GET http://localhost/api/messenger?username={{xmpp_username}}
 
 ### Setting...
 PATCH http://localhost/api/messenger
 Content-Type: application/json
 
 {
-    "username":"connect_center@jabb.im",
-    "password":"vMmj2_DZhknhc4b",
+    "username":"{{xmpp_username}}",
+    "password":"{{xmpp_password}}",
     "service":"xmpp",
     "startup_login":1,
     "center":1
 }
 
 ### Remove
-DELETE http://localhost/api/messenger?username=connect_center@jabb.im
+DELETE http://localhost/api/messenger?username={{xmpp_username}}
 
 ### Login
-GET http://localhost/api/messenger/start?username=connect_center@jabb.im
+GET http://localhost/api/messenger/start?username={{xmpp_username}}
 
 ### Logout
-GET http://localhost/api/messenger/stop?username=connect_center@jabb.im
+GET http://localhost/api/messenger/stop?username={{xmpp_username}}
 
 ### Kirim
 POST http://localhost/api/messenger/send
 Content-Type: application/json
 
 {
-    "username":"connect_center@jabb.im",
+    "username":"{{xmpp_username}}",
     "service":"xmpp",
     "penerima":"connect_client@jabb.im",
     "pesan":"This message from server"
 }
 
 ### Kirim
-GET http://localhost/api/messenger/send?username=connect_center@jabb.im&service=xmpp&penerima=connect_client@jabb.im&pesan=This message from server
+GET http://localhost/api/messenger/send?username={{xmpp_username}}&service=xmpp&penerima=connect_client@jabb.im&pesan=This message from server

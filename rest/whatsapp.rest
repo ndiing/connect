@@ -3,7 +3,7 @@ POST http://localhost/api/messenger
 Content-Type: application/json
 
 {
-    "username":"6281938064470",
+    "username":"{{whatsapp_username}}",
     "password":"",
     "service":"whatsapp",
     "startup_login":1,
@@ -14,14 +14,14 @@ Content-Type: application/json
 GET http://localhost/api/messenger
 
 ### Center account
-GET http://localhost/api/messenger?username=6281938064470
+GET http://localhost/api/messenger?username={{whatsapp_username}}
 
 ### Setting...
 PATCH http://localhost/api/messenger
 Content-Type: application/json
 
 {
-    "username":"6281938064470",
+    "username":"{{whatsapp_username}}",
     "password":"",
     "service":"whatsapp",
     "startup_login":1,
@@ -29,24 +29,24 @@ Content-Type: application/json
 }
 
 ### Remove
-DELETE http://localhost/api/messenger?username=6281938064470
+DELETE http://localhost/api/messenger?username={{whatsapp_username}}
 
 ### Login
-GET http://localhost/api/messenger/start?username=6281938064470
+GET http://localhost/api/messenger/start?username={{whatsapp_username}}
 
 ### Logout
-GET http://localhost/api/messenger/stop?username=6281938064470
+GET http://localhost/api/messenger/stop?username={{whatsapp_username}}
 
 ### Kirim
 POST http://localhost/api/messenger/send
 Content-Type: application/json
 
 {
-    "username":"6281938064470",
+    "username":"{{whatsapp_username}}",
     "service":"whatsapp",
     "penerima":"6281935155404",
     "pesan":"This message from server"
 }
 
 ### Kirim
-GET http://localhost/api/messenger/send?username=6281938064470&service=whatsapp&penerima=6281935155404&pesan=This message from server
+GET http://localhost/api/messenger/send?username={{whatsapp_username}}&service=whatsapp&penerima=6281935155404&pesan=This message from server
