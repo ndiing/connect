@@ -297,7 +297,7 @@ GET https://localhost/api/otomax/inbox/tambah-ym2?kodereseller=OX0004&yahooid=&p
 Authorization: Bearer {{access_token}}
 
 ### Tiket Deposit
-GET https://localhost/api/otomax/inbox/tiket-deposit?jumlah=&pin=1234
+GET https://localhost/api/otomax/inbox/tiket-deposit?jumlah=100000&pin=1234
 Authorization: Bearer {{access_token}}
 
 ### Transaksi pengisian pulsa

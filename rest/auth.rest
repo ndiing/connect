@@ -8,7 +8,7 @@ Content-Type: application/json
     "username": "+62812345678912"
 }
 
-### Login
+### Login - 029197 Jangan memberikan OTP kepada siapa pun.OTP Anda adalah 029197. Kadaluarsa dalam 5 menit.
 POST https://localhost/api/auth/signin
 Authorization: Basic token
 Content-Type: application/json
@@ -24,7 +24,7 @@ Content-Type: application/json
 
 {
     "username": "+6281935155404",
-    "password": "699860"
+    "password": "029197"
 }
 
 ### Refresh / Renew token
