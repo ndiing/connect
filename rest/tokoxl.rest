@@ -29,10 +29,10 @@ GET https://localhost/api/tokoxl/getNboPackages?msisdn=6281935155404&location=NB
 GET https://localhost/api/tokoxl/getProductCategoriesProfiling?brand=XL
 
 ### getProductItemListProfiling
-GET https://localhost/api/tokoxl/getProductItemListProfiling?parent_account_cd=&brand=XL&product_category=HOTROD&msisdn_b=
+GET https://localhost/api/tokoxl/getProductItemListProfiling?parent_account_cd=&brand=XL&product_category=HOTROD&msisdn_b=6281935155404
 
 ### getBestOffer
-GET https://localhost/api/tokoxl/getBestOffer?parent_account_cd=&brand=XL&product_category=HOTROD&msisdn_b=
+GET https://localhost/api/tokoxl/getBestOffer?parent_account_cd=&brand=XL&product_category=HOTROD&msisdn_b=6281935155404
 
 ### Isi Paket
 GET https://localhost/api/tokoxl/package2person?msisdn=6281935155404&offerId=&originalProduct=&pin=6389&productCode=
@@ -41,7 +41,7 @@ GET https://localhost/api/tokoxl/package2person?msisdn=6281935155404&offerId=&or
 GET https://localhost/api/tokoxl/reloadNboPackage?appsTrxID=&msisdn=6281935155404&offerId=&originalProduct=&pin=6389&productCode=
 
 ### getItemList
-GET https://localhost/api/tokoxl/getItemList?parent_account_cd=&brand=XL&product_category=HOTROD&msisdn_b=
+GET https://localhost/api/tokoxl/getItemList?parent_account_cd=&brand=XL&product_category=HOTROD&msisdn_b=6281935155404
 
 ### Tagging HOT
 GET https://localhost/api/tokoxl/taggingHotTransaction?inputValidation=&msisdn=6281935155404&pin=6389&programId=&programType=
