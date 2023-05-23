@@ -35,19 +35,19 @@ GET https://localhost/api/tokoxl/getProductItemListProfiling?parent_account_cd=&
 GET https://localhost/api/tokoxl/getBestOffer?parent_account_cd=&brand=XL&product_category=HOTROD&msisdn_b=
 
 ### Isi Paket
-GET https://localhost/api/tokoxl/package2person?msisdn=6281935155404&offerId=&originalProduct=&pin=&productCode=
+GET https://localhost/api/tokoxl/package2person?msisdn=6281935155404&offerId=&originalProduct=&pin=6389&productCode=
 
 ### CuanKu Spesial
-GET https://localhost/api/tokoxl/reloadNboPackage?appsTrxID=&msisdn=6281935155404&offerId=&originalProduct=&pin=&productCode=
+GET https://localhost/api/tokoxl/reloadNboPackage?appsTrxID=&msisdn=6281935155404&offerId=&originalProduct=&pin=6389&productCode=
 
 ### getItemList
 GET https://localhost/api/tokoxl/getItemList?parent_account_cd=&brand=XL&product_category=HOTROD&msisdn_b=
 
 ### Tagging HOT
-GET https://localhost/api/tokoxl/taggingHotTransaction?inputValidation=&msisdn=6281935155404&pin=&programId=&programType=
+GET https://localhost/api/tokoxl/taggingHotTransaction?inputValidation=&msisdn=6281935155404&pin=6389&programId=&programType=
 
 ### Transfer Kuota
-GET https://localhost/api/tokoxl/hrnc2c?hrn=&msisdn=6281935155404&pin=
+GET https://localhost/api/tokoxl/hrnc2c?hrn=&msisdn=6281935155404&pin=6389
 
 ### Cek Status Voucher
 GET https://localhost/api/tokoxl/checkVoucherStatus?type=SA&voucherCode=
@@ -84,3 +84,22 @@ GET https://localhost/api/tokoxl/checkEligibilityRecipient?msisdn=6281935155404
 
 ### Cek Voucher Hybrid
 GET https://localhost/api/tokoxl/checkVoucherValidity?msisdn=6281935155404&voucherCode=&cgi=510.01.0.0
+
+
+
+
+
+### Isi Pulsa
+GET https://localhost/api/tokoxl/wallet2person?denom=5000&msisdn=6281935155404&pin=6389
+
+### Isi Paket
+GET https://localhost/api/tokoxl/package2person?msisdn=6281935155404&offerId=&originalProduct=&pin=6389&productCode=
+
+### CuanKu Spesial
+GET https://localhost/api/tokoxl/reloadNboPackage?appsTrxID=&msisdn=6281935155404&offerId=&originalProduct=&pin=6389&productCode=
+
+### Tagging HOT
+GET https://localhost/api/tokoxl/taggingHotTransaction?inputValidation=&msisdn=6281935155404&pin=6389&programId=&programType=
+
+### Transfer Kuota
+GET https://localhost/api/tokoxl/hrnc2c?hrn=&msisdn=6281935155404&pin=6389
