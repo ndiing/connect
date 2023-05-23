@@ -1,0 +1,86 @@
+### sendOTP
+GET https://localhost/api/tokoxl/sendOTP?msisdn=6281938064470
+
+### login
+GET https://localhost/api/tokoxl/login?msisdn=6281938064470&otp=771553&imei=
+
+### refreshToken
+GET https://localhost/api/tokoxl/refreshToken?
+
+### logout
+GET https://localhost/api/tokoxl/logout?
+
+### getBalance
+GET https://localhost/api/tokoxl/getBalance?
+
+### getProfile
+GET https://localhost/api/tokoxl/getProfile?
+
+### getPulsaList
+GET https://localhost/api/tokoxl/getPulsaList?msisdn=6281935155404
+
+### Isi Pulsa
+GET https://localhost/api/tokoxl/wallet2person?denom=5000&msisdn=6281935155404&pin=6389
+
+### getNboPackages
+GET https://localhost/api/tokoxl/getNboPackages?msisdn=6281935155404&location=NBO&maxOffer=10
+
+### getProductCategoriesProfiling
+GET https://localhost/api/tokoxl/getProductCategoriesProfiling?brand=XL
+
+### getProductItemListProfiling
+GET https://localhost/api/tokoxl/getProductItemListProfiling?parent_account_cd=&brand=XL&product_category=HOTROD&msisdn_b=
+
+### getBestOffer
+GET https://localhost/api/tokoxl/getBestOffer?parent_account_cd=&brand=XL&product_category=HOTROD&msisdn_b=
+
+### Isi Paket
+GET https://localhost/api/tokoxl/package2person?msisdn=6281935155404&offerId=&originalProduct=&pin=&productCode=
+
+### CuanKu Spesial
+GET https://localhost/api/tokoxl/reloadNboPackage?appsTrxID=&msisdn=6281935155404&offerId=&originalProduct=&pin=&productCode=
+
+### getItemList
+GET https://localhost/api/tokoxl/getItemList?parent_account_cd=&brand=XL&product_category=HOTROD&msisdn_b=
+
+### Tagging HOT
+GET https://localhost/api/tokoxl/taggingHotTransaction?inputValidation=&msisdn=6281935155404&pin=&programId=&programType=
+
+### Transfer Kuota
+GET https://localhost/api/tokoxl/hrnc2c?hrn=&msisdn=6281935155404&pin=
+
+### Cek Status Voucher
+GET https://localhost/api/tokoxl/checkVoucherStatus?type=SA&voucherCode=
+
+### Info Nomor - doCheckPrefix
+GET https://localhost/api/tokoxl/doCheckPrefix?msisdn=6281935155404
+
+### Info Nomor - doCheckDukcapil
+GET https://localhost/api/tokoxl/doCheckDukcapil?msisdn=6281935155404
+
+### Info Nomor - doCheckGraceDate
+GET https://localhost/api/tokoxl/doCheckGraceDate?msisdn=6281935155404
+
+### Info Nomor - doCheck4G
+GET https://localhost/api/tokoxl/doCheck4G?msisdn=6281935155404
+
+### Info Nomor - doCheckSPExpired
+GET https://localhost/api/tokoxl/doCheckSPExpired?msisdn=6281935155404
+
+### Info Nomor - doCheckPackageInfo
+GET https://localhost/api/tokoxl/doCheckPackageInfo?msisdn=6281935155404
+
+### Info Nomor - doCheckTenure
+GET https://localhost/api/tokoxl/doCheckTenure?msisdn=6281935155404
+
+### Info Nomor - getListBonusXcf
+GET https://localhost/api/tokoxl/getListBonusXcf?msisdn=6281935155404
+
+### Cek Transfer Kuota - checkEligibilitySender
+GET https://localhost/api/tokoxl/checkEligibilitySender?msisdn=6281935155404
+
+### Cek Transfer Kuota - checkEligibilityRecipient
+GET https://localhost/api/tokoxl/checkEligibilityRecipient?msisdn=6281935155404
+
+### Cek Voucher Hybrid
+GET https://localhost/api/tokoxl/checkVoucherValidity?msisdn=6281935155404&voucherCode=&cgi=510.01.0.0
