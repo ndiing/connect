@@ -2,7 +2,7 @@
 GET https://localhost/api/tokoxl/sendOTP?msisdn=6281938064470
 
 ### login
-GET https://localhost/api/tokoxl/login?msisdn=6281938064470&otp=771553&imei=
+GET https://localhost/api/tokoxl/login?msisdn=6281938064470&otp=704437&imei=
 
 ### refreshToken
 GET https://localhost/api/tokoxl/refreshToken?
