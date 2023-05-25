@@ -1,0 +1,43 @@
+### Tambah bank
+POST http://localhost/api/bank
+Content-Type: application/json
+
+{
+    "corpid": "{{newbiz_corpid}}",
+    "userid": "{{newbiz_userid}}",
+    "password": "{{newbiz_password}}",
+    "debitaccount": "{{newbiz_debitaccount}}",
+    "service": "newbiz",
+    "startup_login": 1
+}
+
+### Bank
+GET http://localhost/api/bank
+
+### Bank account
+GET http://localhost/api/bank?debitaccount={{newbiz_debitaccount}}
+
+### Setting...
+PATCH http://localhost/api/bank
+Content-Type: application/json
+
+{
+    "corpid": "{{newbiz_corpid}}",
+    "userid": "{{newbiz_userid}}",
+    "password": "{{newbiz_password}}",
+    "debitaccount": "{{newbiz_debitaccount}}",
+    "service": "newbiz",
+    "startup_login": 1
+}
+
+### Remove
+DELETE http://localhost/api/bank?debitaccount={{newbiz_debitaccount}}
+
+### Login
+GET http://localhost/api/bank/login?debitaccount={{newbiz_debitaccount}}
+
+### Logout
+GET http://localhost/api/bank/logout?debitaccount={{newbiz_debitaccount}}
+
+### History
+GET http://localhost/api/bank/history?debitaccount={{newbiz_debitaccount}}

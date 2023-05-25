@@ -1,0 +1,43 @@
+### Tambah bank
+POST http://localhost/api/bank
+Content-Type: application/json
+
+{
+    "corpId": "{{bnidirect_corpId}}",
+    "userName": "{{bnidirect_userName}}",
+    "passwordEncryption": "{{bnidirect_passwordEncryption}}",
+    "account_no": "{{bnidirect_account_no}}",
+    "service": "bnidirect",
+    "startup_login": 1
+}
+
+### Bank
+GET http://localhost/api/bank
+
+### Bank account
+GET http://localhost/api/bank?account_no={{bnidirect_account_no}}
+
+### Setting...
+PATCH http://localhost/api/bank
+Content-Type: application/json
+
+{
+    "corpId": "{{bnidirect_corpId}}",
+    "userName": "{{bnidirect_userName}}",
+    "passwordEncryption": "{{bnidirect_passwordEncryption}}",
+    "account_no": "{{bnidirect_account_no}}",
+    "service": "bnidirect",
+    "startup_login": 1
+}
+
+### Remove
+DELETE http://localhost/api/bank?account_no={{bnidirect_account_no}}
+
+### Login
+GET http://localhost/api/bank/login?account_no={{bnidirect_account_no}}
+
+### Logout
+GET http://localhost/api/bank/logout?account_no={{bnidirect_account_no}}
+
+### History
+GET http://localhost/api/bank/history?account_no={{bnidirect_account_no}}
