@@ -2,7 +2,7 @@
 GET https://localhost/api/tokoxl/sendOTP?msisdn=6281938064470
 
 ### login
-GET https://localhost/api/tokoxl/login?msisdn=6281938064470&otp=078421&imei=
+GET https://localhost/api/tokoxl/login?msisdn=6281938064470&otp=122425&imei=
 
 ### refreshToken
 GET https://localhost/api/tokoxl/refreshToken?
@@ -37,8 +37,21 @@ GET https://localhost/api/tokoxl/getBestOffer?parent_account_cd=&brand=XL&produc
 ### Isi Paket
 GET https://localhost/api/tokoxl/package2person?msisdn=6281935155404&offerId=&originalProduct=&pin=6389&productCode=
 
+
+
+
+
+
 ### CuanKu Spesial
 GET https://localhost/api/tokoxl/reloadNboPackage?appsTrxID=&msisdn=6281935155404&offerId=&originalProduct=&pin=6389&productCode=
+
+### CuanKu Spesial
+GET https://localhost/api/tokoxl/reloadNboPackage?appsTrxID=c4c99ed4-e614-42c7-bd41-d5a54218618c&msisdn=6281935155404&offerId=299104&pin=6389&productCode=Xb1ccbd7q9b4q8b0hKQsB%2BNLKXo9zLpbt7ZW0xlNbDASCwnd%2FZIHkU4U229ILOw9mr5KoTzX%2BmVxrklx7zD0%2FFVoeGAEgPQij%2Bih%2BMmwHxfe%2Bnm0Xu7cky4uVsubEfcZaCtVvdV82Nornhz3GMC%2FssHINAddJGzOn3uRK4te0iP%2FWOTqhy5qABQ8ZeNVcyBVzxoIn%2B4WJLfNRjnSWUmku6M30lbQFme3YP3CpzA%2F1%2FQ%3D
+
+
+
+
+
 
 ### getItemList
 GET https://localhost/api/tokoxl/getItemList?parent_account_cd=&brand=XL&product_category=HOTROD&msisdn_b=6281935155404
