@@ -6,7 +6,7 @@ Content-Type: application/json
     "username":"{{telegram_username}}",
     "password":"{{telegram_password}}",
     "service":"telegram",
-    "startup_login":1,
+    "startup_login":0,
     "center":1
 }
 

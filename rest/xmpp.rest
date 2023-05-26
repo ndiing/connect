@@ -6,7 +6,7 @@ Content-Type: application/json
     "username":"{{xmpp_username}}",
     "password":"{{xmpp_password}}",
     "service":"xmpp",
-    "startup_login":1,
+    "startup_login":0,
     "center":1
 }
 

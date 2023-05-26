@@ -8,7 +8,7 @@ Content-Type: application/json
     "passwordEncryption": "{{bnidirect_passwordEncryption}}",
     "account_no": "{{bnidirect_account_no}}",
     "service": "bnidirect",
-    "startup_login": 1
+    "startup_login": 0
 }
 
 ### Bank
