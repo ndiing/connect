@@ -1,5 +1,6 @@
 # Connect
- connect
+[![GitHub all releases](https://img.shields.io/github/downloads/ndiing/connect/total)](https://github.com/ndiing/connect/releases)
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/ndiing/connect)](https://github.com/ndiing/connect/releases)
 
 ## otomax
 - [otomax](./rest/otomax.rest) (app)
