@@ -95,8 +95,8 @@ src
 # resources
 forge.config.js
 index.js
-!resources/server/index.js
-!resources/renderer/index.js
+# !resources/server/index.js
+# !resources/renderer/index.js
 nodemon.json
 package-lock.json
 package.json
