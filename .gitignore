@@ -92,7 +92,7 @@ typings/
 out/
 
 src
-# resources
+resources
 forge.config.js
 index.js
 # !resources/server/index.js
