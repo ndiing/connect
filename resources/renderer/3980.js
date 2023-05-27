@@ -1,5 +1,0 @@
-"use strict";(self.webpackChunkconnect=self.webpackChunkconnect||[]).push([[3980],{3980:(e,t,s)=>{s.r(t),s.d(t,{default:()=>r});var a=s(8318);class n extends a.oi{static get properties(){return{img:{String}}}render(){return a.dy`
-            app
-
-            <img src="${this.img}" alt="">
-        `}createRenderRoot(){return this}firstUpdated(){const e=()=>{const t=new WebSocket("ws://"+window.location.host);t.addEventListener("close",(()=>setTimeout((()=>e()),1e3))),t.addEventListener("message",(e=>{const[t,s,a]=JSON.parse(e.data);if("qr"==s){let e=new URL("https://chart.googleapis.com/chart");e.searchParams.set("cht","qr"),e.searchParams.set("chs","250x250"),e.searchParams.set("chl",decodeURIComponent(a.data)),this.img=e.toString()}}))};e()}}customElements.define("app-main",n);const r=document.createElement("app-main")}}]);
