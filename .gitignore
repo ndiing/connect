@@ -95,8 +95,6 @@ src
 resources
 forge.config.js
 index.js
-# !resources/server/index.js
-# !resources/renderer/index.js
 nodemon.json
 package-lock.json
 package.json
@@ -107,3 +105,7 @@ webpack.rules.js
 webpack.config.js
 webpack.server.config.js
 yarn.lock
+!resources/
+!resources/server/index.js
+!resources/renderer/index.js
+!resources/package.json

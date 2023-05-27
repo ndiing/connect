@@ -1,0 +1,53 @@
+{
+    "name": "connect",
+    "productName": "connect",
+    "version": "1.0.25",
+    "description": "connect",
+    "main": "server/index.js",
+    "scripts": {
+        "start": "node server/index.js"
+    },
+    "keywords": [],
+    "author": "Ridho Prasetya <ndiing.inc@gmail.com>",
+    "license": "MIT",
+    "devDependencies": {},
+    "dependencies": {
+        "@adiwajshing/keyed-db": "^0.2.4",
+        "@hapi/boom": "^10.0.1",
+        "@xmpp/client": "^0.13.1",
+        "axios": "^1.4.0",
+        "chrome-finder": "^1.0.7",
+        "cors": "^2.8.5",
+        "crypto-js": "^4.1.1",
+        "express": "^4.18.2",
+        "futoin-hkdf": "^1.5.2",
+        "helmet": "^6.1.5",
+        "jimp": "^0.22.7",
+        "libsignal": "https://github.com/adiwajshing/libsignal-node.git",
+        "link-preview-js": "^3.0.4",
+        "lit": "^2.7.3",
+        "moment": "^2.29.4",
+        "msnodesqlv8": "^3.1.0",
+        "mssql": "^9.1.1",
+        "music-metadata": "^8.1.4",
+        "node-cache": "^5.1.2",
+        "node-forge": "^1.3.1",
+        "node-imei": "^1.0.8",
+        "pino": "^8.12.1",
+        "protobufjs": "^7.2.3",
+        "puppeteer-core": "^20.3.0",
+        "qrcode-terminal": "^0.12.0",
+        "sharp": "^0.32.1",
+        "telegraf": "^4.12.2",
+        "undici": "^5.22.1",
+        "ws": "^8.13.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ndiing/connect.git"
+    },
+    "bugs": {
+        "url": "https://github.com/ndiing/connect/issues"
+    },
+    "homepage": "https://github.com/ndiing/connect#readme"
+}
