@@ -4,9 +4,7 @@
     "version": "1.0.38",
     "description": "connect",
     "main": "server/index.js",
-    "scripts": {
-        "start": "node server/index.js"
-    },
+    "scripts": {},
     "keywords": [],
     "author": "Ridho Prasetya <ndiing.inc@gmail.com>",
     "license": "MIT",
@@ -50,16 +48,5 @@
     "bugs": {
         "url": "https://github.com/ndiing/connect/issues"
     },
-    "homepage": "https://github.com/ndiing/connect#readme",
-    "bin": "src/server.js",
-    "pkg": {
-        "assets": [
-            "resources/**/*",
-            "native_modules/**/*"
-        ],
-        "targets": [
-            "node16-win-x64"
-        ],
-        "outputPath": "out/pkg"
-    }
+    "homepage": "https://github.com/ndiing/connect#readme"
 }
