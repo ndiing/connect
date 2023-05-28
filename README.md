@@ -37,5 +37,5 @@ node resources/server/index.js
 - [x] **[sidompul](./rest/sidompul.rest)**
 - [x] **[tokoxl](./rest/tokoxl.rest)**
 
->> `connect.ext` Kompatibilitas terbatas
->> install local dengan `nodejs` mulai versi `1.0.38`
+> `connect.ext` Kompatibilitas terbatas
+> install local dengan `nodejs` mulai versi `1.0.38`
