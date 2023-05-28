@@ -14,8 +14,18 @@ cd resources
 npm i
 
 cd ..
+```
 
+## Jalankan
+
+```
 node resources/server/index.js
+```
+
+## Update
+
+```
+git pull
 ```
 
 ### Otomax
