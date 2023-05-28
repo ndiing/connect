@@ -44,8 +44,8 @@ Content-Type: application/json
 {
     "username":"{{whatsapp_username}}",
     "service":"whatsapp",
-    "penerima":"6281935155404",
-    "pesan":"This message from server"
+    "penerima":"6282245266333",
+    "pesan":"test"
 }
 
 ### Kirim
