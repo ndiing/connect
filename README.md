@@ -4,7 +4,7 @@
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/ndiing/connect)](https://github.com/ndiing/connect/releases)
 [![GitHub](https://img.shields.io/github/license/ndiing/connect)](https://github.com/ndiing/connect/releases)
 
-## Install
+## Instalasi
 
 ```
 git clone https://github.com/ndiing/connect.git
@@ -16,13 +16,13 @@ npm i
 cd ..
 ```
 
-## Jalankan
+## Menjalankan
 
 ```
 node resources/server/index.js
 ```
 
-## Update
+## Pembaruan
 
 ```
 git pull
@@ -52,7 +52,7 @@ git pull
 -   [x] **[sidompul](./rest/sidompul.rest)**
 -   [x] **[tokoxl](./rest/tokoxl.rest)**
 
-## Note
+## Penting
 
 -   `connect.ext` Kompatibilitas terbatas
--   install local dengan `nodejs` mulai versi `1.0.38`
+-   Instal di lokal dengan `nodejs` mulai versi `1.0.38`
