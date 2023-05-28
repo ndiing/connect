@@ -4,19 +4,21 @@
 [![GitHub](https://img.shields.io/github/license/ndiing/connect)](https://github.com/ndiing/connect/releases)
 
 ## otomax
-- **[otomax](./rest/otomax.rest)**
-- **[auth](./rest/auth.rest)**
+- [x] **[otomax](./rest/otomax.rest)**
+- [x] **[auth](./rest/auth.rest)**
 
 ## messenger
-- **[xmpp](./rest/xmpp.rest)**
-- **[telegram](./rest/telegram.rest)**
-- **[whatsapp](./rest/whatsapp.rest)**
+- [x] **[xmpp](./rest/xmpp.rest)**
+- [x] **[telegram](./rest/telegram.rest)**
+- [x] **[whatsapp](./rest/whatsapp.rest)**
 
 ## bank
-- **[bnidirect](./rest/bnidirect.rest)**
-- **[newbiz](./rest/newbiz.rest)**
-- **[ibank](./rest/ibank.rest)**
+- [x] **[bnidirect](./rest/bnidirect.rest)**
+- [x] **[newbiz](./rest/newbiz.rest)**
+- [x] **[ibank](./rest/ibank.rest)**
+- [ ] **[klikbca](./rest/klikbca.rest)**
+- [ ] **[mcm2](./rest/mcm2.rest)**
 
 ## provider
-- **[sidompul](./rest/sidompul.rest)**
-- **[tokoxl](./rest/tokoxl.rest)**
+- [x] **[sidompul](./rest/sidompul.rest)**
+- [x] **[tokoxl](./rest/tokoxl.rest)**
