@@ -4,18 +4,19 @@
 [![GitHub](https://img.shields.io/github/license/ndiing/connect)](https://github.com/ndiing/connect/releases)
 
 ## otomax
-- [otomax](./rest/otomax.rest) (app)
+- [otomax](./rest/otomax.rest) (https://www.otomax-software.com/en)
 - [auth](./rest/auth.rest) ()
 
 ## messenger
-- [xmpp](./rest/xmpp.rest) (web)
-- [telegram](./rest/telegram.rest) (web)
-- [whatsapp](./rest/whatsapp.rest) (web)
+- [xmpp](./rest/xmpp.rest) (https://www.jabber.org/)
+- [telegram](./rest/telegram.rest) (https://web.telegram.org/)
+- [whatsapp](./rest/whatsapp.rest) (https://web.whatsapp.com/)
 
 ## bank
-- [bnidirect](./rest/bnidirect.rest) (web)
-- [newbiz](./rest/newbiz.rest) (web)
+- [bnidirect](./rest/bnidirect.rest) (https://bnidirect.bni.co.id/)
+- [newbiz](./rest/newbiz.rest) (https://newbiz.bri.co.id/)
+- [ibank](./rest/ibank.rest) (https://ibank.klikbca.com/)
 
 ## provider
-- [sidompul](./rest/sidompul.rest) (web)
-- [tokoxl](./rest/tokoxl.rest) (apk 5.5.0)
+- [sidompul](./rest/sidompul.rest) (https://developer.xlaxiata.co.id/public/home)
+- [tokoxl](./rest/tokoxl.rest) (https://play.google.com/store/apps/details?id=com.toko.xl&hl=id)
