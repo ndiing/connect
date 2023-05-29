@@ -2,7 +2,7 @@
     "swagger": "2.0",
     "info": {
         "description": "Connect",
-        "version": "1.2.9",
+        "version": "1.2.30",
         "title": "Connect",
         "termsOfService": "",
         "contact": {
@@ -27,6 +27,10 @@
         {
             "name": "ibank.rest",
             "description": "ibank.rest"
+        },
+        {
+            "name": "mcm2.rest",
+            "description": "mcm2.rest"
         },
         {
             "name": "newbiz.rest",
@@ -69,7 +73,7 @@
                 ],
                 "summary": "Registration",
                 "description": "Registration",
-                "operationId": "authSignup8367880767910167",
+                "operationId": "authSignup3884279010361644",
                 "consumes": [
                     "application/json"
                 ],
@@ -117,7 +121,7 @@
                 ],
                 "summary": "Login",
                 "description": "Login",
-                "operationId": "authSignin6816293682357304",
+                "operationId": "authSignin2682257411864535",
                 "consumes": [
                     "application/json"
                 ],
@@ -165,7 +169,7 @@
                 ],
                 "summary": "Verify / Create token",
                 "description": "Verify / Create token",
-                "operationId": "authChallenge23230841904354715",
+                "operationId": "authChallenge5024979894402952",
                 "consumes": [
                     "application/json"
                 ],
@@ -213,7 +217,7 @@
                 ],
                 "summary": "Refresh / Renew token",
                 "description": "Refresh / Renew token",
-                "operationId": "authRefresh8741066803976147",
+                "operationId": "authRefresh8073344280216921",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -242,7 +246,7 @@
                 ],
                 "summary": "Logout / Revoke token",
                 "description": "Logout / Revoke token",
-                "operationId": "authSignout9027916209903173",
+                "operationId": "authSignout5911420403790533",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -271,7 +275,7 @@
                 ],
                 "summary": "Tambah bank",
                 "description": "Tambah bank",
-                "operationId": "bank25629805330647804",
+                "operationId": "bank9532691535024884",
                 "consumes": [
                     "application/json"
                 ],
@@ -310,7 +314,7 @@
                 ],
                 "summary": "Bank account",
                 "description": "Bank account",
-                "operationId": "bank5544209689080628",
+                "operationId": "bank12448715043501202",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -337,7 +341,7 @@
                 ],
                 "summary": "Setting...",
                 "description": "Setting...",
-                "operationId": "bank2733948420342185",
+                "operationId": "bank3733847497184999",
                 "consumes": [
                     "application/json"
                 ],
@@ -376,7 +380,7 @@
                 ],
                 "summary": "Remove",
                 "description": "Remove",
-                "operationId": "bank3155760284758964",
+                "operationId": "bank6337410073988297",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -405,7 +409,7 @@
                 ],
                 "summary": "Login",
                 "description": "Login",
-                "operationId": "bankLogin12048543054797256",
+                "operationId": "bankLogin8975306863104717",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -434,7 +438,7 @@
                 ],
                 "summary": "Logout",
                 "description": "Logout",
-                "operationId": "bankLogout21080165910560456",
+                "operationId": "bankLogout7922721566468536",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -463,7 +467,7 @@
                 ],
                 "summary": "History",
                 "description": "History",
-                "operationId": "bankHistory8329899302079617",
+                "operationId": "bankHistory7510998171616114",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -492,7 +496,7 @@
                 ],
                 "summary": "otomax",
                 "description": "otomax",
-                "operationId": "otomax06900417124412228",
+                "operationId": "otomax8886507646617645",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -521,7 +525,7 @@
                 ],
                 "summary": "provider",
                 "description": "provider",
-                "operationId": "otomaxProvider949801113316157",
+                "operationId": "otomaxProvider39862409477545047",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -550,7 +554,7 @@
                 ],
                 "summary": "inbox?kode=&tgl_awal=&tgl_akhir=&pengirim=&tipe_pengirim=&pesan=&status=&page=&limit=",
                 "description": "inbox?kode=&tgl_awal=&tgl_akhir=&pengirim=&tipe_pengirim=&pesan=&status=&page=&limit=",
-                "operationId": "otomaxInbox5646211439872677",
+                "operationId": "otomaxInbox3733355826117182",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -579,7 +583,7 @@
                 ],
                 "summary": "outbox?kode=&tgl_awal=&tgl_akhir=&pengirim=&tipe_pengirim=&pesan=&status=&page=&limit=",
                 "description": "outbox?kode=&tgl_awal=&tgl_akhir=&pengirim=&tipe_pengirim=&pesan=&status=&page=&limit=",
-                "operationId": "otomaxOutbox8742354793375569",
+                "operationId": "otomaxOutbox13947309281922893",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -608,7 +612,7 @@
                 ],
                 "summary": "mutasi?kode=&tanggal_awal=&tanggal_akhir=&jumlah=&keterangan=&jenis=&page=&limit=",
                 "description": "mutasi?kode=&tanggal_awal=&tanggal_akhir=&jumlah=&keterangan=&jenis=&page=&limit=",
-                "operationId": "otomaxMutasi11823049979758093",
+                "operationId": "otomaxMutasi09351544633494258",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -637,7 +641,7 @@
                 ],
                 "summary": "operator?kode=&nama=&page=&limit=",
                 "description": "operator?kode=&nama=&page=&limit=",
-                "operationId": "otomaxOperator5217392761722661",
+                "operationId": "otomaxOperator5912345215312875",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -666,7 +670,7 @@
                 ],
                 "summary": "produk?kode=&nama=&kode_operator=&nominal=&page=&limit=",
                 "description": "produk?kode=&nama=&kode_operator=&nominal=&page=&limit=",
-                "operationId": "otomaxProduk619048836490719",
+                "operationId": "otomaxProduk4649994334358072",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -695,7 +699,7 @@
                 ],
                 "summary": "level",
                 "description": "level",
-                "operationId": "otomaxLevel2657677381650949",
+                "operationId": "otomaxLevel8408267754440071",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -724,7 +728,7 @@
                 ],
                 "summary": "reseller",
                 "description": "reseller",
-                "operationId": "otomaxReseller008656006436553954",
+                "operationId": "otomaxReseller9016625017854174",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -753,7 +757,7 @@
                 ],
                 "summary": "pengirim",
                 "description": "pengirim",
-                "operationId": "otomaxPengirim810859744281963",
+                "operationId": "otomaxPengirim00733747354377412",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -782,7 +786,7 @@
                 ],
                 "summary": "parameter?grup=&nama=&name=",
                 "description": "parameter?grup=&nama=&name=",
-                "operationId": "otomaxParameter3396121986796987",
+                "operationId": "otomaxParameter5249951339026473",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -811,7 +815,7 @@
                 ],
                 "summary": "Aktifkan downline/reseller",
                 "description": "Aktifkan downline/reseller",
-                "operationId": "otomaxInboxAktifkanDl5989251137784102",
+                "operationId": "otomaxInboxAktifkanDl6066899433908579",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -854,7 +858,7 @@
                 ],
                 "summary": "Batalkan transaksi yang belum diproses",
                 "description": "Batalkan transaksi yang belum diproses",
-                "operationId": "otomaxInboxBatalTransaksi9999358879146074",
+                "operationId": "otomaxInboxBatalTransaksi005327237964951825",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -897,7 +901,7 @@
                 ],
                 "summary": "Cancel balance transfer",
                 "description": "Cancel balance transfer",
-                "operationId": "otomaxInboxBatalTransferSaldo36558976548188205",
+                "operationId": "otomaxInboxBatalTransferSaldo41409610959697485",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -947,7 +951,7 @@
                 ],
                 "summary": "Cek harga produk",
                 "description": "Cek harga produk",
-                "operationId": "otomaxInboxCekHarga5340994795959189",
+                "operationId": "otomaxInboxCekHarga5785503384049204",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -983,7 +987,7 @@
                 ],
                 "summary": "Check downline's markup",
                 "description": "Check downline's markup",
-                "operationId": "otomaxInboxCekMarkup0631866450980858",
+                "operationId": "otomaxInboxCekMarkup7113399613149383",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -1026,7 +1030,7 @@
                 ],
                 "summary": "Check product markup",
                 "description": "Check product markup",
-                "operationId": "otomaxInboxCekMarkupProduk6962150686010278",
+                "operationId": "otomaxInboxCekMarkupProduk2287714131671137",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -1076,7 +1080,7 @@
                 ],
                 "summary": "Check all product markups",
                 "description": "Check all product markups",
-                "operationId": "otomaxInboxCekMarkupProduk26054557826877145",
+                "operationId": "otomaxInboxCekMarkupProduk27219505553860399",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -1119,7 +1123,7 @@
                 ],
                 "summary": "Cek N (lihat Setting.LimitCekMutasi) mutasi saldo/deposit terakhir",
                 "description": "Cek N (lihat Setting.LimitCekMutasi) mutasi saldo/deposit terakhir",
-                "operationId": "otomaxInboxCekMutasi9278294921882124",
+                "operationId": "otomaxInboxCekMutasi8683842015216663",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -1148,7 +1152,7 @@
                 ],
                 "summary": "Cek mutasi saldo terakhir, khusus manual, tiket, dan transfer saldo",
                 "description": "Cek mutasi saldo terakhir, khusus manual, tiket, dan transfer saldo",
-                "operationId": "otomaxInboxCekMutasi26808753918173611",
+                "operationId": "otomaxInboxCekMutasi20669529903357764",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -1177,7 +1181,7 @@
                 ],
                 "summary": "Check current OID for OtomaX HTH",
                 "description": "Check current OID for OtomaX HTH",
-                "operationId": "otomaxInboxCekOid48098352221586493",
+                "operationId": "otomaxInboxCekOid962595727762976",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -1213,7 +1217,7 @@
                 ],
                 "summary": "Cek saldo akhir",
                 "description": "Cek saldo akhir",
-                "operationId": "otomaxInboxCekSaldo3430221689564117",
+                "operationId": "otomaxInboxCekSaldo7300625283577031",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -1249,7 +1253,7 @@
                 ],
                 "summary": "Cek saldo downline",
                 "description": "Cek saldo downline",
-                "operationId": "otomaxInboxCekSaldoDl5721257620156335",
+                "operationId": "otomaxInboxCekSaldoDl5818362051993309",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -1285,7 +1289,7 @@
                 ],
                 "summary": "Cek status transaksi",
                 "description": "Cek status transaksi",
-                "operationId": "otomaxInboxCekStatusTransaksi22407078602243358",
+                "operationId": "otomaxInboxCekStatusTransaksi7023368616830303",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -1321,7 +1325,7 @@
                 ],
                 "summary": "Cek status transaksi",
                 "description": "Cek status transaksi",
-                "operationId": "otomaxInboxCekStatusTransaksi23926750196486246",
+                "operationId": "otomaxInboxCekStatusTransaksi218727851324002498",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -1357,7 +1361,7 @@
                 ],
                 "summary": "Cek status transaksi",
                 "description": "Cek status transaksi",
-                "operationId": "otomaxInboxCekStatusTransaksi317157798549724013",
+                "operationId": "otomaxInboxCekStatusTransaksi320859642762656283",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -1400,7 +1404,7 @@
                 ],
                 "summary": "Cek status N (lihat Setting.LimitCekTransaksiAkhir) transaksi terakhir",
                 "description": "Cek status N (lihat Setting.LimitCekTransaksiAkhir) transaksi terakhir",
-                "operationId": "otomaxInboxCekTransaksiAkhir30567848736612846",
+                "operationId": "otomaxInboxCekTransaksiAkhir24689533078965753",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -1429,7 +1433,7 @@
                 ],
                 "summary": "Daftarkan downline/reseller baru",
                 "description": "Daftarkan downline/reseller baru",
-                "operationId": "otomaxInboxDaftarDl4762241972013901",
+                "operationId": "otomaxInboxDaftarDl4994558049459443",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -1486,7 +1490,7 @@
                 ],
                 "summary": "Daftarkan downline/reseller baru",
                 "description": "Daftarkan downline/reseller baru",
-                "operationId": "otomaxInboxDaftarDl28973409915654309",
+                "operationId": "otomaxInboxDaftarDl207596003738184809",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -1550,7 +1554,7 @@
                 ],
                 "summary": "Daftarkan downline/reseller baru",
                 "description": "Daftarkan downline/reseller baru",
-                "operationId": "otomaxInboxDaftarDl38765886408394112",
+                "operationId": "otomaxInboxDaftarDl36055465897869086",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -1614,7 +1618,7 @@
                 ],
                 "summary": "Registration of non member",
                 "description": "Registration of non member",
-                "operationId": "otomaxInboxDaftarNonMember08770216425838595",
+                "operationId": "otomaxInboxDaftarNonMember09564728291859925",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -1664,7 +1668,7 @@
                 ],
                 "summary": "Hapus pengirim tipe GTalk",
                 "description": "Hapus pengirim tipe GTalk",
-                "operationId": "otomaxInboxHapusGtalk9764632060591778",
+                "operationId": "otomaxInboxHapusGtalk6946244475764662",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -1707,7 +1711,7 @@
                 ],
                 "summary": "Hapus pengirim tipe GTalk untuk downline",
                 "description": "Hapus pengirim tipe GTalk untuk downline",
-                "operationId": "otomaxInboxHapusGtalk26682446322388051",
+                "operationId": "otomaxInboxHapusGtalk21394296335625047",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -1757,7 +1761,7 @@
                 ],
                 "summary": "Delete product markup",
                 "description": "Delete product markup",
-                "operationId": "otomaxInboxHapusMarkupProduk9769620685223899",
+                "operationId": "otomaxInboxHapusMarkupProduk5151005990862816",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -1807,7 +1811,7 @@
                 ],
                 "summary": "Delete product markup",
                 "description": "Delete product markup",
-                "operationId": "otomaxInboxHapusMarkupProduk27669610552015258",
+                "operationId": "otomaxInboxHapusMarkupProduk28802221838164035",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -1850,7 +1854,7 @@
                 ],
                 "summary": "Delete product markup",
                 "description": "Delete product markup",
-                "operationId": "otomaxInboxHapusMarkupProduk3744514286906927",
+                "operationId": "otomaxInboxHapusMarkupProduk36548114741055375",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -1893,7 +1897,7 @@
                 ],
                 "summary": "Hapus pengirim tipe SMS",
                 "description": "Hapus pengirim tipe SMS",
-                "operationId": "otomaxInboxHapusNomor25352363174852743",
+                "operationId": "otomaxInboxHapusNomor9612254239616442",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -1936,7 +1940,7 @@
                 ],
                 "summary": "Hapus pengirim tipe SMS",
                 "description": "Hapus pengirim tipe SMS",
-                "operationId": "otomaxInboxHapusNomor205686048274158928",
+                "operationId": "otomaxInboxHapusNomor25767698253904734",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -1986,7 +1990,7 @@
                 ],
                 "summary": "Hapus nomor WA",
                 "description": "Hapus nomor WA",
-                "operationId": "otomaxInboxHapusWa9007874321880696",
+                "operationId": "otomaxInboxHapusWa962784597557051",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -2029,7 +2033,7 @@
                 ],
                 "summary": "Hapus pengirim tipe YM",
                 "description": "Hapus pengirim tipe YM",
-                "operationId": "otomaxInboxHapusYm196455699564398",
+                "operationId": "otomaxInboxHapusYm26611580047434025",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -2072,7 +2076,7 @@
                 ],
                 "summary": "Hapus pengirim tipe YM dari downline",
                 "description": "Hapus pengirim tipe YM dari downline",
-                "operationId": "otomaxInboxHapusYm210901126974324238",
+                "operationId": "otomaxInboxHapusYm24398323012313188",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -2122,7 +2126,7 @@
                 ],
                 "summary": "Cek laporan mutasi saldo per tanggal",
                 "description": "Cek laporan mutasi saldo per tanggal",
-                "operationId": "otomaxInboxLaporanMutasi8015167585452132",
+                "operationId": "otomaxInboxLaporanMutasi4050492434938002",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -2158,7 +2162,7 @@
                 ],
                 "summary": "Cek laporan transaksi per tanggal",
                 "description": "Cek laporan transaksi per tanggal",
-                "operationId": "otomaxInboxLaporanTransaksi49843939079761657",
+                "operationId": "otomaxInboxLaporanTransaksi009378323940854472",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -2194,7 +2198,7 @@
                 ],
                 "summary": "View gift list",
                 "description": "View gift list",
-                "operationId": "otomaxInboxLihatHadiahPoin4277876462632435",
+                "operationId": "otomaxInboxLihatHadiahPoin6025131940435784",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -2223,7 +2227,7 @@
                 ],
                 "summary": "Lihat daftar downline",
                 "description": "Lihat daftar downline",
-                "operationId": "otomaxInboxListDl4556538345049659",
+                "operationId": "otomaxInboxListDl8429344070938445",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -2252,7 +2256,7 @@
                 ],
                 "summary": "Lihat daftar downline dari downline (sub-downline)",
                 "description": "Lihat daftar downline dari downline (sub-downline)",
-                "operationId": "otomaxInboxListDl2293206849210615",
+                "operationId": "otomaxInboxListDl28171978726878035",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -2288,7 +2292,7 @@
                 ],
                 "summary": "Lihat daftar pengirim semua tipe",
                 "description": "Lihat daftar pengirim semua tipe",
-                "operationId": "otomaxInboxListPengirim6712227559173591",
+                "operationId": "otomaxInboxListPengirim2630231704898902",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -2317,7 +2321,7 @@
                 ],
                 "summary": "Lihat daftar pengirim tipe GTalk",
                 "description": "Lihat daftar pengirim tipe GTalk",
-                "operationId": "otomaxInboxListPengirimGtalk6008891430855472",
+                "operationId": "otomaxInboxListPengirimGtalk276257256449975",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -2346,7 +2350,7 @@
                 ],
                 "summary": "Lihat daftar pengirim tipe GTalk untuk downline",
                 "description": "Lihat daftar pengirim tipe GTalk untuk downline",
-                "operationId": "otomaxInboxListPengirimGtalk2524197185512659",
+                "operationId": "otomaxInboxListPengirimGtalk22550211272403351",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -2382,7 +2386,7 @@
                 ],
                 "summary": "Lihat daftar pengirim tipe SMS",
                 "description": "Lihat daftar pengirim tipe SMS",
-                "operationId": "otomaxInboxListPengirimSms6437230981702073",
+                "operationId": "otomaxInboxListPengirimSms3444244115924735",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -2411,7 +2415,7 @@
                 ],
                 "summary": "Lihat daftar pengirim tipe SMS dari downline",
                 "description": "Lihat daftar pengirim tipe SMS dari downline",
-                "operationId": "otomaxInboxListPengirimSms203897835826624241",
+                "operationId": "otomaxInboxListPengirimSms26714784738199877",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -2447,7 +2451,7 @@
                 ],
                 "summary": "Lihat daftar pengirim tipe YM",
                 "description": "Lihat daftar pengirim tipe YM",
-                "operationId": "otomaxInboxListPengirimYm9489249437421918",
+                "operationId": "otomaxInboxListPengirimYm6382834094925065",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -2476,7 +2480,7 @@
                 ],
                 "summary": "Lihat daftar pengirim tipe YM dari downline",
                 "description": "Lihat daftar pengirim tipe YM dari downline",
-                "operationId": "otomaxInboxListPengirimYm247140592509947754",
+                "operationId": "otomaxInboxListPengirimYm230188897521308267",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -2512,7 +2516,7 @@
                 ],
                 "summary": "Non-aktifkan downline/reseller",
                 "description": "Non-aktifkan downline/reseller",
-                "operationId": "otomaxInboxNonAktifkanDl393054596551887",
+                "operationId": "otomaxInboxNonAktifkanDl9270731226912343",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -2555,7 +2559,7 @@
                 ],
                 "summary": "Reset pin member",
                 "description": "Reset pin member",
-                "operationId": "otomaxInboxResetPin015607133420281194",
+                "operationId": "otomaxInboxResetPin3586046676243859",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -2598,7 +2602,7 @@
                 ],
                 "summary": "Tambah pengirim tipe GTalk",
                 "description": "Tambah pengirim tipe GTalk",
-                "operationId": "otomaxInboxTambahGtalk5800620257490414",
+                "operationId": "otomaxInboxTambahGtalk5473484073417356",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -2641,7 +2645,7 @@
                 ],
                 "summary": "Tambah pengirim tipe GTalk untuk downline",
                 "description": "Tambah pengirim tipe GTalk untuk downline",
-                "operationId": "otomaxInboxTambahGtalk26833761005870136",
+                "operationId": "otomaxInboxTambahGtalk228047616040503986",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -2691,7 +2695,7 @@
                 ],
                 "summary": "Tambah pengirim tipe SMS",
                 "description": "Tambah pengirim tipe SMS",
-                "operationId": "otomaxInboxTambahNomor3975928273429492",
+                "operationId": "otomaxInboxTambahNomor43346376956709687",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -2734,7 +2738,7 @@
                 ],
                 "summary": "Tambah pengirim tipe SMS untuk downline",
                 "description": "Tambah pengirim tipe SMS untuk downline",
-                "operationId": "otomaxInboxTambahNomor207836328410281324",
+                "operationId": "otomaxInboxTambahNomor221539713354720513",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -2784,7 +2788,7 @@
                 ],
                 "summary": "Tambah nomor WA",
                 "description": "Tambah nomor WA",
-                "operationId": "otomaxInboxTambahWa804494826218378",
+                "operationId": "otomaxInboxTambahWa056153099844090226",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -2827,7 +2831,7 @@
                 ],
                 "summary": "Tambah pengirim tipe YM",
                 "description": "Tambah pengirim tipe YM",
-                "operationId": "otomaxInboxTambahYm4799037739400609",
+                "operationId": "otomaxInboxTambahYm2539351546541919",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -2870,7 +2874,7 @@
                 ],
                 "summary": "Tambah pengirim tipe YM untuk downline",
                 "description": "Tambah pengirim tipe YM untuk downline",
-                "operationId": "otomaxInboxTambahYm26142581898784263",
+                "operationId": "otomaxInboxTambahYm29103796065017824",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -2920,7 +2924,7 @@
                 ],
                 "summary": "Tiket Deposit",
                 "description": "Tiket Deposit",
-                "operationId": "otomaxInboxTiketDeposit7240199291915292",
+                "operationId": "otomaxInboxTiketDeposit34004187538068087",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -2963,7 +2967,7 @@
                 ],
                 "summary": "Transaksi pengisian pulsa",
                 "description": "Transaksi pengisian pulsa",
-                "operationId": "otomaxInboxTransaksi047458309795619824",
+                "operationId": "otomaxInboxTransaksi4680818067103174",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -3013,7 +3017,7 @@
                 ],
                 "summary": "Transaksi pengisian pulsa",
                 "description": "Transaksi pengisian pulsa",
-                "operationId": "otomaxInboxTransaksi1047791764845886875",
+                "operationId": "otomaxInboxTransaksi108314632121511916",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -3063,7 +3067,7 @@
                 ],
                 "summary": "Transaksi pengisian pulsa",
                 "description": "Transaksi pengisian pulsa",
-                "operationId": "otomaxInboxTransaksi116642788483020703",
+                "operationId": "otomaxInboxTransaksi117516042456982392",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -3113,7 +3117,7 @@
                 ],
                 "summary": "Transaksi pengisian pulsa",
                 "description": "Transaksi pengisian pulsa",
-                "operationId": "otomaxInboxTransaksi127245419515186238",
+                "operationId": "otomaxInboxTransaksi12008510600131880652",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -3163,7 +3167,7 @@
                 ],
                 "summary": "Transaksi pengisian pulsa",
                 "description": "Transaksi pengisian pulsa",
-                "operationId": "otomaxInboxTransaksi132184295824821496",
+                "operationId": "otomaxInboxTransaksi1319433450139220665",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -3213,7 +3217,7 @@
                 ],
                 "summary": "Transaksi pengisian pulsa ",
                 "description": "Transaksi pengisian pulsa ",
-                "operationId": "otomaxInboxTransaksi146051966047361499",
+                "operationId": "otomaxInboxTransaksi141214528291124446",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -3270,7 +3274,7 @@
                 ],
                 "summary": "Transaksi pengisian pulsa",
                 "description": "Transaksi pengisian pulsa",
-                "operationId": "otomaxInboxTransaksi1545806131897368685",
+                "operationId": "otomaxInboxTransaksi152539654298081486",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -3327,7 +3331,7 @@
                 ],
                 "summary": "Transaksi pengisian pulsa",
                 "description": "Transaksi pengisian pulsa",
-                "operationId": "otomaxInboxTransaksi168954312850676178",
+                "operationId": "otomaxInboxTransaksi161577598408161225",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -3377,7 +3381,7 @@
                 ],
                 "summary": "Transaksi pengisian pulsa",
                 "description": "Transaksi pengisian pulsa",
-                "operationId": "otomaxInboxTransaksi1708689302498472284",
+                "operationId": "otomaxInboxTransaksi175166621120348602",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -3427,7 +3431,7 @@
                 ],
                 "summary": "Transaksi pengisian pulsa",
                 "description": "Transaksi pengisian pulsa",
-                "operationId": "otomaxInboxTransaksi18990946061288458",
+                "operationId": "otomaxInboxTransaksi186324467723195191",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -3477,7 +3481,7 @@
                 ],
                 "summary": "Transaksi pengisian pulsa",
                 "description": "Transaksi pengisian pulsa",
-                "operationId": "otomaxInboxTransaksi1910972928606401688",
+                "operationId": "otomaxInboxTransaksi195887094378090605",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -3527,7 +3531,7 @@
                 ],
                 "summary": "Transaksi pengisian pulsa",
                 "description": "Transaksi pengisian pulsa",
-                "operationId": "otomaxInboxTransaksi29807629709442487",
+                "operationId": "otomaxInboxTransaksi26363323432071286",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -3577,7 +3581,7 @@
                 ],
                 "summary": "Transaksi pengisian pulsa",
                 "description": "Transaksi pengisian pulsa",
-                "operationId": "otomaxInboxTransaksi20556704451097422",
+                "operationId": "otomaxInboxTransaksi205496909287386786",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -3627,7 +3631,7 @@
                 ],
                 "summary": "Transaksi pengisian pulsa",
                 "description": "Transaksi pengisian pulsa",
-                "operationId": "otomaxInboxTransaksi215018360567902382",
+                "operationId": "otomaxInboxTransaksi215662951165113992",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -3677,7 +3681,7 @@
                 ],
                 "summary": "Transaksi pengisian pulsa",
                 "description": "Transaksi pengisian pulsa",
-                "operationId": "otomaxInboxTransaksi224555361840802914",
+                "operationId": "otomaxInboxTransaksi229504922549591002",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -3727,7 +3731,7 @@
                 ],
                 "summary": "Transaksi pengisian pulsa",
                 "description": "Transaksi pengisian pulsa",
-                "operationId": "otomaxInboxTransaksi23615631152635939",
+                "operationId": "otomaxInboxTransaksi231761025557043312",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -3784,7 +3788,7 @@
                 ],
                 "summary": "Transaksi pengisian pulsa",
                 "description": "Transaksi pengisian pulsa",
-                "operationId": "otomaxInboxTransaksi243169405125799183",
+                "operationId": "otomaxInboxTransaksi243761571338650431",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -3848,7 +3852,7 @@
                 ],
                 "summary": "Transaksi pengisian pulsa",
                 "description": "Transaksi pengisian pulsa",
-                "operationId": "otomaxInboxTransaksi254353848266401077",
+                "operationId": "otomaxInboxTransaksi2506550495214847207",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -3905,7 +3909,7 @@
                 ],
                 "summary": "Transaksi pengisian pulsa",
                 "description": "Transaksi pengisian pulsa",
-                "operationId": "otomaxInboxTransaksi268767075381358234",
+                "operationId": "otomaxInboxTransaksi26716807219694019",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -3962,7 +3966,7 @@
                 ],
                 "summary": "Transaksi pengisian pulsa",
                 "description": "Transaksi pengisian pulsa",
-                "operationId": "otomaxInboxTransaksi275422506359358383",
+                "operationId": "otomaxInboxTransaksi275370305991942166",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -3991,7 +3995,7 @@
                 ],
                 "summary": "Transaksi pengisian pulsa",
                 "description": "Transaksi pengisian pulsa",
-                "operationId": "otomaxInboxTransaksi286563666773591257",
+                "operationId": "otomaxInboxTransaksi287905534452799072",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -4048,7 +4052,7 @@
                 ],
                 "summary": "Transaksi pengisian pulsa",
                 "description": "Transaksi pengisian pulsa",
-                "operationId": "otomaxInboxTransaksi299400170829388899",
+                "operationId": "otomaxInboxTransaksi295922070539120599",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -4105,7 +4109,7 @@
                 ],
                 "summary": "Transaksi pengisian pulsa",
                 "description": "Transaksi pengisian pulsa",
-                "operationId": "otomaxInboxTransaksi37140202440377519",
+                "operationId": "otomaxInboxTransaksi33949309852346865",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -4169,7 +4173,7 @@
                 ],
                 "summary": "Transaksi pengisian pulsa",
                 "description": "Transaksi pengisian pulsa",
-                "operationId": "otomaxInboxTransaksi46664049536763252",
+                "operationId": "otomaxInboxTransaksi40404076542919074",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -4233,7 +4237,7 @@
                 ],
                 "summary": "Transaksi pengisian pulsa",
                 "description": "Transaksi pengisian pulsa",
-                "operationId": "otomaxInboxTransaksi548800008033521713",
+                "operationId": "otomaxInboxTransaksi57024905516669377",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -4262,7 +4266,7 @@
                 ],
                 "summary": "Transaksi pengisian pulsa",
                 "description": "Transaksi pengisian pulsa",
-                "operationId": "otomaxInboxTransaksi640681537907487986",
+                "operationId": "otomaxInboxTransaksi629091560280245155",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -4305,7 +4309,7 @@
                 ],
                 "summary": "Transaksi pengisian pulsa",
                 "description": "Transaksi pengisian pulsa",
-                "operationId": "otomaxInboxTransaksi75719172389394684",
+                "operationId": "otomaxInboxTransaksi77203258582305814",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -4341,7 +4345,7 @@
                 ],
                 "summary": "Transaksi pengisian pulsa",
                 "description": "Transaksi pengisian pulsa",
-                "operationId": "otomaxInboxTransaksi83673617412699757",
+                "operationId": "otomaxInboxTransaksi87458757520361761",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -4377,7 +4381,7 @@
                 ],
                 "summary": "Transaksi pengisian pulsa",
                 "description": "Transaksi pengisian pulsa",
-                "operationId": "otomaxInboxTransaksi93451135848799487",
+                "operationId": "otomaxInboxTransaksi94854732610179253",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -4420,7 +4424,7 @@
                 ],
                 "summary": "Transaksi pengisian pulsa TANPA pengecekan dobel",
                 "description": "Transaksi pengisian pulsa TANPA pengecekan dobel",
-                "operationId": "otomaxInboxTransaksiBebasDobel2416307011330272",
+                "operationId": "otomaxInboxTransaksiBebasDobel9894063521566756",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -4449,7 +4453,7 @@
                 ],
                 "summary": "Transfer saldo/deposit ke downline/reseller",
                 "description": "Transfer saldo/deposit ke downline/reseller",
-                "operationId": "otomaxInboxTransferSaldo5901139912081734",
+                "operationId": "otomaxInboxTransferSaldo42544876685895394",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -4499,7 +4503,7 @@
                 ],
                 "summary": "Allows transfer balance across the membership network",
                 "description": "Allows transfer balance across the membership network",
-                "operationId": "otomaxInboxTransferSaldoLintas4206704802262302",
+                "operationId": "otomaxInboxTransferSaldoLintas44459818324491174",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -4528,7 +4532,7 @@
                 ],
                 "summary": "Tukar komisi tunda dalam bentuk deposit",
                 "description": "Tukar komisi tunda dalam bentuk deposit",
-                "operationId": "otomaxInboxTukarKomisi1713540365401478",
+                "operationId": "otomaxInboxTukarKomisi8068777116506938",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -4571,7 +4575,7 @@
                 ],
                 "summary": "Tukar semua komisi tunda dalam bentuk deposit",
                 "description": "Tukar semua komisi tunda dalam bentuk deposit",
-                "operationId": "otomaxInboxTukarKomisi25438533776124181",
+                "operationId": "otomaxInboxTukarKomisi230718647781256503",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -4600,7 +4604,7 @@
                 ],
                 "summary": "Menukar poin",
                 "description": "Menukar poin",
-                "operationId": "otomaxInboxTukarPoin10924181112789522",
+                "operationId": "otomaxInboxTukarPoin29575381223283026",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -4643,7 +4647,7 @@
                 ],
                 "summary": "Change IP Address",
                 "description": "Change IP Address",
-                "operationId": "otomaxInboxUbahAlamatIp9140705442086019",
+                "operationId": "otomaxInboxUbahAlamatIp36329440403936775",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -4686,7 +4690,7 @@
                 ],
                 "summary": "Ubah level downline",
                 "description": "Ubah level downline",
-                "operationId": "otomaxInboxUbahLevel5860008244646115",
+                "operationId": "otomaxInboxUbahLevel2645686068801094",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -4736,7 +4740,7 @@
                 ],
                 "summary": "Change downline's markup",
                 "description": "Change downline's markup",
-                "operationId": "otomaxInboxUbahMarkup18227318879277488",
+                "operationId": "otomaxInboxUbahMarkup4356249763854494",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -4786,7 +4790,7 @@
                 ],
                 "summary": "Change product markup",
                 "description": "Change product markup",
-                "operationId": "otomaxInboxUbahMarkupProduk8885608256277446",
+                "operationId": "otomaxInboxUbahMarkupProduk8618007994850385",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -4843,7 +4847,7 @@
                 ],
                 "summary": "Change product markup for all downlines",
                 "description": "Change product markup for all downlines",
-                "operationId": "otomaxInboxUbahMarkupProduk27360854678003255",
+                "operationId": "otomaxInboxUbahMarkupProduk27463198956492068",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -4893,7 +4897,7 @@
                 ],
                 "summary": "Ubah nama",
                 "description": "Ubah nama",
-                "operationId": "otomaxInboxUbahNama25873755632503936",
+                "operationId": "otomaxInboxUbahNama9407450657543923",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -4936,7 +4940,7 @@
                 ],
                 "summary": "Change OID for OtomaX HTH",
                 "description": "Change OID for OtomaX HTH",
-                "operationId": "otomaxInboxUbahOid7841823215152071",
+                "operationId": "otomaxInboxUbahOid148976068907146",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -4979,7 +4983,7 @@
                 ],
                 "summary": "Change IP Password",
                 "description": "Change IP Password",
-                "operationId": "otomaxInboxUbahPasswordIp5003343871378312",
+                "operationId": "otomaxInboxUbahPasswordIp7764940337508208",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -5029,7 +5033,7 @@
                 ],
                 "summary": "Ubah PIN",
                 "description": "Ubah PIN",
-                "operationId": "otomaxInboxUbahPin02505806775268793",
+                "operationId": "otomaxInboxUbahPin5991350978356509",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -5072,7 +5076,7 @@
                 ],
                 "summary": "Change Report URL",
                 "description": "Change Report URL",
-                "operationId": "otomaxInboxUbahReportUrl9115064661743972",
+                "operationId": "otomaxInboxUbahReportUrl22041480605105268",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -5115,7 +5119,7 @@
                 ],
                 "summary": "config",
                 "description": "config",
-                "operationId": "sidompulConfig2808444616055368",
+                "operationId": "sidompulConfig42150307095967143",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -5134,7 +5138,7 @@
                 ],
                 "summary": "config",
                 "description": "config",
-                "operationId": "sidompulConfig4451708245974124",
+                "operationId": "sidompulConfig2468130494348464",
                 "consumes": [
                     "application/json"
                 ],
@@ -5175,7 +5179,7 @@
                 ],
                 "summary": "Get Token",
                 "description": "Get Token",
-                "operationId": "sidompulToken5548023842644003",
+                "operationId": "sidompulToken1090758215374108",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -5218,7 +5222,7 @@
                 ],
                 "summary": "Encrypt",
                 "description": "Encrypt",
-                "operationId": "sidompulPostEncrypt003592133103937911",
+                "operationId": "sidompulPostEncrypt4107268219344298",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -5247,7 +5251,7 @@
                 ],
                 "summary": "Purchase Package",
                 "description": "Purchase Package",
-                "operationId": "sidompulPostPackage38965009766379044",
+                "operationId": "sidompulPostPackage6842150529292805",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -5290,7 +5294,7 @@
                 ],
                 "summary": "Transaction History",
                 "description": "Transaction History",
-                "operationId": "sidompulGetTransactionhistory11091607777005175",
+                "operationId": "sidompulGetTransactionhistory6345230808904798",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -5326,7 +5330,7 @@
                 ],
                 "summary": "Reload Pulsa (W2P)",
                 "description": "Reload Pulsa (W2P)",
-                "operationId": "sidompulPostW2p3910402188774693",
+                "operationId": "sidompulPostW2p650939067817224",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -5369,7 +5373,7 @@
                 ],
                 "summary": "Get Dompul Balance",
                 "description": "Get Dompul Balance",
-                "operationId": "sidompulGetDompulBalance28006318202423985",
+                "operationId": "sidompulGetDompulBalance15152837433829514",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -5390,7 +5394,7 @@
                 ],
                 "summary": "Get Pulsa Balance",
                 "description": "Get Pulsa Balance",
-                "operationId": "sidompulGetPulsaBalance9739854163454156",
+                "operationId": "sidompulGetPulsaBalance3208863522390468",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -5411,7 +5415,7 @@
                 ],
                 "summary": "Get List Product Code",
                 "description": "Get List Product Code",
-                "operationId": "sidompulGetProductList7617258419723674",
+                "operationId": "sidompulGetProductList9402104040465284",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -5432,7 +5436,7 @@
                 ],
                 "summary": "Purchase Package Deduct Pulsa",
                 "description": "Purchase Package Deduct Pulsa",
-                "operationId": "sidompulPostPackagePulsa9534781939588994",
+                "operationId": "sidompulPostPackagePulsa09386083231067244",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -5475,7 +5479,7 @@
                 ],
                 "summary": "AWG Get Stock",
                 "description": "AWG Get Stock",
-                "operationId": "sidompulGetAwgStock8791088862818659",
+                "operationId": "sidompulGetAwgStock7800950030847991",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -5496,7 +5500,7 @@
                 ],
                 "summary": "AWG Get Info Transaction",
                 "description": "AWG Get Info Transaction",
-                "operationId": "sidompulGetAwgTransactioninfo8096463505036353",
+                "operationId": "sidompulGetAwgTransactioninfo3631808177052118",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -5539,7 +5543,7 @@
                 ],
                 "summary": "AWG Get Info Transaction Detail",
                 "description": "AWG Get Info Transaction Detail",
-                "operationId": "sidompulPostAwgTransactionInfoDetail7700869941286388",
+                "operationId": "sidompulPostAwgTransactionInfoDetail6300000222595841",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -5575,7 +5579,7 @@
                 ],
                 "summary": "AWG Inject Stock",
                 "description": "AWG Inject Stock",
-                "operationId": "sidompulPostAwgTembak6173450445835889",
+                "operationId": "sidompulPostAwgTembak7733936571814577",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -5632,7 +5636,7 @@
                 ],
                 "summary": "XWG Get Stock",
                 "description": "XWG Get Stock",
-                "operationId": "sidompulGetXwgStock3411375342309335",
+                "operationId": "sidompulGetXwgStock9592532595472909",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -5661,7 +5665,7 @@
                 ],
                 "summary": "XWG Get Info Transaction",
                 "description": "XWG Get Info Transaction",
-                "operationId": "sidompulGetXwgTransactioninfo4455165543252162",
+                "operationId": "sidompulGetXwgTransactioninfo053138404136668704",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -5704,7 +5708,7 @@
                 ],
                 "summary": "XWG Get Info Transaction Detail",
                 "description": "XWG Get Info Transaction Detail",
-                "operationId": "sidompulPostXwgTransactionInfoDetail16548383935265853",
+                "operationId": "sidompulPostXwgTransactionInfoDetail15019987452415418",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -5740,7 +5744,7 @@
                 ],
                 "summary": "XWG Inject Stock",
                 "description": "XWG Inject Stock",
-                "operationId": "sidompulPostXwgTembak2534122581418321",
+                "operationId": "sidompulPostXwgTembak4248243901681312",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -5797,7 +5801,7 @@
                 ],
                 "summary": "Transaction History Detail",
                 "description": "Transaction History Detail",
-                "operationId": "sidompulGetTransactionHistorydetail26652982026643546",
+                "operationId": "sidompulGetTransactionHistorydetail8863197156893614",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -5840,7 +5844,7 @@
                 ],
                 "summary": "Tambah center",
                 "description": "Tambah center",
-                "operationId": "messenger46835918835244605",
+                "operationId": "messenger568488154475006",
                 "consumes": [
                     "application/json"
                 ],
@@ -5879,7 +5883,7 @@
                 ],
                 "summary": "Center account",
                 "description": "Center account",
-                "operationId": "messenger4262494531072851",
+                "operationId": "messenger7817549865036633",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -5906,7 +5910,7 @@
                 ],
                 "summary": "Setting...",
                 "description": "Setting...",
-                "operationId": "messenger3587797576235232",
+                "operationId": "messenger9261675322547811",
                 "consumes": [
                     "application/json"
                 ],
@@ -5945,7 +5949,7 @@
                 ],
                 "summary": "Remove",
                 "description": "Remove",
-                "operationId": "messenger48610392711822015",
+                "operationId": "messenger6787249487691815",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -5974,7 +5978,7 @@
                 ],
                 "summary": "Login",
                 "description": "Login",
-                "operationId": "messengerStart48257605551721805",
+                "operationId": "messengerStart8110858870109676",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -6003,7 +6007,7 @@
                 ],
                 "summary": "Logout",
                 "description": "Logout",
-                "operationId": "messengerStop0894295056924499",
+                "operationId": "messengerStop6772361766721855",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -6032,7 +6036,7 @@
                 ],
                 "summary": "Kirim",
                 "description": "Kirim",
-                "operationId": "messengerSend46774770078018046",
+                "operationId": "messengerSend6020277705434163",
                 "consumes": [
                     "application/json"
                 ],
@@ -6071,7 +6075,7 @@
                 ],
                 "summary": "Kirim",
                 "description": "Kirim",
-                "operationId": "messengerSend17442241962322824",
+                "operationId": "messengerSend4513986431118395",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -6121,7 +6125,7 @@
                 ],
                 "summary": "sendOTP",
                 "description": "sendOTP",
-                "operationId": "tokoxlSendOTP21528092995260462",
+                "operationId": "tokoxlSendOTP7188706822124606",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -6150,7 +6154,7 @@
                 ],
                 "summary": "login",
                 "description": "login",
-                "operationId": "tokoxlLogin6078780327036228",
+                "operationId": "tokoxlLogin6693053031566552",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -6193,7 +6197,7 @@
                 ],
                 "summary": "refreshToken",
                 "description": "refreshToken",
-                "operationId": "tokoxlRefreshToken7145869854980016",
+                "operationId": "tokoxlRefreshToken8009528957105172",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -6214,7 +6218,7 @@
                 ],
                 "summary": "logout",
                 "description": "logout",
-                "operationId": "tokoxlLogout8959687688273605",
+                "operationId": "tokoxlLogout7235301581201747",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -6235,7 +6239,7 @@
                 ],
                 "summary": "getBalance",
                 "description": "getBalance",
-                "operationId": "tokoxlGetBalance39422919944084467",
+                "operationId": "tokoxlGetBalance36226191025243093",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -6256,7 +6260,7 @@
                 ],
                 "summary": "getProfile",
                 "description": "getProfile",
-                "operationId": "tokoxlGetProfile5538543520872787",
+                "operationId": "tokoxlGetProfile4269257228861829",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -6277,7 +6281,7 @@
                 ],
                 "summary": "getPulsaList",
                 "description": "getPulsaList",
-                "operationId": "tokoxlGetPulsaList5944266845644828",
+                "operationId": "tokoxlGetPulsaList811616300692992",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -6306,7 +6310,7 @@
                 ],
                 "summary": "Isi Pulsa",
                 "description": "Isi Pulsa",
-                "operationId": "tokoxlWallet2person48509002641925547",
+                "operationId": "tokoxlWallet2person07912207574098407",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -6349,7 +6353,7 @@
                 ],
                 "summary": "getNboPackages",
                 "description": "getNboPackages",
-                "operationId": "tokoxlGetNboPackages003575963590734421",
+                "operationId": "tokoxlGetNboPackages5879506199258362",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -6392,7 +6396,7 @@
                 ],
                 "summary": "getProductCategoriesProfiling",
                 "description": "getProductCategoriesProfiling",
-                "operationId": "tokoxlGetProductCategoriesProfiling10676477485453306",
+                "operationId": "tokoxlGetProductCategoriesProfiling2801109545182541",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -6421,7 +6425,7 @@
                 ],
                 "summary": "getProductItemListProfiling",
                 "description": "getProductItemListProfiling",
-                "operationId": "tokoxlGetProductItemListProfiling8780580737926666",
+                "operationId": "tokoxlGetProductItemListProfiling13805677169171982",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -6471,7 +6475,7 @@
                 ],
                 "summary": "getBestOffer",
                 "description": "getBestOffer",
-                "operationId": "tokoxlGetBestOffer7348662948875899",
+                "operationId": "tokoxlGetBestOffer27934815147005665",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -6521,7 +6525,7 @@
                 ],
                 "summary": "Isi Paket",
                 "description": "Isi Paket",
-                "operationId": "tokoxlPackage2person7486232641983532",
+                "operationId": "tokoxlPackage2person44749153679349685",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -6578,7 +6582,7 @@
                 ],
                 "summary": "CuanKu Spesial",
                 "description": "CuanKu Spesial",
-                "operationId": "tokoxlReloadNboPackage006003827791662308",
+                "operationId": "tokoxlReloadNboPackage5080104939467895",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -6642,7 +6646,7 @@
                 ],
                 "summary": "getItemList",
                 "description": "getItemList",
-                "operationId": "tokoxlGetItemList995158428484324",
+                "operationId": "tokoxlGetItemList7121190210877162",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -6692,7 +6696,7 @@
                 ],
                 "summary": "Tagging HOT",
                 "description": "Tagging HOT",
-                "operationId": "tokoxlTaggingHotTransaction7534942025232592",
+                "operationId": "tokoxlTaggingHotTransaction7592665193897536",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -6749,7 +6753,7 @@
                 ],
                 "summary": "Transfer Kuota",
                 "description": "Transfer Kuota",
-                "operationId": "tokoxlHrnc2c16120659194936704",
+                "operationId": "tokoxlHrnc2c23633664698557255",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -6792,7 +6796,7 @@
                 ],
                 "summary": "Cek Status Voucher",
                 "description": "Cek Status Voucher",
-                "operationId": "tokoxlCheckVoucherStatus4468560744572625",
+                "operationId": "tokoxlCheckVoucherStatus7046296146148476",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -6828,7 +6832,7 @@
                 ],
                 "summary": "Info Nomor - doCheckPrefix",
                 "description": "Info Nomor - doCheckPrefix",
-                "operationId": "tokoxlDoCheckPrefix5980597840383541",
+                "operationId": "tokoxlDoCheckPrefix45613710847061606",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -6857,7 +6861,7 @@
                 ],
                 "summary": "Info Nomor - doCheckDukcapil",
                 "description": "Info Nomor - doCheckDukcapil",
-                "operationId": "tokoxlDoCheckDukcapil42139571934189",
+                "operationId": "tokoxlDoCheckDukcapil05820438929713223",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -6886,7 +6890,7 @@
                 ],
                 "summary": "Info Nomor - doCheckGraceDate",
                 "description": "Info Nomor - doCheckGraceDate",
-                "operationId": "tokoxlDoCheckGraceDate11673807310597484",
+                "operationId": "tokoxlDoCheckGraceDate4055757662007442",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -6915,7 +6919,7 @@
                 ],
                 "summary": "Info Nomor - doCheck4G",
                 "description": "Info Nomor - doCheck4G",
-                "operationId": "tokoxlDoCheck4G9182538525502144",
+                "operationId": "tokoxlDoCheck4G37252392918189003",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -6944,7 +6948,7 @@
                 ],
                 "summary": "Info Nomor - doCheckSPExpired",
                 "description": "Info Nomor - doCheckSPExpired",
-                "operationId": "tokoxlDoCheckSPExpired6958959423179973",
+                "operationId": "tokoxlDoCheckSPExpired9896825281132602",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -6973,7 +6977,7 @@
                 ],
                 "summary": "Info Nomor - doCheckPackageInfo",
                 "description": "Info Nomor - doCheckPackageInfo",
-                "operationId": "tokoxlDoCheckPackageInfo3689128194340372",
+                "operationId": "tokoxlDoCheckPackageInfo5743515719924142",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -7002,7 +7006,7 @@
                 ],
                 "summary": "Info Nomor - doCheckTenure",
                 "description": "Info Nomor - doCheckTenure",
-                "operationId": "tokoxlDoCheckTenure8809753720720623",
+                "operationId": "tokoxlDoCheckTenure35669043148532276",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -7031,7 +7035,7 @@
                 ],
                 "summary": "Info Nomor - getListBonusXcf",
                 "description": "Info Nomor - getListBonusXcf",
-                "operationId": "tokoxlGetListBonusXcf8943747705842027",
+                "operationId": "tokoxlGetListBonusXcf6001702928843042",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -7060,7 +7064,7 @@
                 ],
                 "summary": "Cek Transfer Kuota - checkEligibilitySender",
                 "description": "Cek Transfer Kuota - checkEligibilitySender",
-                "operationId": "tokoxlCheckEligibilitySender6630125850371615",
+                "operationId": "tokoxlCheckEligibilitySender5786940263678362",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -7089,7 +7093,7 @@
                 ],
                 "summary": "Cek Transfer Kuota - checkEligibilityRecipient",
                 "description": "Cek Transfer Kuota - checkEligibilityRecipient",
-                "operationId": "tokoxlCheckEligibilityRecipient712134001312283",
+                "operationId": "tokoxlCheckEligibilityRecipient4559082357298514",
                 "consumes": [],
                 "produces": [
                     "application/json"
@@ -7118,7 +7122,7 @@
                 ],
                 "summary": "Cek Voucher Hybrid",
                 "description": "Cek Voucher Hybrid",
-                "operationId": "tokoxlCheckVoucherValidity8512508599647286",
+                "operationId": "tokoxlCheckVoucherValidity4499246569996498",
                 "consumes": [],
                 "produces": [
                     "application/json"
