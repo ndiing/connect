@@ -2,8 +2,8 @@
 
 ## Prasyarat
 
-Proyek ini membutuhkan nodejs (versi 18 atau lebih baru) dan NPM.
-Node dan NPM sangat mudah dipasang.Untuk memastikan Anda memilikinya tersedia di mesin Anda,
+Proyek ini membutuhkan **Node** (versi **18** atau lebih baru) dan **NPM**.
+**Node** dan **NPM** sangat mudah dipasang.Untuk memastikan Anda memilikinya tersedia di mesin Anda,
 Coba jalankan perintah berikut.
 
 ```bash
@@ -14,7 +14,7 @@ v18.16.0
 
 ## Instalasi
 
-Sebelum Anda menginstal: silakan baca Prasyarat
+SEBELUM ANDA MENGINSTAL: silakan baca **[Prasyarat](#prasyarat)**
 
 Mulailah dengan mengkloning repo ini di mesin lokal Anda:
 
@@ -47,24 +47,24 @@ git pull
 
 ### OtomaX
 
--   [x] [auth.rest](./rest/auth.rest)
--   [x] [otomax.rest](./rest/otomax.rest)
+-   **[x] [auth.rest](./rest/auth.rest)**
+-   **[x] [otomax.rest](./rest/otomax.rest)**
 
 ### Bank
 
--   [x] [bnidirect.rest](./rest/bnidirect.rest)
--   [x] [ibank.rest](./rest/ibank.rest)
--   [x] [newbiz.rest](./rest/newbiz.rest)
--   [ ] [mcm2.rest](./rest/mcm2.rest)
--   [ ] [klikbca.rest](./rest/klikbca.rest)
+-   **[x] [bnidirect.rest](./rest/bnidirect.rest)**
+-   **[x] [ibank.rest](./rest/ibank.rest)**
+-   **[x] [newbiz.rest](./rest/newbiz.rest)**
+-   **[ ] [mcm2.rest](./rest/mcm2.rest)**
+-   **[ ] [klikbca.rest](./rest/klikbca.rest)**
 
 ### Messenger
 
--   [x] [whatsapp.rest](./rest/whatsapp.rest)
--   [x] [telegram.rest](./rest/telegram.rest)
--   [x] [xmpp.rest](./rest/xmpp.rest)
+-   **[x] [whatsapp.rest](./rest/whatsapp.rest)**
+-   **[x] [telegram.rest](./rest/telegram.rest)**
+-   **[x] [xmpp.rest](./rest/xmpp.rest)**
 
 ### Provider
 
--   [x] [sidompul.rest](./rest/sidompul.rest)
--   [x] [tokoxl.rest](./rest/tokoxl.rest)
+-   **[x] [sidompul.rest](./rest/sidompul.rest)**
+-   **[x] [tokoxl.rest](./rest/tokoxl.rest)**
