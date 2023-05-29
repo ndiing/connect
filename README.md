@@ -25,8 +25,8 @@ git pull
 ### API
 
 ### OtomaX
-- [x] [otomax.rest](./rest/otomax.rest)
 - [x] [auth.rest](./rest/auth.rest)
+- [x] [otomax.rest](./rest/otomax.rest)
 
 ### Bank
 - [x] [bnidirect.rest](./rest/bnidirect.rest)
