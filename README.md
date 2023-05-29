@@ -2,8 +2,8 @@
 
 ## Prasyarat
 
-Proyek ini membutuhkan **Node** (versi **18** atau lebih baru) dan **NPM**.
-**Node** dan **NPM** sangat mudah dipasang.Untuk memastikan Anda memilikinya tersedia di mesin Anda,
+Proyek ini membutuhkan **[Node](https://nodejs.org/dist/v18.16.0/node-v18.16.0-x64.msi)** (versi **18** atau lebih baru) dan **NPM**.
+**[Node](https://nodejs.org/dist/v18.16.0/node-v18.16.0-x64.msi)** dan **NPM** sangat mudah dipasang.Untuk memastikan Anda memilikinya tersedia di mesin Anda,
 Coba jalankan perintah berikut.
 
 ```bash
