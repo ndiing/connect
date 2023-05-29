@@ -101,5 +101,6 @@ dist/*.sql
 package.json
 package-lock.json
 specification.js
+dist/query.js
 client.js
 server.js
