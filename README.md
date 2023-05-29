@@ -1,10 +1,10 @@
 # Connect
 
-## Prerequisites
+## Prasyarat
 
-This project requires NodeJS (version 18 or later) and NPM.
-Node and NPM are really easy to install. To make sure you have them available on your machine,
-try running the following command.
+Proyek ini membutuhkan nodejs (versi 18 atau lebih baru) dan NPM.
+Node dan NPM sangat mudah dipasang.Untuk memastikan Anda memilikinya tersedia di mesin Anda,
+Coba jalankan perintah berikut.
 
 ```bash
 npm -v && node -v
@@ -14,30 +14,30 @@ v18.16.0
 
 ## Installation
 
-BEFORE YOU INSTALL: please read the prerequisites
+Sebelum Anda menginstal: silakan baca Prasyarat
 
-Start with cloning this repo on your local machine:
+Mulailah dengan mengkloning repo ini di mesin lokal Anda:
 
 ```bash
 git clone https://github.com/ndiing/connect.git
 cd connect
 ```
 
-To install and set up the library, run:
+Untuk menginstal, jalankan:
 
 ```bash
 npm install
 ```
 
-## Usage
+## Penggunaan
 
-### Serving the app
+### Memulai aplikasi
 
 ```bash
 npm start
 ```
 
-### Updating the app
+### Memperbarui aplikasi
 
 ```bash
 git pull
