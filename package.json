@@ -29,7 +29,7 @@
         "watch": "webpack --watch",
         "serve": "webpack serve",
         "serve:server": "nodemon src/index.js",
-        "start": "nodemon dist/main.js"
+        "start": "node dist/main.js"
     },
     "dependencies": {
         "@adiwajshing/keyed-db": "^0.2.4",
