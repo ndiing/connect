@@ -1,0 +1,45 @@
+### Tambah bank
+POST {{base}}/api/bank
+Content-Type: application/json
+
+{
+    "corp_id": "{{mcm2_corp_id}}",
+    "user_id": "{{mcm2_user_id}}",
+    "password": "{{mcm2_password}}",
+    "norek": "{{mcm2_norek}}",
+    "service": "mcm2",
+    "auto_start": 0,
+    "interval": 60000
+}
+
+### Bank
+GET {{base}}/api/bank
+
+### Bank account
+GET {{base}}/api/bank?norek={{mcm2_norek}}
+
+### Setting...
+PATCH {{base}}/api/bank
+Content-Type: application/json
+
+{
+    "corp_id": "{{mcm2_corp_id}}",
+    "user_id": "{{mcm2_user_id}}",
+    "password": "{{mcm2_password}}",
+    "norek": "{{mcm2_norek}}",
+    "service": "mcm2",
+    "auto_start": 1,
+    "interval": 60000
+}
+
+### Remove
+DELETE {{base}}/api/bank?norek={{mcm2_norek}}
+
+### Login
+GET {{base}}/api/bank/login?norek={{mcm2_norek}}
+
+### Logout
+GET {{base}}/api/bank/logout?norek={{mcm2_norek}}
+
+### History
+GET {{base}}/api/bank/history?norek={{mcm2_norek}}&fromDate=2023-05-01&toDate=2023-05-28
