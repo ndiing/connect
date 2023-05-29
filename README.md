@@ -11,7 +11,7 @@ npm -v && node -v
 8.17.0
 v18.16.0
 ```
-<!-- 
+
 ## Instalasi
 
 Sebelum Anda menginstal: silakan baca Prasyarat
@@ -22,7 +22,7 @@ Mulailah dengan mengkloning repo ini di mesin lokal Anda:
 git clone https://github.com/ndiing/connect.git
 cd connect
 ```
-
+<!-- 
 Untuk menginstal, jalankan:
 
 ```bash
