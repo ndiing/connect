@@ -1,5 +1,5 @@
 ### Tambah bank
-POST http://localhost/api/bank
+POST {{base}}/api/bank
 Content-Type: application/json
 
 {
@@ -13,13 +13,13 @@ Content-Type: application/json
 }
 
 ### Bank
-GET http://localhost/api/bank
+GET {{base}}/api/bank
 
 ### Bank account
-GET http://localhost/api/bank?norek={{bnidirect_norek}}
+GET {{base}}/api/bank?norek={{bnidirect_norek}}
 
 ### Setting...
-PATCH http://localhost/api/bank
+PATCH {{base}}/api/bank
 Content-Type: application/json
 
 {
@@ -33,13 +33,13 @@ Content-Type: application/json
 }
 
 ### Remove
-DELETE http://localhost/api/bank?norek={{bnidirect_norek}}
+DELETE {{base}}/api/bank?norek={{bnidirect_norek}}
 
 ### Login
-GET http://localhost/api/bank/login?norek={{bnidirect_norek}}
+GET {{base}}/api/bank/login?norek={{bnidirect_norek}}
 
 ### Logout
-GET http://localhost/api/bank/logout?norek={{bnidirect_norek}}
+GET {{base}}/api/bank/logout?norek={{bnidirect_norek}}
 
 ### History
-GET http://localhost/api/bank/history?norek={{bnidirect_norek}}&fromDate=2023-05-01&toDate=2023-05-28
+GET {{base}}/api/bank/history?norek={{bnidirect_norek}}&fromDate=2023-05-01&toDate=2023-05-28

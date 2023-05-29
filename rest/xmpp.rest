@@ -1,5 +1,5 @@
 ### Tambah center
-POST http://localhost/api/messenger
+POST {{base}}/api/messenger
 Content-Type: application/json
 
 {
@@ -11,13 +11,13 @@ Content-Type: application/json
 }
 
 ### Center
-GET http://localhost/api/messenger
+GET {{base}}/api/messenger
 
 ### Center account
-GET http://localhost/api/messenger?username={{xmpp_username}}
+GET {{base}}/api/messenger?username={{xmpp_username}}
 
 ### Setting...
-PATCH http://localhost/api/messenger
+PATCH {{base}}/api/messenger
 Content-Type: application/json
 
 {
@@ -29,16 +29,16 @@ Content-Type: application/json
 }
 
 ### Remove
-DELETE http://localhost/api/messenger?username={{xmpp_username}}
+DELETE {{base}}/api/messenger?username={{xmpp_username}}
 
 ### Login
-GET http://localhost/api/messenger/start?username={{xmpp_username}}
+GET {{base}}/api/messenger/start?username={{xmpp_username}}
 
 ### Logout
-GET http://localhost/api/messenger/stop?username={{xmpp_username}}
+GET {{base}}/api/messenger/stop?username={{xmpp_username}}
 
 ### Kirim
-POST http://localhost/api/messenger/send
+POST {{base}}/api/messenger/send
 Content-Type: application/json
 
 {
@@ -49,4 +49,4 @@ Content-Type: application/json
 }
 
 ### Kirim
-GET http://localhost/api/messenger/send?username={{xmpp_username}}&service=xmpp&penerima=connect_client@jabb.im&pesan=This message from server
+GET {{base}}/api/messenger/send?username={{xmpp_username}}&service=xmpp&penerima=connect_client@jabb.im&pesan=This message from server
