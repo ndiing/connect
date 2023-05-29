@@ -12,7 +12,7 @@ npm -v && node -v
 v18.16.0
 ```
 
-## Installation
+## Instalasi
 
 Sebelum Anda menginstal: silakan baca Prasyarat
 
