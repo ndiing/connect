@@ -92,15 +92,21 @@ typings/
 out/
 
 src/
+
 .babelrc
+
 nodemon.json
+
 webpack.config.js
 webpack.server.config.js
-dist/*.sql
-!dist/index.js
+
 package.json
 package-lock.json
-specification.js
+
+dist/*.sql
+!dist/index.js
 dist/query.js
+
+specification.js
 client.js
 server.js
