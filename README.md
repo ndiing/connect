@@ -57,7 +57,7 @@ git pull
 -   [x] **[bnidirect.rest](./rest/bnidirect.rest)**
 -   [x] **[ibank.rest](./rest/ibank.rest)**
 -   [x] **[newbiz.rest](./rest/newbiz.rest)**
--   [ ] **[mcm2.rest](./rest/mcm2.rest)**
+-   [x] **[mcm2.rest](./rest/mcm2.rest)**
 -   [ ] **[klikbca.rest](./rest/klikbca.rest)**
 
 ### Messenger
