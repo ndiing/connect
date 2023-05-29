@@ -1,5 +1,7 @@
 # Connect
 
+[![Connect][connect.png]](https://github.com/ndiing/connect.git)
+
 ## Prasyarat
 
 Proyek ini membutuhkan **[Node](https://nodejs.org/dist/v18.16.0/node-v18.16.0-x64.msi)** (versi **18** atau lebih baru) dan **NPM**.
