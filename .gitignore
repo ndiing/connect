@@ -96,3 +96,4 @@ src/
 nodemon.json
 webpack.config.js
 webpack.server.config.js
+index.js

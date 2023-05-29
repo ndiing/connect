@@ -1,8 +1,8 @@
-###
+### otomax
 GET {{base}}/api/otomax
 Authorization: Bearer {{access_token}}
 
-###
+### provider
 GET {{base}}/api/otomax/provider
 Authorization: Bearer {{access_token}}
 
