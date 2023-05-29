@@ -99,3 +99,7 @@ webpack.server.config.js
 index.js
 dist/*.sql
 !dist/index.js
+package.json
+package-lock.json
+_package.json
+_package-lock.json
