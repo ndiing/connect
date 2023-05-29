@@ -98,3 +98,4 @@ webpack.config.js
 webpack.server.config.js
 index.js
 dist/*.sql
+!dist/index.js
