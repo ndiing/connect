@@ -16,7 +16,7 @@
         "webpack-node-externals": "^3.0.0",
         "workbox-webpack-plugin": "^6.6.0"
     },
-    "version": "1.2.1",
+    "version": "1.2.2",
     "description": "",
     "name": "connect",
     "scripts": {
