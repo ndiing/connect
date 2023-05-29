@@ -24,6 +24,7 @@
         "build:server": "webpack --config=webpack.server.config.js --mode=production --node-env=production",
         "build:dev": "webpack --mode=development",
         "build:prod": "webpack --mode=production --node-env=production",
+        "prod": "npm run build&&npm run build:server",
         "watch": "webpack --watch",
         "serve": "webpack serve",
         "serve:server": "nodemon src/index.js",
