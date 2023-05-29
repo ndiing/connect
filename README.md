@@ -14,7 +14,7 @@ v18.16.0
 
 ## Instalasi
 
-SEBELUM ANDA MENGINSTAL: silakan baca **[Prasyarat](#prasyarat)**
+**SEBELUM ANDA MENGINSTAL**: silakan baca **[Prasyarat](#prasyarat)**
 
 Mulailah dengan mengkloning repo ini di mesin lokal Anda:
 
