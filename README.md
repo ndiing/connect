@@ -2,7 +2,7 @@
 
 ## Instal
 
-pc harus sudah ada `git` dan `nodejs`
+pc harus sudah ada `git` dan `node v18.16.0`
 
 ```
 git clone https://github.com/ndiing/connect.git

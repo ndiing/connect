@@ -32,7 +32,7 @@
         "watch": "webpack --watch",
         "serve": "webpack serve",
         "serve:server": "nodemon src/index.js",
-        "ncc": "ncc build ./src/index.js -o dist",
+        "ncc": "ncc build ./src/index.js -m -o dist",
         "start": "node dist/index.js"
     },
     "dependencies": {
