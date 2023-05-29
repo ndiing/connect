@@ -1,0 +1,5085 @@
+swagger: '2.0'
+info:
+  description: Connect
+  version: 1.2.9
+  title: Connect
+  termsOfService: ''
+  contact:
+    email: ndiing.inc@gmail.com
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+host: localhost
+basePath: /api
+tags:
+  - name: auth.rest
+    description: auth.rest
+  - name: bnidirect.rest
+    description: bnidirect.rest
+  - name: ibank.rest
+    description: ibank.rest
+  - name: newbiz.rest
+    description: newbiz.rest
+  - name: otomax.rest
+    description: otomax.rest
+  - name: sidompul.rest
+    description: sidompul.rest
+  - name: telegram.rest
+    description: telegram.rest
+  - name: tokoxl.rest
+    description: tokoxl.rest
+  - name: whatsapp.rest
+    description: whatsapp.rest
+  - name: xmpp.rest
+    description: xmpp.rest
+schemes:
+  - https
+  - http
+paths:
+  /auth/signup:
+    post:
+      tags:
+        - auth
+      summary: Registration
+      description: Registration
+      operationId: authSignup5930198608731925
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+        - name: Content-Type
+          description: Content-Type
+          type: string
+          required: true
+          in: header
+        - name: body
+          description: auth.rest
+          type: string
+          required: true
+          in: body
+          schema:
+            $ref: '#/definitions/authSignup'
+      responses:
+        '200':
+          description: ok
+      security: []
+  /auth/signin:
+    post:
+      tags:
+        - auth
+      summary: Login
+      description: Login
+      operationId: authSignin7305929291629352
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+        - name: Content-Type
+          description: Content-Type
+          type: string
+          required: true
+          in: header
+        - name: body
+          description: auth.rest
+          type: string
+          required: true
+          in: body
+          schema:
+            $ref: '#/definitions/authSignin'
+      responses:
+        '200':
+          description: ok
+      security: []
+  /auth/challenge:
+    post:
+      tags:
+        - auth
+      summary: Verify / Create token
+      description: Verify / Create token
+      operationId: authChallenge05791963732145544
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+        - name: Content-Type
+          description: Content-Type
+          type: string
+          required: true
+          in: header
+        - name: body
+          description: auth.rest
+          type: string
+          required: true
+          in: body
+          schema:
+            $ref: '#/definitions/authChallenge'
+      responses:
+        '200':
+          description: ok
+      security: []
+  /auth/refresh:
+    get:
+      tags:
+        - auth
+      summary: Refresh / Renew token
+      description: Refresh / Renew token
+      operationId: authRefresh2938907141356153
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /auth/signout:
+    get:
+      tags:
+        - auth
+      summary: Logout / Revoke token
+      description: Logout / Revoke token
+      operationId: authSignout25610733241748074
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /bank:
+    post:
+      tags:
+        - bank
+      summary: Tambah bank
+      description: Tambah bank
+      operationId: bank7198843436222133
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: Content-Type
+          description: Content-Type
+          type: string
+          required: true
+          in: header
+        - name: body
+          description: newbiz.rest
+          type: string
+          required: true
+          in: body
+          schema:
+            $ref: '#/definitions/bank'
+      responses:
+        '200':
+          description: ok
+      security: []
+    get:
+      tags:
+        - bank
+      summary: Bank account
+      description: Bank account
+      operationId: bank7687159872815221
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: norek
+          description: norek
+          type: string
+          required: true
+          in: query
+      responses:
+        '200':
+          description: ok
+      security: []
+    patch:
+      tags:
+        - bank
+      summary: Setting...
+      description: Setting...
+      operationId: bank8575827439277082
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: Content-Type
+          description: Content-Type
+          type: string
+          required: true
+          in: header
+        - name: body
+          description: newbiz.rest
+          type: string
+          required: true
+          in: body
+          schema:
+            $ref: '#/definitions/bank'
+      responses:
+        '200':
+          description: ok
+      security: []
+    delete:
+      tags:
+        - bank
+      summary: Remove
+      description: Remove
+      operationId: bank9009925098642286
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: norek
+          description: norek
+          type: string
+          required: true
+          in: query
+      responses:
+        '200':
+          description: ok
+      security: []
+  /bank/login:
+    get:
+      tags:
+        - bank
+      summary: Login
+      description: Login
+      operationId: bankLogin9113431965818968
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: norek
+          description: norek
+          type: string
+          required: true
+          in: query
+      responses:
+        '200':
+          description: ok
+      security: []
+  /bank/logout:
+    get:
+      tags:
+        - bank
+      summary: Logout
+      description: Logout
+      operationId: bankLogout5126901328714448
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: norek
+          description: norek
+          type: string
+          required: true
+          in: query
+      responses:
+        '200':
+          description: ok
+      security: []
+  /bank/history:
+    get:
+      tags:
+        - bank
+      summary: History
+      description: History
+      operationId: bankHistory46039868876486567
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: norek
+          description: norek
+          type: string
+          required: true
+          in: query
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax:
+    get:
+      tags:
+        - otomax
+      summary: otomax
+      description: otomax
+      operationId: otomax10569512002569725
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/provider:
+    get:
+      tags:
+        - otomax
+      summary: provider
+      description: provider
+      operationId: otomaxProvider09496265212722488
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox:
+    get:
+      tags:
+        - otomax
+      summary: >-
+        inbox?kode=&tgl_awal=&tgl_akhir=&pengirim=&tipe_pengirim=&pesan=&status=&page=&limit=
+      description: >-
+        inbox?kode=&tgl_awal=&tgl_akhir=&pengirim=&tipe_pengirim=&pesan=&status=&page=&limit=
+      operationId: otomaxInbox22967114743749217
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/outbox:
+    get:
+      tags:
+        - otomax
+      summary: >-
+        outbox?kode=&tgl_awal=&tgl_akhir=&pengirim=&tipe_pengirim=&pesan=&status=&page=&limit=
+      description: >-
+        outbox?kode=&tgl_awal=&tgl_akhir=&pengirim=&tipe_pengirim=&pesan=&status=&page=&limit=
+      operationId: otomaxOutbox440729894834472
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/mutasi:
+    get:
+      tags:
+        - otomax
+      summary: >-
+        mutasi?kode=&tanggal_awal=&tanggal_akhir=&jumlah=&keterangan=&jenis=&page=&limit=
+      description: >-
+        mutasi?kode=&tanggal_awal=&tanggal_akhir=&jumlah=&keterangan=&jenis=&page=&limit=
+      operationId: otomaxMutasi35876263017404053
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/operator:
+    get:
+      tags:
+        - otomax
+      summary: operator?kode=&nama=&page=&limit=
+      description: operator?kode=&nama=&page=&limit=
+      operationId: otomaxOperator4649130534397561
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/produk:
+    get:
+      tags:
+        - otomax
+      summary: produk?kode=&nama=&kode_operator=&nominal=&page=&limit=
+      description: produk?kode=&nama=&kode_operator=&nominal=&page=&limit=
+      operationId: otomaxProduk15859461030580402
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/level:
+    get:
+      tags:
+        - otomax
+      summary: level
+      description: level
+      operationId: otomaxLevel2728787782951887
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/reseller:
+    get:
+      tags:
+        - otomax
+      summary: reseller
+      description: reseller
+      operationId: otomaxReseller35097827976877394
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/pengirim:
+    get:
+      tags:
+        - otomax
+      summary: pengirim
+      description: pengirim
+      operationId: otomaxPengirim8483712399247576
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/parameter:
+    get:
+      tags:
+        - otomax
+      summary: parameter?grup=&nama=&name=
+      description: parameter?grup=&nama=&name=
+      operationId: otomaxParameter6703275644353821
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/aktifkan-dl:
+    get:
+      tags:
+        - otomax
+      summary: Aktifkan downline/reseller
+      description: Aktifkan downline/reseller
+      operationId: otomaxInboxAktifkanDl8371309810213736
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: kodereseller
+          description: kodereseller
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/batal-transaksi:
+    get:
+      tags:
+        - otomax
+      summary: Batalkan transaksi yang belum diproses
+      description: Batalkan transaksi yang belum diproses
+      operationId: otomaxInboxBatalTransaksi975102486301344
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: trxid
+          description: trxid
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/batal-transfer-saldo:
+    get:
+      tags:
+        - otomax
+      summary: Cancel balance transfer
+      description: Cancel balance transfer
+      operationId: otomaxInboxBatalTransferSaldo39123276424951636
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: kodereseller
+          description: kodereseller
+          type: string
+          required: true
+          in: query
+        - name: jumlah
+          description: jumlah
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/cek-harga:
+    get:
+      tags:
+        - otomax
+      summary: Cek harga produk
+      description: Cek harga produk
+      operationId: otomaxInboxCekHarga1837126847822228
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: kodeproduk
+          description: kodeproduk
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/cek-markup:
+    get:
+      tags:
+        - otomax
+      summary: Check downline's markup
+      description: Check downline's markup
+      operationId: otomaxInboxCekMarkup8693835399364005
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: kodereseller
+          description: kodereseller
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/cek-markup-produk:
+    get:
+      tags:
+        - otomax
+      summary: Check product markup
+      description: Check product markup
+      operationId: otomaxInboxCekMarkupProduk41998867547029506
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: kodereseller
+          description: kodereseller
+          type: string
+          required: true
+          in: query
+        - name: kodeproduk
+          description: kodeproduk
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/cek-markup-produk2:
+    get:
+      tags:
+        - otomax
+      summary: Check all product markups
+      description: Check all product markups
+      operationId: otomaxInboxCekMarkupProduk25700409584203854
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: kodereseller
+          description: kodereseller
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/cek-mutasi:
+    get:
+      tags:
+        - otomax
+      summary: Cek N (lihat Setting.LimitCekMutasi) mutasi saldo/deposit terakhir
+      description: Cek N (lihat Setting.LimitCekMutasi) mutasi saldo/deposit terakhir
+      operationId: otomaxInboxCekMutasi979556468668872
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/cek-mutasi2:
+    get:
+      tags:
+        - otomax
+      summary: Cek mutasi saldo terakhir, khusus manual, tiket, dan transfer saldo
+      description: Cek mutasi saldo terakhir, khusus manual, tiket, dan transfer saldo
+      operationId: otomaxInboxCekMutasi29971698252942649
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/cek-oid:
+    get:
+      tags:
+        - otomax
+      summary: Check current OID for OtomaX HTH
+      description: Check current OID for OtomaX HTH
+      operationId: otomaxInboxCekOid9901750055117513
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/cek-saldo:
+    get:
+      tags:
+        - otomax
+      summary: Cek saldo akhir
+      description: Cek saldo akhir
+      operationId: otomaxInboxCekSaldo6003812083655078
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/cek-saldo-dl:
+    get:
+      tags:
+        - otomax
+      summary: Cek saldo downline
+      description: Cek saldo downline
+      operationId: otomaxInboxCekSaldoDl7524747422077367
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: kodereseller
+          description: kodereseller
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/cek-status-transaksi:
+    get:
+      tags:
+        - otomax
+      summary: Cek status transaksi
+      description: Cek status transaksi
+      operationId: otomaxInboxCekStatusTransaksi9100300902049243
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: nomor tujuan
+          description: nomor tujuan
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/cek-status-transaksi2:
+    get:
+      tags:
+        - otomax
+      summary: Cek status transaksi
+      description: Cek status transaksi
+      operationId: otomaxInboxCekStatusTransaksi27948727473436177
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: tujuan
+          description: tujuan
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/cek-status-transaksi3:
+    get:
+      tags:
+        - otomax
+      summary: Cek status transaksi
+      description: Cek status transaksi
+      operationId: otomaxInboxCekStatusTransaksi35188452784648667
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: tanggal
+          description: tanggal
+          type: string
+          required: true
+          in: query
+        - name: tujuan
+          description: tujuan
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/cek-transaksi-akhir:
+    get:
+      tags:
+        - otomax
+      summary: Cek status N (lihat Setting.LimitCekTransaksiAkhir) transaksi terakhir
+      description: Cek status N (lihat Setting.LimitCekTransaksiAkhir) transaksi terakhir
+      operationId: otomaxInboxCekTransaksiAkhir44061973662541476
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/daftar-dl:
+    get:
+      tags:
+        - otomax
+      summary: Daftarkan downline/reseller baru
+      description: Daftarkan downline/reseller baru
+      operationId: otomaxInboxDaftarDl8303142937666008
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: nama
+          description: nama
+          type: string
+          required: true
+          in: query
+        - name: alamat
+          description: alamat
+          type: string
+          required: true
+          in: query
+        - name: nomorhp
+          description: nomorhp
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/daftar-dl2:
+    get:
+      tags:
+        - otomax
+      summary: Daftarkan downline/reseller baru
+      description: Daftarkan downline/reseller baru
+      operationId: otomaxInboxDaftarDl228766404739694407
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: nama
+          description: nama
+          type: string
+          required: true
+          in: query
+        - name: alamat
+          description: alamat
+          type: string
+          required: true
+          in: query
+        - name: nomorhp
+          description: nomorhp
+          type: string
+          required: true
+          in: query
+        - name: markup
+          description: markup
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/daftar-dl3:
+    get:
+      tags:
+        - otomax
+      summary: Daftarkan downline/reseller baru
+      description: Daftarkan downline/reseller baru
+      operationId: otomaxInboxDaftarDl33789651376004519
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: nama
+          description: nama
+          type: string
+          required: true
+          in: query
+        - name: alamat
+          description: alamat
+          type: string
+          required: true
+          in: query
+        - name: nomorhp
+          description: nomorhp
+          type: string
+          required: true
+          in: query
+        - name: kodelevel
+          description: kodelevel
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/daftar-non-member:
+    get:
+      tags:
+        - otomax
+      summary: Registration of non member
+      description: Registration of non member
+      operationId: otomaxInboxDaftarNonMember16940713113912698
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: name
+          description: name
+          type: string
+          required: true
+          in: query
+        - name: address
+          description: address
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/hapus-gtalk:
+    get:
+      tags:
+        - otomax
+      summary: Hapus pengirim tipe GTalk
+      description: Hapus pengirim tipe GTalk
+      operationId: otomaxInboxHapusGtalk34258462392263933
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: email
+          description: email
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/hapus-gtalk2:
+    get:
+      tags:
+        - otomax
+      summary: Hapus pengirim tipe GTalk untuk downline
+      description: Hapus pengirim tipe GTalk untuk downline
+      operationId: otomaxInboxHapusGtalk2948309964576163
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: kodereseller
+          description: kodereseller
+          type: string
+          required: true
+          in: query
+        - name: email
+          description: email
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/hapus-markup-produk:
+    get:
+      tags:
+        - otomax
+      summary: Delete product markup
+      description: Delete product markup
+      operationId: otomaxInboxHapusMarkupProduk780534296171379
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: kodeproduk
+          description: kodeproduk
+          type: string
+          required: true
+          in: query
+        - name: kodereseller
+          description: kodereseller
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/hapus-markup-produk2:
+    get:
+      tags:
+        - otomax
+      summary: Delete product markup
+      description: Delete product markup
+      operationId: otomaxInboxHapusMarkupProduk254668758707101
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: kodereseller
+          description: kodereseller
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/hapus-markup-produk3:
+    get:
+      tags:
+        - otomax
+      summary: Delete product markup
+      description: Delete product markup
+      operationId: otomaxInboxHapusMarkupProduk32283975437072392
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: kodeproduk
+          description: kodeproduk
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/hapus-nomor:
+    get:
+      tags:
+        - otomax
+      summary: Hapus pengirim tipe SMS
+      description: Hapus pengirim tipe SMS
+      operationId: otomaxInboxHapusNomor45810904473666225
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: tujuan
+          description: tujuan
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/hapus-nomor2:
+    get:
+      tags:
+        - otomax
+      summary: Hapus pengirim tipe SMS
+      description: Hapus pengirim tipe SMS
+      operationId: otomaxInboxHapusNomor239058699458178436
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: kodereseller
+          description: kodereseller
+          type: string
+          required: true
+          in: query
+        - name: tujuan
+          description: tujuan
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/hapus-wa:
+    get:
+      tags:
+        - otomax
+      summary: Hapus nomor WA
+      description: Hapus nomor WA
+      operationId: otomaxInboxHapusWa47503738810911234
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: nomor
+          description: nomor
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/hapus-ym:
+    get:
+      tags:
+        - otomax
+      summary: Hapus pengirim tipe YM
+      description: Hapus pengirim tipe YM
+      operationId: otomaxInboxHapusYm044707187015643024
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: yahooid
+          description: yahooid
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/hapus-ym2:
+    get:
+      tags:
+        - otomax
+      summary: Hapus pengirim tipe YM dari downline
+      description: Hapus pengirim tipe YM dari downline
+      operationId: otomaxInboxHapusYm22866486588247168
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: kodereseller
+          description: kodereseller
+          type: string
+          required: true
+          in: query
+        - name: yahooid
+          description: yahooid
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/laporan-mutasi:
+    get:
+      tags:
+        - otomax
+      summary: Cek laporan mutasi saldo per tanggal
+      description: Cek laporan mutasi saldo per tanggal
+      operationId: otomaxInboxLaporanMutasi8434879286193278
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: tanggal
+          description: tanggal
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/laporan-transaksi:
+    get:
+      tags:
+        - otomax
+      summary: Cek laporan transaksi per tanggal
+      description: Cek laporan transaksi per tanggal
+      operationId: otomaxInboxLaporanTransaksi6265223319289128
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: tanggal
+          description: tanggal
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/lihat-hadiah-poin:
+    get:
+      tags:
+        - otomax
+      summary: View gift list
+      description: View gift list
+      operationId: otomaxInboxLihatHadiahPoin38563526664406256
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/list-dl:
+    get:
+      tags:
+        - otomax
+      summary: Lihat daftar downline
+      description: Lihat daftar downline
+      operationId: otomaxInboxListDl5306134545482142
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/list-dl2:
+    get:
+      tags:
+        - otomax
+      summary: Lihat daftar downline dari downline (sub-downline)
+      description: Lihat daftar downline dari downline (sub-downline)
+      operationId: otomaxInboxListDl221594629536870658
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: kodereseller
+          description: kodereseller
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/list-pengirim:
+    get:
+      tags:
+        - otomax
+      summary: Lihat daftar pengirim semua tipe
+      description: Lihat daftar pengirim semua tipe
+      operationId: otomaxInboxListPengirim5790569952865008
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/list-pengirim-gtalk:
+    get:
+      tags:
+        - otomax
+      summary: Lihat daftar pengirim tipe GTalk
+      description: Lihat daftar pengirim tipe GTalk
+      operationId: otomaxInboxListPengirimGtalk8354145841017171
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/list-pengirim-gtalk2:
+    get:
+      tags:
+        - otomax
+      summary: Lihat daftar pengirim tipe GTalk untuk downline
+      description: Lihat daftar pengirim tipe GTalk untuk downline
+      operationId: otomaxInboxListPengirimGtalk214961402475743069
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: kodereseller
+          description: kodereseller
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/list-pengirim-sms:
+    get:
+      tags:
+        - otomax
+      summary: Lihat daftar pengirim tipe SMS
+      description: Lihat daftar pengirim tipe SMS
+      operationId: otomaxInboxListPengirimSms7850098886532462
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/list-pengirim-sms2:
+    get:
+      tags:
+        - otomax
+      summary: Lihat daftar pengirim tipe SMS dari downline
+      description: Lihat daftar pengirim tipe SMS dari downline
+      operationId: otomaxInboxListPengirimSms2852632070420652
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: kodereseller
+          description: kodereseller
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/list-pengirim-ym:
+    get:
+      tags:
+        - otomax
+      summary: Lihat daftar pengirim tipe YM
+      description: Lihat daftar pengirim tipe YM
+      operationId: otomaxInboxListPengirimYm04241622631470854
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/list-pengirim-ym2:
+    get:
+      tags:
+        - otomax
+      summary: Lihat daftar pengirim tipe YM dari downline
+      description: Lihat daftar pengirim tipe YM dari downline
+      operationId: otomaxInboxListPengirimYm26822534195190635
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: kodereseller
+          description: kodereseller
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/non-aktifkan-dl:
+    get:
+      tags:
+        - otomax
+      summary: Non-aktifkan downline/reseller
+      description: Non-aktifkan downline/reseller
+      operationId: otomaxInboxNonAktifkanDl2857458504533028
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: kodereseller
+          description: kodereseller
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/reset-pin:
+    get:
+      tags:
+        - otomax
+      summary: Reset pin member
+      description: Reset pin member
+      operationId: otomaxInboxResetPin17139539701458806
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: kodereseller
+          description: kodereseller
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/tambah-gtalk:
+    get:
+      tags:
+        - otomax
+      summary: Tambah pengirim tipe GTalk
+      description: Tambah pengirim tipe GTalk
+      operationId: otomaxInboxTambahGtalk6592236505910216
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: email
+          description: email
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/tambah-gtalk2:
+    get:
+      tags:
+        - otomax
+      summary: Tambah pengirim tipe GTalk untuk downline
+      description: Tambah pengirim tipe GTalk untuk downline
+      operationId: otomaxInboxTambahGtalk232967827808165917
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: kodereseller
+          description: kodereseller
+          type: string
+          required: true
+          in: query
+        - name: email
+          description: email
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/tambah-nomor:
+    get:
+      tags:
+        - otomax
+      summary: Tambah pengirim tipe SMS
+      description: Tambah pengirim tipe SMS
+      operationId: otomaxInboxTambahNomor6777445455809274
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: tujuan
+          description: tujuan
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/tambah-nomor2:
+    get:
+      tags:
+        - otomax
+      summary: Tambah pengirim tipe SMS untuk downline
+      description: Tambah pengirim tipe SMS untuk downline
+      operationId: otomaxInboxTambahNomor249627262676702943
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: kodereseller
+          description: kodereseller
+          type: string
+          required: true
+          in: query
+        - name: tujuan
+          description: tujuan
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/tambah-wa:
+    get:
+      tags:
+        - otomax
+      summary: Tambah nomor WA
+      description: Tambah nomor WA
+      operationId: otomaxInboxTambahWa5244242347758952
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: number
+          description: number
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/tambah-ym:
+    get:
+      tags:
+        - otomax
+      summary: Tambah pengirim tipe YM
+      description: Tambah pengirim tipe YM
+      operationId: otomaxInboxTambahYm5470318148166611
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: yahooid
+          description: yahooid
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/tambah-ym2:
+    get:
+      tags:
+        - otomax
+      summary: Tambah pengirim tipe YM untuk downline
+      description: Tambah pengirim tipe YM untuk downline
+      operationId: otomaxInboxTambahYm26303983531745421
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: kodereseller
+          description: kodereseller
+          type: string
+          required: true
+          in: query
+        - name: yahooid
+          description: yahooid
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/tiket-deposit:
+    get:
+      tags:
+        - otomax
+      summary: Tiket Deposit
+      description: Tiket Deposit
+      operationId: otomaxInboxTiketDeposit9233075087949532
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: jumlah
+          description: jumlah
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/transaksi:
+    get:
+      tags:
+        - otomax
+      summary: Transaksi pengisian pulsa
+      description: Transaksi pengisian pulsa
+      operationId: otomaxInboxTransaksi06587926944752653
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: kodeproduk
+          description: kodeproduk
+          type: string
+          required: true
+          in: query
+        - name: tujuan
+          description: tujuan
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/transaksi10:
+    get:
+      tags:
+        - otomax
+      summary: Transaksi pengisian pulsa
+      description: Transaksi pengisian pulsa
+      operationId: otomaxInboxTransaksi106272635888684714
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: kodeproduk
+          description: kodeproduk
+          type: string
+          required: true
+          in: query
+        - name: tujuan
+          description: tujuan
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/transaksi11:
+    get:
+      tags:
+        - otomax
+      summary: Transaksi pengisian pulsa
+      description: Transaksi pengisian pulsa
+      operationId: otomaxInboxTransaksi1133336208999072703
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: nominal
+          description: nominal
+          type: string
+          required: true
+          in: query
+        - name: tujuan
+          description: tujuan
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/transaksi12:
+    get:
+      tags:
+        - otomax
+      summary: Transaksi pengisian pulsa
+      description: Transaksi pengisian pulsa
+      operationId: otomaxInboxTransaksi125746862175250789
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: tujuan
+          description: tujuan
+          type: string
+          required: true
+          in: query
+        - name: nominal
+          description: nominal
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/transaksi13:
+    get:
+      tags:
+        - otomax
+      summary: Transaksi pengisian pulsa
+      description: Transaksi pengisian pulsa
+      operationId: otomaxInboxTransaksi1334856159959351785
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: tujuan
+          description: tujuan
+          type: string
+          required: true
+          in: query
+        - name: kodeproduk
+          description: kodeproduk
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/transaksi14:
+    get:
+      tags:
+        - otomax
+      summary: 'Transaksi pengisian pulsa '
+      description: 'Transaksi pengisian pulsa '
+      operationId: otomaxInboxTransaksi1412500106270729194
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: kodeproduk
+          description: kodeproduk
+          type: string
+          required: true
+          in: query
+        - name: counter
+          description: counter
+          type: string
+          required: true
+          in: query
+        - name: tujuan
+          description: tujuan
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/transaksi15:
+    get:
+      tags:
+        - otomax
+      summary: Transaksi pengisian pulsa
+      description: Transaksi pengisian pulsa
+      operationId: otomaxInboxTransaksi157065394883479561
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: tujuan
+          description: tujuan
+          type: string
+          required: true
+          in: query
+        - name: nominal
+          description: nominal
+          type: string
+          required: true
+          in: query
+        - name: counter
+          description: counter
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/transaksi16:
+    get:
+      tags:
+        - otomax
+      summary: Transaksi pengisian pulsa
+      description: Transaksi pengisian pulsa
+      operationId: otomaxInboxTransaksi1602801294063878257
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: nominal
+          description: nominal
+          type: string
+          required: true
+          in: query
+        - name: tujuan
+          description: tujuan
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/transaksi17:
+    get:
+      tags:
+        - otomax
+      summary: Transaksi pengisian pulsa
+      description: Transaksi pengisian pulsa
+      operationId: otomaxInboxTransaksi1723581821455958862
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: tujuan
+          description: tujuan
+          type: string
+          required: true
+          in: query
+        - name: nominal
+          description: nominal
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/transaksi18:
+    get:
+      tags:
+        - otomax
+      summary: Transaksi pengisian pulsa
+      description: Transaksi pengisian pulsa
+      operationId: otomaxInboxTransaksi187087357705948318
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: tujuan
+          description: tujuan
+          type: string
+          required: true
+          in: query
+        - name: kodeproduk
+          description: kodeproduk
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/transaksi19:
+    get:
+      tags:
+        - otomax
+      summary: Transaksi pengisian pulsa
+      description: Transaksi pengisian pulsa
+      operationId: otomaxInboxTransaksi192122924027092934
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: kodeproduk
+          description: kodeproduk
+          type: string
+          required: true
+          in: query
+        - name: tujuan
+          description: tujuan
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/transaksi2:
+    get:
+      tags:
+        - otomax
+      summary: Transaksi pengisian pulsa
+      description: Transaksi pengisian pulsa
+      operationId: otomaxInboxTransaksi29997684344560656
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: kodeproduk
+          description: kodeproduk
+          type: string
+          required: true
+          in: query
+        - name: tujuan
+          description: tujuan
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/transaksi20:
+    get:
+      tags:
+        - otomax
+      summary: Transaksi pengisian pulsa
+      description: Transaksi pengisian pulsa
+      operationId: otomaxInboxTransaksi206294326076931875
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: nominal
+          description: nominal
+          type: string
+          required: true
+          in: query
+        - name: tujuan
+          description: tujuan
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/transaksi21:
+    get:
+      tags:
+        - otomax
+      summary: Transaksi pengisian pulsa
+      description: Transaksi pengisian pulsa
+      operationId: otomaxInboxTransaksi2142628815209123894
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: tujuan
+          description: tujuan
+          type: string
+          required: true
+          in: query
+        - name: nominal
+          description: nominal
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/transaksi22:
+    get:
+      tags:
+        - otomax
+      summary: Transaksi pengisian pulsa
+      description: Transaksi pengisian pulsa
+      operationId: otomaxInboxTransaksi227538158953997587
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: tujuan
+          description: tujuan
+          type: string
+          required: true
+          in: query
+        - name: kodeproduk
+          description: kodeproduk
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/transaksi23:
+    get:
+      tags:
+        - otomax
+      summary: Transaksi pengisian pulsa
+      description: Transaksi pengisian pulsa
+      operationId: otomaxInboxTransaksi2307226750224690082
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: kodeproduk
+          description: kodeproduk
+          type: string
+          required: true
+          in: query
+        - name: qty
+          description: qty
+          type: string
+          required: true
+          in: query
+        - name: tujuan
+          description: tujuan
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/transaksi24:
+    get:
+      tags:
+        - otomax
+      summary: Transaksi pengisian pulsa
+      description: Transaksi pengisian pulsa
+      operationId: otomaxInboxTransaksi2439145132447496556
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: kodeproduk
+          description: kodeproduk
+          type: string
+          required: true
+          in: query
+        - name: qty
+          description: qty
+          type: string
+          required: true
+          in: query
+        - name: tujuan
+          description: tujuan
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: counter
+          description: counter
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/transaksi25:
+    get:
+      tags:
+        - otomax
+      summary: Transaksi pengisian pulsa
+      description: Transaksi pengisian pulsa
+      operationId: otomaxInboxTransaksi258577301116350784
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: kodeproduk
+          description: kodeproduk
+          type: string
+          required: true
+          in: query
+        - name: tujuan
+          description: tujuan
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: trxid
+          description: trxid
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/transaksi26:
+    get:
+      tags:
+        - otomax
+      summary: Transaksi pengisian pulsa
+      description: Transaksi pengisian pulsa
+      operationId: otomaxInboxTransaksi268637130720272173
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: kodeproduk
+          description: kodeproduk
+          type: string
+          required: true
+          in: query
+        - name: tujuan
+          description: tujuan
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: enduser
+          description: enduser
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/transaksi27:
+    get:
+      tags:
+        - otomax
+      summary: Transaksi pengisian pulsa
+      description: Transaksi pengisian pulsa
+      operationId: otomaxInboxTransaksi277338481831048225
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/transaksi28:
+    get:
+      tags:
+        - otomax
+      summary: Transaksi pengisian pulsa
+      description: Transaksi pengisian pulsa
+      operationId: otomaxInboxTransaksi28987233591488474
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: nominal
+          description: nominal
+          type: string
+          required: true
+          in: query
+        - name: counter
+          description: counter
+          type: string
+          required: true
+          in: query
+        - name: tujuan
+          description: tujuan
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/transaksi29:
+    get:
+      tags:
+        - otomax
+      summary: Transaksi pengisian pulsa
+      description: Transaksi pengisian pulsa
+      operationId: otomaxInboxTransaksi296957895706751611
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: kodeproduk
+          description: kodeproduk
+          type: string
+          required: true
+          in: query
+        - name: qty
+          description: qty
+          type: string
+          required: true
+          in: query
+        - name: tujuan
+          description: tujuan
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/transaksi3:
+    get:
+      tags:
+        - otomax
+      summary: Transaksi pengisian pulsa
+      description: Transaksi pengisian pulsa
+      operationId: otomaxInboxTransaksi327212024249751954
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: counter
+          description: counter
+          type: string
+          required: true
+          in: query
+        - name: kodeproduk
+          description: kodeproduk
+          type: string
+          required: true
+          in: query
+        - name: qty
+          description: qty
+          type: string
+          required: true
+          in: query
+        - name: tujuan
+          description: tujuan
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/transaksi4:
+    get:
+      tags:
+        - otomax
+      summary: Transaksi pengisian pulsa
+      description: Transaksi pengisian pulsa
+      operationId: otomaxInboxTransaksi423257813427455898
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: kodeproduk
+          description: kodeproduk
+          type: string
+          required: true
+          in: query
+        - name: nominal
+          description: nominal
+          type: string
+          required: true
+          in: query
+        - name: tujuan
+          description: tujuan
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: enduser
+          description: enduser
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/transaksi5:
+    get:
+      tags:
+        - otomax
+      summary: Transaksi pengisian pulsa
+      description: Transaksi pengisian pulsa
+      operationId: otomaxInboxTransaksi5788627352450632
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/transaksi6:
+    get:
+      tags:
+        - otomax
+      summary: Transaksi pengisian pulsa
+      description: Transaksi pengisian pulsa
+      operationId: otomaxInboxTransaksi67181139317098049
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: kodeproduk
+          description: kodeproduk
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/transaksi7:
+    get:
+      tags:
+        - otomax
+      summary: Transaksi pengisian pulsa
+      description: Transaksi pengisian pulsa
+      operationId: otomaxInboxTransaksi717590431274769314
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: nominal
+          description: nominal
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/transaksi8:
+    get:
+      tags:
+        - otomax
+      summary: Transaksi pengisian pulsa
+      description: Transaksi pengisian pulsa
+      operationId: otomaxInboxTransaksi86088060145352421
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: kodeproduk
+          description: kodeproduk
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/transaksi9:
+    get:
+      tags:
+        - otomax
+      summary: Transaksi pengisian pulsa
+      description: Transaksi pengisian pulsa
+      operationId: otomaxInboxTransaksi97624959302485408
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: nominal
+          description: nominal
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/transaksi-bebas-dobel:
+    get:
+      tags:
+        - otomax
+      summary: Transaksi pengisian pulsa TANPA pengecekan dobel
+      description: Transaksi pengisian pulsa TANPA pengecekan dobel
+      operationId: otomaxInboxTransaksiBebasDobel3848444495476915
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/transfer-saldo:
+    get:
+      tags:
+        - otomax
+      summary: Transfer saldo/deposit ke downline/reseller
+      description: Transfer saldo/deposit ke downline/reseller
+      operationId: otomaxInboxTransferSaldo28933977133010225
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: kodereseller
+          description: kodereseller
+          type: string
+          required: true
+          in: query
+        - name: jumlah
+          description: jumlah
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/transfer-saldo-lintas:
+    get:
+      tags:
+        - otomax
+      summary: Allows transfer balance across the membership network
+      description: Allows transfer balance across the membership network
+      operationId: otomaxInboxTransferSaldoLintas5711221371932036
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/tukar-komisi:
+    get:
+      tags:
+        - otomax
+      summary: Tukar komisi tunda dalam bentuk deposit
+      description: Tukar komisi tunda dalam bentuk deposit
+      operationId: otomaxInboxTukarKomisi2630754241247475
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: jumlah
+          description: jumlah
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/tukar-komisi2:
+    get:
+      tags:
+        - otomax
+      summary: Tukar semua komisi tunda dalam bentuk deposit
+      description: Tukar semua komisi tunda dalam bentuk deposit
+      operationId: otomaxInboxTukarKomisi207644376297752853
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/tukar-poin:
+    get:
+      tags:
+        - otomax
+      summary: Menukar poin
+      description: Menukar poin
+      operationId: otomaxInboxTukarPoin17814069861867776
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: kode
+          description: kode
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/ubah-alamat-ip:
+    get:
+      tags:
+        - otomax
+      summary: Change IP Address
+      description: Change IP Address
+      operationId: otomaxInboxUbahAlamatIp6108518403119034
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: newip
+          description: newip
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/ubah-level:
+    get:
+      tags:
+        - otomax
+      summary: Ubah level downline
+      description: Ubah level downline
+      operationId: otomaxInboxUbahLevel2079337685442686
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: kodereseller
+          description: kodereseller
+          type: string
+          required: true
+          in: query
+        - name: kodelevel
+          description: kodelevel
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/ubah-markup:
+    get:
+      tags:
+        - otomax
+      summary: Change downline's markup
+      description: Change downline's markup
+      operationId: otomaxInboxUbahMarkup006579957968973593
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: kodereseller
+          description: kodereseller
+          type: string
+          required: true
+          in: query
+        - name: markup
+          description: markup
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/ubah-markup-produk:
+    get:
+      tags:
+        - otomax
+      summary: Change product markup
+      description: Change product markup
+      operationId: otomaxInboxUbahMarkupProduk5436749090315587
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: kodeproduk
+          description: kodeproduk
+          type: string
+          required: true
+          in: query
+        - name: markup
+          description: markup
+          type: string
+          required: true
+          in: query
+        - name: kodereseller
+          description: kodereseller
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/ubah-markup-produk2:
+    get:
+      tags:
+        - otomax
+      summary: Change product markup for all downlines
+      description: Change product markup for all downlines
+      operationId: otomaxInboxUbahMarkupProduk28036555383539927
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: kodeproduk
+          description: kodeproduk
+          type: string
+          required: true
+          in: query
+        - name: markup
+          description: markup
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/ubah-nama:
+    get:
+      tags:
+        - otomax
+      summary: Ubah nama
+      description: Ubah nama
+      operationId: otomaxInboxUbahNama11803217306951663
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: nama
+          description: nama
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/ubah-oid:
+    get:
+      tags:
+        - otomax
+      summary: Change OID for OtomaX HTH
+      description: Change OID for OtomaX HTH
+      operationId: otomaxInboxUbahOid5912793266557614
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: oid
+          description: oid
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/ubah-password-ip:
+    get:
+      tags:
+        - otomax
+      summary: Change IP Password
+      description: Change IP Password
+      operationId: otomaxInboxUbahPasswordIp3982548623408557
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: oldpassword
+          description: oldpassword
+          type: string
+          required: true
+          in: query
+        - name: newpassword
+          description: newpassword
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/ubah-pin:
+    get:
+      tags:
+        - otomax
+      summary: Ubah PIN
+      description: Ubah PIN
+      operationId: otomaxInboxUbahPin5027497346134064
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: pinlama
+          description: pinlama
+          type: string
+          required: true
+          in: query
+        - name: pinbaru
+          description: pinbaru
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /otomax/inbox/ubah-report-url:
+    get:
+      tags:
+        - otomax
+      summary: Change Report URL
+      description: Change Report URL
+      operationId: otomaxInboxUbahReportUrl9135967551869415
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: newurl
+          description: newurl
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: Authorization
+          description: Authorization
+          type: string
+          required: true
+          in: header
+      responses:
+        '200':
+          description: ok
+      security: []
+  /sidompul/config:
+    get:
+      tags:
+        - sidompul
+      summary: config
+      description: config
+      operationId: sidompulConfig18143563385940986
+      consumes: []
+      produces:
+        - application/json
+      parameters: []
+      responses:
+        '200':
+          description: ok
+      security: []
+    post:
+      tags:
+        - sidompul
+      summary: config
+      description: config
+      operationId: sidompulConfig5493859571473749
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: Content-Type
+          description: Content-Type
+          type: string
+          required: true
+          in: header
+        - name: body
+          description: sidompul.rest
+          type: string
+          required: true
+          in: body
+          schema:
+            $ref: '#/definitions/sidompulConfig'
+      responses:
+        '200':
+          description: ok
+      security: []
+  /sidompul/token:
+    get:
+      tags:
+        - sidompul
+      summary: Get Token
+      description: Get Token
+      operationId: sidompulToken6056454451133617
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: grant_type
+          description: grant_type
+          type: string
+          required: true
+          in: query
+        - name: client_id
+          description: client_id
+          type: string
+          required: true
+          in: query
+        - name: client_secret
+          description: client_secret
+          type: string
+          required: true
+          in: query
+      responses:
+        '200':
+          description: ok
+      security: []
+  /sidompul/postEncrypt:
+    get:
+      tags:
+        - sidompul
+      summary: Encrypt
+      description: Encrypt
+      operationId: sidompulPostEncrypt33868208579371983
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: data
+          description: data
+          type: string
+          required: true
+          in: query
+      responses:
+        '200':
+          description: ok
+      security: []
+  /sidompul/postPackage:
+    get:
+      tags:
+        - sidompul
+      summary: Purchase Package
+      description: Purchase Package
+      operationId: sidompulPostPackage2959221035591866
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: msisdn
+          description: msisdn
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: productCode
+          description: productCode
+          type: string
+          required: true
+          in: query
+      responses:
+        '200':
+          description: ok
+      security: []
+  /sidompul/getTransactionhistory:
+    get:
+      tags:
+        - sidompul
+      summary: Transaction History
+      description: Transaction History
+      operationId: sidompulGetTransactionhistory5345618229682005
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: startdate
+          description: startdate
+          type: string
+          required: true
+          in: query
+        - name: enddate
+          description: enddate
+          type: string
+          required: true
+          in: query
+      responses:
+        '200':
+          description: ok
+      security: []
+  /sidompul/postW2p:
+    get:
+      tags:
+        - sidompul
+      summary: Reload Pulsa (W2P)
+      description: Reload Pulsa (W2P)
+      operationId: sidompulPostW2p07843134880559521
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: msisdn
+          description: msisdn
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: denom
+          description: denom
+          type: string
+          required: true
+          in: query
+      responses:
+        '200':
+          description: ok
+      security: []
+  /sidompul/getDompulBalance:
+    get:
+      tags:
+        - sidompul
+      summary: Get Dompul Balance
+      description: Get Dompul Balance
+      operationId: sidompulGetDompulBalance11583799189766264
+      consumes: []
+      produces:
+        - application/json
+      parameters: []
+      responses:
+        '200':
+          description: ok
+      security: []
+  /sidompul/getPulsaBalance:
+    get:
+      tags:
+        - sidompul
+      summary: Get Pulsa Balance
+      description: Get Pulsa Balance
+      operationId: sidompulGetPulsaBalance4237761971580818
+      consumes: []
+      produces:
+        - application/json
+      parameters: []
+      responses:
+        '200':
+          description: ok
+      security: []
+  /sidompul/getProductList:
+    get:
+      tags:
+        - sidompul
+      summary: Get List Product Code
+      description: Get List Product Code
+      operationId: sidompulGetProductList20318094168127976
+      consumes: []
+      produces:
+        - application/json
+      parameters: []
+      responses:
+        '200':
+          description: ok
+      security: []
+  /sidompul/postPackagePulsa:
+    get:
+      tags:
+        - sidompul
+      summary: Purchase Package Deduct Pulsa
+      description: Purchase Package Deduct Pulsa
+      operationId: sidompulPostPackagePulsa10665431767606703
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: msisdn
+          description: msisdn
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: productCode
+          description: productCode
+          type: string
+          required: true
+          in: query
+      responses:
+        '200':
+          description: ok
+      security: []
+  /sidompul/getAwgStock:
+    get:
+      tags:
+        - sidompul
+      summary: AWG Get Stock
+      description: AWG Get Stock
+      operationId: sidompulGetAwgStock9430997213948165
+      consumes: []
+      produces:
+        - application/json
+      parameters: []
+      responses:
+        '200':
+          description: ok
+      security: []
+  /sidompul/getAwgTransactioninfo:
+    get:
+      tags:
+        - sidompul
+      summary: AWG Get Info Transaction
+      description: AWG Get Info Transaction
+      operationId: sidompulGetAwgTransactioninfo829917817533459
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: beginDate
+          description: beginDate
+          type: string
+          required: true
+          in: query
+        - name: endDate
+          description: endDate
+          type: string
+          required: true
+          in: query
+        - name: servicetype
+          description: servicetype
+          type: string
+          required: true
+          in: query
+      responses:
+        '200':
+          description: ok
+      security: []
+  /sidompul/postAwgTransactionInfoDetail:
+    get:
+      tags:
+        - sidompul
+      summary: AWG Get Info Transaction Detail
+      description: AWG Get Info Transaction Detail
+      operationId: sidompulPostAwgTransactionInfoDetail2665262674573208
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: command
+          description: command
+          type: string
+          required: true
+          in: query
+        - name: masterTrxId
+          description: masterTrxId
+          type: string
+          required: true
+          in: query
+      responses:
+        '200':
+          description: ok
+      security: []
+  /sidompul/postAwgTembak:
+    get:
+      tags:
+        - sidompul
+      summary: AWG Inject Stock
+      description: AWG Inject Stock
+      operationId: sidompulPostAwgTembak18177625479943016
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: target
+          description: target
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: vId
+          description: vId
+          type: string
+          required: true
+          in: query
+        - name: command
+          description: command
+          type: string
+          required: true
+          in: query
+        - name: allowType
+          description: allowType
+          type: string
+          required: true
+          in: query
+      responses:
+        '200':
+          description: ok
+      security: []
+  /sidompul/getXwgStock:
+    get:
+      tags:
+        - sidompul
+      summary: XWG Get Stock
+      description: XWG Get Stock
+      operationId: sidompulGetXwgStock7405874538906492
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: roType
+          description: roType
+          type: string
+          required: true
+          in: query
+      responses:
+        '200':
+          description: ok
+      security: []
+  /sidompul/getXwgTransactioninfo:
+    get:
+      tags:
+        - sidompul
+      summary: XWG Get Info Transaction
+      description: XWG Get Info Transaction
+      operationId: sidompulGetXwgTransactioninfo15507992574720286
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: beginDate
+          description: beginDate
+          type: string
+          required: true
+          in: query
+        - name: endDate
+          description: endDate
+          type: string
+          required: true
+          in: query
+        - name: servicetype
+          description: servicetype
+          type: string
+          required: true
+          in: query
+      responses:
+        '200':
+          description: ok
+      security: []
+  /sidompul/postXwgTransactionInfoDetail:
+    get:
+      tags:
+        - sidompul
+      summary: XWG Get Info Transaction Detail
+      description: XWG Get Info Transaction Detail
+      operationId: sidompulPostXwgTransactionInfoDetail3215999344545273
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: command
+          description: command
+          type: string
+          required: true
+          in: query
+        - name: masterTrxId
+          description: masterTrxId
+          type: string
+          required: true
+          in: query
+      responses:
+        '200':
+          description: ok
+      security: []
+  /sidompul/postXwgTembak:
+    get:
+      tags:
+        - sidompul
+      summary: XWG Inject Stock
+      description: XWG Inject Stock
+      operationId: sidompulPostXwgTembak4936599785136482
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: allowType
+          description: allowType
+          type: string
+          required: true
+          in: query
+        - name: command
+          description: command
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: target
+          description: target
+          type: string
+          required: true
+          in: query
+        - name: vId
+          description: vId
+          type: string
+          required: true
+          in: query
+      responses:
+        '200':
+          description: ok
+      security: []
+  /sidompul/getTransactionHistorydetail:
+    get:
+      tags:
+        - sidompul
+      summary: Transaction History Detail
+      description: Transaction History Detail
+      operationId: sidompulGetTransactionHistorydetail5506885800516894
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: transactionId
+          description: transactionId
+          type: string
+          required: true
+          in: query
+        - name: msisdnB
+          description: msisdnB
+          type: string
+          required: true
+          in: query
+        - name: orderStatus
+          description: orderStatus
+          type: string
+          required: true
+          in: query
+      responses:
+        '200':
+          description: ok
+      security: []
+  /messenger:
+    post:
+      tags:
+        - messenger
+      summary: Tambah center
+      description: Tambah center
+      operationId: messenger8705121250708241
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: Content-Type
+          description: Content-Type
+          type: string
+          required: true
+          in: header
+        - name: body
+          description: xmpp.rest
+          type: string
+          required: true
+          in: body
+          schema:
+            $ref: '#/definitions/messenger'
+      responses:
+        '200':
+          description: ok
+      security: []
+    get:
+      tags:
+        - messenger
+      summary: Center account
+      description: Center account
+      operationId: messenger15315680479423244
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: username
+          description: username
+          type: string
+          required: true
+          in: query
+      responses:
+        '200':
+          description: ok
+      security: []
+    patch:
+      tags:
+        - messenger
+      summary: Setting...
+      description: Setting...
+      operationId: messenger6969349427743814
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: Content-Type
+          description: Content-Type
+          type: string
+          required: true
+          in: header
+        - name: body
+          description: xmpp.rest
+          type: string
+          required: true
+          in: body
+          schema:
+            $ref: '#/definitions/messenger'
+      responses:
+        '200':
+          description: ok
+      security: []
+    delete:
+      tags:
+        - messenger
+      summary: Remove
+      description: Remove
+      operationId: messenger1851083907460318
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: username
+          description: username
+          type: string
+          required: true
+          in: query
+      responses:
+        '200':
+          description: ok
+      security: []
+  /messenger/start:
+    get:
+      tags:
+        - messenger
+      summary: Login
+      description: Login
+      operationId: messengerStart6549942766522292
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: username
+          description: username
+          type: string
+          required: true
+          in: query
+      responses:
+        '200':
+          description: ok
+      security: []
+  /messenger/stop:
+    get:
+      tags:
+        - messenger
+      summary: Logout
+      description: Logout
+      operationId: messengerStop7552937611842327
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: username
+          description: username
+          type: string
+          required: true
+          in: query
+      responses:
+        '200':
+          description: ok
+      security: []
+  /messenger/send:
+    post:
+      tags:
+        - messenger
+      summary: Kirim
+      description: Kirim
+      operationId: messengerSend7861508949250076
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: Content-Type
+          description: Content-Type
+          type: string
+          required: true
+          in: header
+        - name: body
+          description: xmpp.rest
+          type: string
+          required: true
+          in: body
+          schema:
+            $ref: '#/definitions/messengerSend'
+      responses:
+        '200':
+          description: ok
+      security: []
+    get:
+      tags:
+        - messenger
+      summary: Kirim
+      description: Kirim
+      operationId: messengerSend9292721627262084
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: username
+          description: username
+          type: string
+          required: true
+          in: query
+        - name: service
+          description: service
+          type: string
+          required: true
+          in: query
+        - name: penerima
+          description: penerima
+          type: string
+          required: true
+          in: query
+        - name: pesan
+          description: pesan
+          type: string
+          required: true
+          in: query
+      responses:
+        '200':
+          description: ok
+      security: []
+  /tokoxl/sendOTP:
+    get:
+      tags:
+        - tokoxl
+      summary: sendOTP
+      description: sendOTP
+      operationId: tokoxlSendOTP7561919034696436
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: msisdn
+          description: msisdn
+          type: string
+          required: true
+          in: query
+      responses:
+        '200':
+          description: ok
+      security: []
+  /tokoxl/login:
+    get:
+      tags:
+        - tokoxl
+      summary: login
+      description: login
+      operationId: tokoxlLogin46409853015255864
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: msisdn
+          description: msisdn
+          type: string
+          required: true
+          in: query
+        - name: otp
+          description: otp
+          type: string
+          required: true
+          in: query
+        - name: imei
+          description: imei
+          type: string
+          required: true
+          in: query
+      responses:
+        '200':
+          description: ok
+      security: []
+  /tokoxl/refreshToken:
+    get:
+      tags:
+        - tokoxl
+      summary: refreshToken
+      description: refreshToken
+      operationId: tokoxlRefreshToken6406800837014843
+      consumes: []
+      produces:
+        - application/json
+      parameters: []
+      responses:
+        '200':
+          description: ok
+      security: []
+  /tokoxl/logout:
+    get:
+      tags:
+        - tokoxl
+      summary: logout
+      description: logout
+      operationId: tokoxlLogout296218704941801
+      consumes: []
+      produces:
+        - application/json
+      parameters: []
+      responses:
+        '200':
+          description: ok
+      security: []
+  /tokoxl/getBalance:
+    get:
+      tags:
+        - tokoxl
+      summary: getBalance
+      description: getBalance
+      operationId: tokoxlGetBalance37563652544964965
+      consumes: []
+      produces:
+        - application/json
+      parameters: []
+      responses:
+        '200':
+          description: ok
+      security: []
+  /tokoxl/getProfile:
+    get:
+      tags:
+        - tokoxl
+      summary: getProfile
+      description: getProfile
+      operationId: tokoxlGetProfile6357590599150515
+      consumes: []
+      produces:
+        - application/json
+      parameters: []
+      responses:
+        '200':
+          description: ok
+      security: []
+  /tokoxl/getPulsaList:
+    get:
+      tags:
+        - tokoxl
+      summary: getPulsaList
+      description: getPulsaList
+      operationId: tokoxlGetPulsaList39274402259992836
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: msisdn
+          description: msisdn
+          type: string
+          required: true
+          in: query
+      responses:
+        '200':
+          description: ok
+      security: []
+  /tokoxl/wallet2person:
+    get:
+      tags:
+        - tokoxl
+      summary: Isi Pulsa
+      description: Isi Pulsa
+      operationId: tokoxlWallet2person289821640978263
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: denom
+          description: denom
+          type: string
+          required: true
+          in: query
+        - name: msisdn
+          description: msisdn
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+      responses:
+        '200':
+          description: ok
+      security: []
+  /tokoxl/getNboPackages:
+    get:
+      tags:
+        - tokoxl
+      summary: getNboPackages
+      description: getNboPackages
+      operationId: tokoxlGetNboPackages3256001023251891
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: msisdn
+          description: msisdn
+          type: string
+          required: true
+          in: query
+        - name: location
+          description: location
+          type: string
+          required: true
+          in: query
+        - name: maxOffer
+          description: maxOffer
+          type: string
+          required: true
+          in: query
+      responses:
+        '200':
+          description: ok
+      security: []
+  /tokoxl/getProductCategoriesProfiling:
+    get:
+      tags:
+        - tokoxl
+      summary: getProductCategoriesProfiling
+      description: getProductCategoriesProfiling
+      operationId: tokoxlGetProductCategoriesProfiling212423181824007
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: brand
+          description: brand
+          type: string
+          required: true
+          in: query
+      responses:
+        '200':
+          description: ok
+      security: []
+  /tokoxl/getProductItemListProfiling:
+    get:
+      tags:
+        - tokoxl
+      summary: getProductItemListProfiling
+      description: getProductItemListProfiling
+      operationId: tokoxlGetProductItemListProfiling5677962249046675
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: parent_account_cd
+          description: parent_account_cd
+          type: string
+          required: true
+          in: query
+        - name: brand
+          description: brand
+          type: string
+          required: true
+          in: query
+        - name: product_category
+          description: product_category
+          type: string
+          required: true
+          in: query
+        - name: msisdn_b
+          description: msisdn_b
+          type: string
+          required: true
+          in: query
+      responses:
+        '200':
+          description: ok
+      security: []
+  /tokoxl/getBestOffer:
+    get:
+      tags:
+        - tokoxl
+      summary: getBestOffer
+      description: getBestOffer
+      operationId: tokoxlGetBestOffer3090040572587476
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: parent_account_cd
+          description: parent_account_cd
+          type: string
+          required: true
+          in: query
+        - name: brand
+          description: brand
+          type: string
+          required: true
+          in: query
+        - name: product_category
+          description: product_category
+          type: string
+          required: true
+          in: query
+        - name: msisdn_b
+          description: msisdn_b
+          type: string
+          required: true
+          in: query
+      responses:
+        '200':
+          description: ok
+      security: []
+  /tokoxl/package2person:
+    get:
+      tags:
+        - tokoxl
+      summary: Isi Paket
+      description: Isi Paket
+      operationId: tokoxlPackage2person6606050418334808
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: msisdn
+          description: msisdn
+          type: string
+          required: true
+          in: query
+        - name: offerId
+          description: offerId
+          type: string
+          required: true
+          in: query
+        - name: originalProduct
+          description: originalProduct
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: productCode
+          description: productCode
+          type: string
+          required: true
+          in: query
+      responses:
+        '200':
+          description: ok
+      security: []
+  /tokoxl/reloadNboPackage:
+    get:
+      tags:
+        - tokoxl
+      summary: CuanKu Spesial
+      description: CuanKu Spesial
+      operationId: tokoxlReloadNboPackage312944853303633
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: appsTrxID
+          description: appsTrxID
+          type: string
+          required: true
+          in: query
+        - name: msisdn
+          description: msisdn
+          type: string
+          required: true
+          in: query
+        - name: offerId
+          description: offerId
+          type: string
+          required: true
+          in: query
+        - name: originalProduct
+          description: originalProduct
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: productCode
+          description: productCode
+          type: string
+          required: true
+          in: query
+      responses:
+        '200':
+          description: ok
+      security: []
+  /tokoxl/getItemList:
+    get:
+      tags:
+        - tokoxl
+      summary: getItemList
+      description: getItemList
+      operationId: tokoxlGetItemList4292292081952387
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: parent_account_cd
+          description: parent_account_cd
+          type: string
+          required: true
+          in: query
+        - name: brand
+          description: brand
+          type: string
+          required: true
+          in: query
+        - name: product_category
+          description: product_category
+          type: string
+          required: true
+          in: query
+        - name: msisdn_b
+          description: msisdn_b
+          type: string
+          required: true
+          in: query
+      responses:
+        '200':
+          description: ok
+      security: []
+  /tokoxl/taggingHotTransaction:
+    get:
+      tags:
+        - tokoxl
+      summary: Tagging HOT
+      description: Tagging HOT
+      operationId: tokoxlTaggingHotTransaction047903413541173556
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: inputValidation
+          description: inputValidation
+          type: string
+          required: true
+          in: query
+        - name: msisdn
+          description: msisdn
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+        - name: programId
+          description: programId
+          type: string
+          required: true
+          in: query
+        - name: programType
+          description: programType
+          type: string
+          required: true
+          in: query
+      responses:
+        '200':
+          description: ok
+      security: []
+  /tokoxl/hrnc2c:
+    get:
+      tags:
+        - tokoxl
+      summary: Transfer Kuota
+      description: Transfer Kuota
+      operationId: tokoxlHrnc2c03667072450693376
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: hrn
+          description: hrn
+          type: string
+          required: true
+          in: query
+        - name: msisdn
+          description: msisdn
+          type: string
+          required: true
+          in: query
+        - name: pin
+          description: pin
+          type: string
+          required: true
+          in: query
+      responses:
+        '200':
+          description: ok
+      security: []
+  /tokoxl/checkVoucherStatus:
+    get:
+      tags:
+        - tokoxl
+      summary: Cek Status Voucher
+      description: Cek Status Voucher
+      operationId: tokoxlCheckVoucherStatus19206604072015687
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: type
+          description: type
+          type: string
+          required: true
+          in: query
+        - name: voucherCode
+          description: voucherCode
+          type: string
+          required: true
+          in: query
+      responses:
+        '200':
+          description: ok
+      security: []
+  /tokoxl/doCheckPrefix:
+    get:
+      tags:
+        - tokoxl
+      summary: Info Nomor - doCheckPrefix
+      description: Info Nomor - doCheckPrefix
+      operationId: tokoxlDoCheckPrefix9084551990613994
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: msisdn
+          description: msisdn
+          type: string
+          required: true
+          in: query
+      responses:
+        '200':
+          description: ok
+      security: []
+  /tokoxl/doCheckDukcapil:
+    get:
+      tags:
+        - tokoxl
+      summary: Info Nomor - doCheckDukcapil
+      description: Info Nomor - doCheckDukcapil
+      operationId: tokoxlDoCheckDukcapil5393097790290551
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: msisdn
+          description: msisdn
+          type: string
+          required: true
+          in: query
+      responses:
+        '200':
+          description: ok
+      security: []
+  /tokoxl/doCheckGraceDate:
+    get:
+      tags:
+        - tokoxl
+      summary: Info Nomor - doCheckGraceDate
+      description: Info Nomor - doCheckGraceDate
+      operationId: tokoxlDoCheckGraceDate6608520502579245
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: msisdn
+          description: msisdn
+          type: string
+          required: true
+          in: query
+      responses:
+        '200':
+          description: ok
+      security: []
+  /tokoxl/doCheck4G:
+    get:
+      tags:
+        - tokoxl
+      summary: Info Nomor - doCheck4G
+      description: Info Nomor - doCheck4G
+      operationId: tokoxlDoCheck4G8593573536553225
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: msisdn
+          description: msisdn
+          type: string
+          required: true
+          in: query
+      responses:
+        '200':
+          description: ok
+      security: []
+  /tokoxl/doCheckSPExpired:
+    get:
+      tags:
+        - tokoxl
+      summary: Info Nomor - doCheckSPExpired
+      description: Info Nomor - doCheckSPExpired
+      operationId: tokoxlDoCheckSPExpired738675214253182
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: msisdn
+          description: msisdn
+          type: string
+          required: true
+          in: query
+      responses:
+        '200':
+          description: ok
+      security: []
+  /tokoxl/doCheckPackageInfo:
+    get:
+      tags:
+        - tokoxl
+      summary: Info Nomor - doCheckPackageInfo
+      description: Info Nomor - doCheckPackageInfo
+      operationId: tokoxlDoCheckPackageInfo33640756503515457
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: msisdn
+          description: msisdn
+          type: string
+          required: true
+          in: query
+      responses:
+        '200':
+          description: ok
+      security: []
+  /tokoxl/doCheckTenure:
+    get:
+      tags:
+        - tokoxl
+      summary: Info Nomor - doCheckTenure
+      description: Info Nomor - doCheckTenure
+      operationId: tokoxlDoCheckTenure785849825555702
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: msisdn
+          description: msisdn
+          type: string
+          required: true
+          in: query
+      responses:
+        '200':
+          description: ok
+      security: []
+  /tokoxl/getListBonusXcf:
+    get:
+      tags:
+        - tokoxl
+      summary: Info Nomor - getListBonusXcf
+      description: Info Nomor - getListBonusXcf
+      operationId: tokoxlGetListBonusXcf3795450916989611
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: msisdn
+          description: msisdn
+          type: string
+          required: true
+          in: query
+      responses:
+        '200':
+          description: ok
+      security: []
+  /tokoxl/checkEligibilitySender:
+    get:
+      tags:
+        - tokoxl
+      summary: Cek Transfer Kuota - checkEligibilitySender
+      description: Cek Transfer Kuota - checkEligibilitySender
+      operationId: tokoxlCheckEligibilitySender7632689976042388
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: msisdn
+          description: msisdn
+          type: string
+          required: true
+          in: query
+      responses:
+        '200':
+          description: ok
+      security: []
+  /tokoxl/checkEligibilityRecipient:
+    get:
+      tags:
+        - tokoxl
+      summary: Cek Transfer Kuota - checkEligibilityRecipient
+      description: Cek Transfer Kuota - checkEligibilityRecipient
+      operationId: tokoxlCheckEligibilityRecipient21418220763860818
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: msisdn
+          description: msisdn
+          type: string
+          required: true
+          in: query
+      responses:
+        '200':
+          description: ok
+      security: []
+  /tokoxl/checkVoucherValidity:
+    get:
+      tags:
+        - tokoxl
+      summary: Cek Voucher Hybrid
+      description: Cek Voucher Hybrid
+      operationId: tokoxlCheckVoucherValidity3679664933630027
+      consumes: []
+      produces:
+        - application/json
+      parameters:
+        - name: msisdn
+          description: msisdn
+          type: string
+          required: true
+          in: query
+        - name: voucherCode
+          description: voucherCode
+          type: string
+          required: true
+          in: query
+        - name: cgi
+          description: cgi
+          type: string
+          required: true
+          in: query
+      responses:
+        '200':
+          description: ok
+      security: []
+securityDefinitions: {}
+definitions:
+  authSignup:
+    type: object
+    properties:
+      username:
+        type: string
+  authSignin:
+    type: object
+    properties:
+      username:
+        type: string
+  authChallenge:
+    type: object
+    properties:
+      username:
+        type: string
+      password:
+        type: string
+  bank:
+    type: object
+    properties:
+      corp_id:
+        type: string
+      user_id:
+        type: string
+      password:
+        type: string
+      norek:
+        type: string
+      service:
+        type: string
+      auto_start:
+        type: string
+      interval:
+        type: string
+  sidompulConfig:
+    type: object
+    properties:
+      postEncrypt:
+        type: string
+      postPackage:
+        type: string
+      getTransactionhistory:
+        type: string
+      postW2p:
+        type: string
+      getDompulBalance:
+        type: string
+      getPulsaBalance:
+        type: string
+      getProductList:
+        type: string
+      postPackagePulsa:
+        type: string
+      getAwgStock:
+        type: string
+      getAwgTransactioninfo:
+        type: string
+      postAwgTransactionInfoDetail:
+        type: string
+      postAwgTembak:
+        type: string
+      getXwgStock:
+        type: string
+      getXwgTransactioninfo:
+        type: string
+      postXwgTransactionInfoDetail:
+        type: string
+      postXwgTembak:
+        type: string
+      getTransactionHistorydetail:
+        type: string
+  messenger:
+    type: object
+    properties:
+      username:
+        type: string
+      password:
+        type: string
+      service:
+        type: string
+      startup_login:
+        type: string
+      center:
+        type: string
+  messengerSend:
+    type: object
+    properties:
+      username:
+        type: string
+      service:
+        type: string
+      penerima:
+        type: string
+      pesan:
+        type: string

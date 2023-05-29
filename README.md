@@ -22,27 +22,35 @@ npm start
 git pull
 ```
 
-### API
+### DOCS
+
+connect [docs](https://ndiing.gitbook.io/connect/)
+
+### REST
 
 ### OtomaX
-- [x] [auth.rest](./rest/auth.rest)
-- [x] [otomax.rest](./rest/otomax.rest)
+
+-   [x] [auth.rest](./rest/auth.rest)
+-   [x] [otomax.rest](./rest/otomax.rest)
 
 ### Bank
-- [x] [bnidirect.rest](./rest/bnidirect.rest)
-- [x] [ibank.rest](./rest/ibank.rest)
-- [x] [newbiz.rest](./rest/newbiz.rest)
-- [ ] [mcm2.rest](./rest/mcm2.rest)
-- [ ] [klikbca.rest](./rest/klikbca.rest)
+
+-   [x] [bnidirect.rest](./rest/bnidirect.rest)
+-   [x] [ibank.rest](./rest/ibank.rest)
+-   [x] [newbiz.rest](./rest/newbiz.rest)
+-   [ ] [mcm2.rest](./rest/mcm2.rest)
+-   [ ] [klikbca.rest](./rest/klikbca.rest)
 
 ### Messenger
-- [x] [whatsapp.rest](./rest/whatsapp.rest)
-- [x] [telegram.rest](./rest/telegram.rest)
-- [x] [xmpp.rest](./rest/xmpp.rest)
+
+-   [x] [whatsapp.rest](./rest/whatsapp.rest)
+-   [x] [telegram.rest](./rest/telegram.rest)
+-   [x] [xmpp.rest](./rest/xmpp.rest)
 
 ## Provider
-- [x] [sidompul.rest](./rest/sidompul.rest)
-- [x] [tokoxl.rest](./rest/tokoxl.rest)
+
+-   [x] [sidompul.rest](./rest/sidompul.rest)
+-   [x] [tokoxl.rest](./rest/tokoxl.rest)
 
 # Changelog
 
