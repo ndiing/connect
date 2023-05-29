@@ -25,22 +25,24 @@ git pull
 ### API
 
 ### OtomaX
-- [otomax.rest](./rest/otomax.rest)
-- [auth.rest](./rest/auth.rest)
+- [x] [otomax.rest](./rest/otomax.rest)
+- [x] [auth.rest](./rest/auth.rest)
 
 ### Bank
-- [bnidirect.rest](./rest/bnidirect.rest)
-- [ibank.rest](./rest/ibank.rest)
-- [sidompul.rest](./rest/sidompul.rest)
+- [x] [bnidirect.rest](./rest/bnidirect.rest)
+- [x] [ibank.rest](./rest/ibank.rest)
+- [x] [newbiz.rest](./rest/newbiz.rest)
+- [ ] [mcm2.rest](./rest/mcm2.rest)
+- [ ] [klikbca.rest](./rest/klikbca.rest)
 
 ### Messenger
-- [whatsapp.rest](./rest/whatsapp.rest)
-- [telegram.rest](./rest/telegram.rest)
-- [xmpp.rest](./rest/xmpp.rest)
+- [x] [whatsapp.rest](./rest/whatsapp.rest)
+- [x] [telegram.rest](./rest/telegram.rest)
+- [x] [xmpp.rest](./rest/xmpp.rest)
 
 ## Provider
-- [newbiz.rest](./rest/newbiz.rest)
-- [tokoxl.rest](./rest/tokoxl.rest)
+- [x] [sidompul.rest](./rest/sidompul.rest)
+- [x] [tokoxl.rest](./rest/tokoxl.rest)
 
 # Changelog
 
