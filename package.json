@@ -2,6 +2,7 @@
     "devDependencies": {
         "@babel/core": "^7.22.1",
         "@babel/preset-env": "^7.22.2",
+        "@herberttn/bytenode-webpack-plugin": "^2.3.1",
         "@vercel/webpack-asset-relocator-loader": "^1.7.3",
         "@webpack-cli/generators": "^3.0.4",
         "babel-loader": "^9.1.2",
