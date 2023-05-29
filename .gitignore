@@ -91,21 +91,8 @@ typings/
 # Electron-Forge
 out/
 
-src
-resources
-forge.config.js
-index.js
+src/
+.babelrc
 nodemon.json
-package-lock.json
-package.json
-webpack.main.config.js
-webpack.plugins.js
-webpack.renderer.config.js
-webpack.rules.js
 webpack.config.js
 webpack.server.config.js
-yarn.lock
-!resources/
-!resources/server/index.js
-!resources/renderer/index.js
-!resources/package.json
