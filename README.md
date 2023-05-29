@@ -1,6 +1,6 @@
 # Connect
 
-[![Connect][connect.png]](https://github.com/ndiing/connect.git)
+[![Connect](./connect.png)](https://github.com/ndiing/connect.git)
 
 ## Prasyarat
 
