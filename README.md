@@ -45,6 +45,8 @@ git pull
 
 ## REST
 
+[Dokumentasi](https://ndiing.gitbook.io/connect/) API
+
 ### OtomaX
 
 -   [x] **[auth.rest](./rest/auth.rest)**
