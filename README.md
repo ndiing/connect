@@ -24,7 +24,8 @@ Mulailah dengan mengkloning repo ini di mesin lokal Anda:
 git clone https://github.com/ndiing/connect.git
 cd connect
 ```
-<!-- 
+
+<!--
 Untuk menginstal, jalankan:
 
 ```bash
@@ -72,3 +73,7 @@ git pull
 
 -   [x] **[sidompul.rest](./rest/sidompul.rest)**
 -   [x] **[tokoxl.rest](./rest/tokoxl.rest)**
+
+## Catatan
+
+-   `connect.exe` kompatibilitas terbatas, dihentikan sejak `v1.0.37`
