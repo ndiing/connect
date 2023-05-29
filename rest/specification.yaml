@@ -1,7 +1,7 @@
 swagger: '2.0'
 info:
   description: Connect
-  version: 1.2.9
+  version: 1.2.30
   title: Connect
   termsOfService: ''
   contact:
@@ -18,6 +18,8 @@ tags:
     description: bnidirect.rest
   - name: ibank.rest
     description: ibank.rest
+  - name: mcm2.rest
+    description: mcm2.rest
   - name: newbiz.rest
     description: newbiz.rest
   - name: otomax.rest
@@ -42,7 +44,7 @@ paths:
         - auth
       summary: Registration
       description: Registration
-      operationId: authSignup5930198608731925
+      operationId: authSignup3884279010361644
       consumes:
         - application/json
       produces:
@@ -75,7 +77,7 @@ paths:
         - auth
       summary: Login
       description: Login
-      operationId: authSignin7305929291629352
+      operationId: authSignin2682257411864535
       consumes:
         - application/json
       produces:
@@ -108,7 +110,7 @@ paths:
         - auth
       summary: Verify / Create token
       description: Verify / Create token
-      operationId: authChallenge05791963732145544
+      operationId: authChallenge5024979894402952
       consumes:
         - application/json
       produces:
@@ -141,7 +143,7 @@ paths:
         - auth
       summary: Refresh / Renew token
       description: Refresh / Renew token
-      operationId: authRefresh2938907141356153
+      operationId: authRefresh8073344280216921
       consumes: []
       produces:
         - application/json
@@ -161,7 +163,7 @@ paths:
         - auth
       summary: Logout / Revoke token
       description: Logout / Revoke token
-      operationId: authSignout25610733241748074
+      operationId: authSignout5911420403790533
       consumes: []
       produces:
         - application/json
@@ -181,7 +183,7 @@ paths:
         - bank
       summary: Tambah bank
       description: Tambah bank
-      operationId: bank7198843436222133
+      operationId: bank9532691535024884
       consumes:
         - application/json
       produces:
@@ -208,7 +210,7 @@ paths:
         - bank
       summary: Bank account
       description: Bank account
-      operationId: bank7687159872815221
+      operationId: bank12448715043501202
       consumes: []
       produces:
         - application/json
@@ -227,7 +229,7 @@ paths:
         - bank
       summary: Setting...
       description: Setting...
-      operationId: bank8575827439277082
+      operationId: bank3733847497184999
       consumes:
         - application/json
       produces:
@@ -254,7 +256,7 @@ paths:
         - bank
       summary: Remove
       description: Remove
-      operationId: bank9009925098642286
+      operationId: bank6337410073988297
       consumes: []
       produces:
         - application/json
@@ -274,7 +276,7 @@ paths:
         - bank
       summary: Login
       description: Login
-      operationId: bankLogin9113431965818968
+      operationId: bankLogin8975306863104717
       consumes: []
       produces:
         - application/json
@@ -294,7 +296,7 @@ paths:
         - bank
       summary: Logout
       description: Logout
-      operationId: bankLogout5126901328714448
+      operationId: bankLogout7922721566468536
       consumes: []
       produces:
         - application/json
@@ -314,7 +316,7 @@ paths:
         - bank
       summary: History
       description: History
-      operationId: bankHistory46039868876486567
+      operationId: bankHistory7510998171616114
       consumes: []
       produces:
         - application/json
@@ -334,7 +336,7 @@ paths:
         - otomax
       summary: otomax
       description: otomax
-      operationId: otomax10569512002569725
+      operationId: otomax8886507646617645
       consumes: []
       produces:
         - application/json
@@ -354,7 +356,7 @@ paths:
         - otomax
       summary: provider
       description: provider
-      operationId: otomaxProvider09496265212722488
+      operationId: otomaxProvider39862409477545047
       consumes: []
       produces:
         - application/json
@@ -376,7 +378,7 @@ paths:
         inbox?kode=&tgl_awal=&tgl_akhir=&pengirim=&tipe_pengirim=&pesan=&status=&page=&limit=
       description: >-
         inbox?kode=&tgl_awal=&tgl_akhir=&pengirim=&tipe_pengirim=&pesan=&status=&page=&limit=
-      operationId: otomaxInbox22967114743749217
+      operationId: otomaxInbox3733355826117182
       consumes: []
       produces:
         - application/json
@@ -398,7 +400,7 @@ paths:
         outbox?kode=&tgl_awal=&tgl_akhir=&pengirim=&tipe_pengirim=&pesan=&status=&page=&limit=
       description: >-
         outbox?kode=&tgl_awal=&tgl_akhir=&pengirim=&tipe_pengirim=&pesan=&status=&page=&limit=
-      operationId: otomaxOutbox440729894834472
+      operationId: otomaxOutbox13947309281922893
       consumes: []
       produces:
         - application/json
@@ -420,7 +422,7 @@ paths:
         mutasi?kode=&tanggal_awal=&tanggal_akhir=&jumlah=&keterangan=&jenis=&page=&limit=
       description: >-
         mutasi?kode=&tanggal_awal=&tanggal_akhir=&jumlah=&keterangan=&jenis=&page=&limit=
-      operationId: otomaxMutasi35876263017404053
+      operationId: otomaxMutasi09351544633494258
       consumes: []
       produces:
         - application/json
@@ -440,7 +442,7 @@ paths:
         - otomax
       summary: operator?kode=&nama=&page=&limit=
       description: operator?kode=&nama=&page=&limit=
-      operationId: otomaxOperator4649130534397561
+      operationId: otomaxOperator5912345215312875
       consumes: []
       produces:
         - application/json
@@ -460,7 +462,7 @@ paths:
         - otomax
       summary: produk?kode=&nama=&kode_operator=&nominal=&page=&limit=
       description: produk?kode=&nama=&kode_operator=&nominal=&page=&limit=
-      operationId: otomaxProduk15859461030580402
+      operationId: otomaxProduk4649994334358072
       consumes: []
       produces:
         - application/json
@@ -480,7 +482,7 @@ paths:
         - otomax
       summary: level
       description: level
-      operationId: otomaxLevel2728787782951887
+      operationId: otomaxLevel8408267754440071
       consumes: []
       produces:
         - application/json
@@ -500,7 +502,7 @@ paths:
         - otomax
       summary: reseller
       description: reseller
-      operationId: otomaxReseller35097827976877394
+      operationId: otomaxReseller9016625017854174
       consumes: []
       produces:
         - application/json
@@ -520,7 +522,7 @@ paths:
         - otomax
       summary: pengirim
       description: pengirim
-      operationId: otomaxPengirim8483712399247576
+      operationId: otomaxPengirim00733747354377412
       consumes: []
       produces:
         - application/json
@@ -540,7 +542,7 @@ paths:
         - otomax
       summary: parameter?grup=&nama=&name=
       description: parameter?grup=&nama=&name=
-      operationId: otomaxParameter6703275644353821
+      operationId: otomaxParameter5249951339026473
       consumes: []
       produces:
         - application/json
@@ -560,7 +562,7 @@ paths:
         - otomax
       summary: Aktifkan downline/reseller
       description: Aktifkan downline/reseller
-      operationId: otomaxInboxAktifkanDl8371309810213736
+      operationId: otomaxInboxAktifkanDl6066899433908579
       consumes: []
       produces:
         - application/json
@@ -590,7 +592,7 @@ paths:
         - otomax
       summary: Batalkan transaksi yang belum diproses
       description: Batalkan transaksi yang belum diproses
-      operationId: otomaxInboxBatalTransaksi975102486301344
+      operationId: otomaxInboxBatalTransaksi005327237964951825
       consumes: []
       produces:
         - application/json
@@ -620,7 +622,7 @@ paths:
         - otomax
       summary: Cancel balance transfer
       description: Cancel balance transfer
-      operationId: otomaxInboxBatalTransferSaldo39123276424951636
+      operationId: otomaxInboxBatalTransferSaldo41409610959697485
       consumes: []
       produces:
         - application/json
@@ -655,7 +657,7 @@ paths:
         - otomax
       summary: Cek harga produk
       description: Cek harga produk
-      operationId: otomaxInboxCekHarga1837126847822228
+      operationId: otomaxInboxCekHarga5785503384049204
       consumes: []
       produces:
         - application/json
@@ -680,7 +682,7 @@ paths:
         - otomax
       summary: Check downline's markup
       description: Check downline's markup
-      operationId: otomaxInboxCekMarkup8693835399364005
+      operationId: otomaxInboxCekMarkup7113399613149383
       consumes: []
       produces:
         - application/json
@@ -710,7 +712,7 @@ paths:
         - otomax
       summary: Check product markup
       description: Check product markup
-      operationId: otomaxInboxCekMarkupProduk41998867547029506
+      operationId: otomaxInboxCekMarkupProduk2287714131671137
       consumes: []
       produces:
         - application/json
@@ -745,7 +747,7 @@ paths:
         - otomax
       summary: Check all product markups
       description: Check all product markups
-      operationId: otomaxInboxCekMarkupProduk25700409584203854
+      operationId: otomaxInboxCekMarkupProduk27219505553860399
       consumes: []
       produces:
         - application/json
@@ -775,7 +777,7 @@ paths:
         - otomax
       summary: Cek N (lihat Setting.LimitCekMutasi) mutasi saldo/deposit terakhir
       description: Cek N (lihat Setting.LimitCekMutasi) mutasi saldo/deposit terakhir
-      operationId: otomaxInboxCekMutasi979556468668872
+      operationId: otomaxInboxCekMutasi8683842015216663
       consumes: []
       produces:
         - application/json
@@ -795,7 +797,7 @@ paths:
         - otomax
       summary: Cek mutasi saldo terakhir, khusus manual, tiket, dan transfer saldo
       description: Cek mutasi saldo terakhir, khusus manual, tiket, dan transfer saldo
-      operationId: otomaxInboxCekMutasi29971698252942649
+      operationId: otomaxInboxCekMutasi20669529903357764
       consumes: []
       produces:
         - application/json
@@ -815,7 +817,7 @@ paths:
         - otomax
       summary: Check current OID for OtomaX HTH
       description: Check current OID for OtomaX HTH
-      operationId: otomaxInboxCekOid9901750055117513
+      operationId: otomaxInboxCekOid962595727762976
       consumes: []
       produces:
         - application/json
@@ -840,7 +842,7 @@ paths:
         - otomax
       summary: Cek saldo akhir
       description: Cek saldo akhir
-      operationId: otomaxInboxCekSaldo6003812083655078
+      operationId: otomaxInboxCekSaldo7300625283577031
       consumes: []
       produces:
         - application/json
@@ -865,7 +867,7 @@ paths:
         - otomax
       summary: Cek saldo downline
       description: Cek saldo downline
-      operationId: otomaxInboxCekSaldoDl7524747422077367
+      operationId: otomaxInboxCekSaldoDl5818362051993309
       consumes: []
       produces:
         - application/json
@@ -890,7 +892,7 @@ paths:
         - otomax
       summary: Cek status transaksi
       description: Cek status transaksi
-      operationId: otomaxInboxCekStatusTransaksi9100300902049243
+      operationId: otomaxInboxCekStatusTransaksi7023368616830303
       consumes: []
       produces:
         - application/json
@@ -915,7 +917,7 @@ paths:
         - otomax
       summary: Cek status transaksi
       description: Cek status transaksi
-      operationId: otomaxInboxCekStatusTransaksi27948727473436177
+      operationId: otomaxInboxCekStatusTransaksi218727851324002498
       consumes: []
       produces:
         - application/json
@@ -940,7 +942,7 @@ paths:
         - otomax
       summary: Cek status transaksi
       description: Cek status transaksi
-      operationId: otomaxInboxCekStatusTransaksi35188452784648667
+      operationId: otomaxInboxCekStatusTransaksi320859642762656283
       consumes: []
       produces:
         - application/json
@@ -970,7 +972,7 @@ paths:
         - otomax
       summary: Cek status N (lihat Setting.LimitCekTransaksiAkhir) transaksi terakhir
       description: Cek status N (lihat Setting.LimitCekTransaksiAkhir) transaksi terakhir
-      operationId: otomaxInboxCekTransaksiAkhir44061973662541476
+      operationId: otomaxInboxCekTransaksiAkhir24689533078965753
       consumes: []
       produces:
         - application/json
@@ -990,7 +992,7 @@ paths:
         - otomax
       summary: Daftarkan downline/reseller baru
       description: Daftarkan downline/reseller baru
-      operationId: otomaxInboxDaftarDl8303142937666008
+      operationId: otomaxInboxDaftarDl4994558049459443
       consumes: []
       produces:
         - application/json
@@ -1030,7 +1032,7 @@ paths:
         - otomax
       summary: Daftarkan downline/reseller baru
       description: Daftarkan downline/reseller baru
-      operationId: otomaxInboxDaftarDl228766404739694407
+      operationId: otomaxInboxDaftarDl207596003738184809
       consumes: []
       produces:
         - application/json
@@ -1075,7 +1077,7 @@ paths:
         - otomax
       summary: Daftarkan downline/reseller baru
       description: Daftarkan downline/reseller baru
-      operationId: otomaxInboxDaftarDl33789651376004519
+      operationId: otomaxInboxDaftarDl36055465897869086
       consumes: []
       produces:
         - application/json
@@ -1120,7 +1122,7 @@ paths:
         - otomax
       summary: Registration of non member
       description: Registration of non member
-      operationId: otomaxInboxDaftarNonMember16940713113912698
+      operationId: otomaxInboxDaftarNonMember09564728291859925
       consumes: []
       produces:
         - application/json
@@ -1155,7 +1157,7 @@ paths:
         - otomax
       summary: Hapus pengirim tipe GTalk
       description: Hapus pengirim tipe GTalk
-      operationId: otomaxInboxHapusGtalk34258462392263933
+      operationId: otomaxInboxHapusGtalk6946244475764662
       consumes: []
       produces:
         - application/json
@@ -1185,7 +1187,7 @@ paths:
         - otomax
       summary: Hapus pengirim tipe GTalk untuk downline
       description: Hapus pengirim tipe GTalk untuk downline
-      operationId: otomaxInboxHapusGtalk2948309964576163
+      operationId: otomaxInboxHapusGtalk21394296335625047
       consumes: []
       produces:
         - application/json
@@ -1220,7 +1222,7 @@ paths:
         - otomax
       summary: Delete product markup
       description: Delete product markup
-      operationId: otomaxInboxHapusMarkupProduk780534296171379
+      operationId: otomaxInboxHapusMarkupProduk5151005990862816
       consumes: []
       produces:
         - application/json
@@ -1255,7 +1257,7 @@ paths:
         - otomax
       summary: Delete product markup
       description: Delete product markup
-      operationId: otomaxInboxHapusMarkupProduk254668758707101
+      operationId: otomaxInboxHapusMarkupProduk28802221838164035
       consumes: []
       produces:
         - application/json
@@ -1285,7 +1287,7 @@ paths:
         - otomax
       summary: Delete product markup
       description: Delete product markup
-      operationId: otomaxInboxHapusMarkupProduk32283975437072392
+      operationId: otomaxInboxHapusMarkupProduk36548114741055375
       consumes: []
       produces:
         - application/json
@@ -1315,7 +1317,7 @@ paths:
         - otomax
       summary: Hapus pengirim tipe SMS
       description: Hapus pengirim tipe SMS
-      operationId: otomaxInboxHapusNomor45810904473666225
+      operationId: otomaxInboxHapusNomor9612254239616442
       consumes: []
       produces:
         - application/json
@@ -1345,7 +1347,7 @@ paths:
         - otomax
       summary: Hapus pengirim tipe SMS
       description: Hapus pengirim tipe SMS
-      operationId: otomaxInboxHapusNomor239058699458178436
+      operationId: otomaxInboxHapusNomor25767698253904734
       consumes: []
       produces:
         - application/json
@@ -1380,7 +1382,7 @@ paths:
         - otomax
       summary: Hapus nomor WA
       description: Hapus nomor WA
-      operationId: otomaxInboxHapusWa47503738810911234
+      operationId: otomaxInboxHapusWa962784597557051
       consumes: []
       produces:
         - application/json
@@ -1410,7 +1412,7 @@ paths:
         - otomax
       summary: Hapus pengirim tipe YM
       description: Hapus pengirim tipe YM
-      operationId: otomaxInboxHapusYm044707187015643024
+      operationId: otomaxInboxHapusYm26611580047434025
       consumes: []
       produces:
         - application/json
@@ -1440,7 +1442,7 @@ paths:
         - otomax
       summary: Hapus pengirim tipe YM dari downline
       description: Hapus pengirim tipe YM dari downline
-      operationId: otomaxInboxHapusYm22866486588247168
+      operationId: otomaxInboxHapusYm24398323012313188
       consumes: []
       produces:
         - application/json
@@ -1475,7 +1477,7 @@ paths:
         - otomax
       summary: Cek laporan mutasi saldo per tanggal
       description: Cek laporan mutasi saldo per tanggal
-      operationId: otomaxInboxLaporanMutasi8434879286193278
+      operationId: otomaxInboxLaporanMutasi4050492434938002
       consumes: []
       produces:
         - application/json
@@ -1500,7 +1502,7 @@ paths:
         - otomax
       summary: Cek laporan transaksi per tanggal
       description: Cek laporan transaksi per tanggal
-      operationId: otomaxInboxLaporanTransaksi6265223319289128
+      operationId: otomaxInboxLaporanTransaksi009378323940854472
       consumes: []
       produces:
         - application/json
@@ -1525,7 +1527,7 @@ paths:
         - otomax
       summary: View gift list
       description: View gift list
-      operationId: otomaxInboxLihatHadiahPoin38563526664406256
+      operationId: otomaxInboxLihatHadiahPoin6025131940435784
       consumes: []
       produces:
         - application/json
@@ -1545,7 +1547,7 @@ paths:
         - otomax
       summary: Lihat daftar downline
       description: Lihat daftar downline
-      operationId: otomaxInboxListDl5306134545482142
+      operationId: otomaxInboxListDl8429344070938445
       consumes: []
       produces:
         - application/json
@@ -1565,7 +1567,7 @@ paths:
         - otomax
       summary: Lihat daftar downline dari downline (sub-downline)
       description: Lihat daftar downline dari downline (sub-downline)
-      operationId: otomaxInboxListDl221594629536870658
+      operationId: otomaxInboxListDl28171978726878035
       consumes: []
       produces:
         - application/json
@@ -1590,7 +1592,7 @@ paths:
         - otomax
       summary: Lihat daftar pengirim semua tipe
       description: Lihat daftar pengirim semua tipe
-      operationId: otomaxInboxListPengirim5790569952865008
+      operationId: otomaxInboxListPengirim2630231704898902
       consumes: []
       produces:
         - application/json
@@ -1610,7 +1612,7 @@ paths:
         - otomax
       summary: Lihat daftar pengirim tipe GTalk
       description: Lihat daftar pengirim tipe GTalk
-      operationId: otomaxInboxListPengirimGtalk8354145841017171
+      operationId: otomaxInboxListPengirimGtalk276257256449975
       consumes: []
       produces:
         - application/json
@@ -1630,7 +1632,7 @@ paths:
         - otomax
       summary: Lihat daftar pengirim tipe GTalk untuk downline
       description: Lihat daftar pengirim tipe GTalk untuk downline
-      operationId: otomaxInboxListPengirimGtalk214961402475743069
+      operationId: otomaxInboxListPengirimGtalk22550211272403351
       consumes: []
       produces:
         - application/json
@@ -1655,7 +1657,7 @@ paths:
         - otomax
       summary: Lihat daftar pengirim tipe SMS
       description: Lihat daftar pengirim tipe SMS
-      operationId: otomaxInboxListPengirimSms7850098886532462
+      operationId: otomaxInboxListPengirimSms3444244115924735
       consumes: []
       produces:
         - application/json
@@ -1675,7 +1677,7 @@ paths:
         - otomax
       summary: Lihat daftar pengirim tipe SMS dari downline
       description: Lihat daftar pengirim tipe SMS dari downline
-      operationId: otomaxInboxListPengirimSms2852632070420652
+      operationId: otomaxInboxListPengirimSms26714784738199877
       consumes: []
       produces:
         - application/json
@@ -1700,7 +1702,7 @@ paths:
         - otomax
       summary: Lihat daftar pengirim tipe YM
       description: Lihat daftar pengirim tipe YM
-      operationId: otomaxInboxListPengirimYm04241622631470854
+      operationId: otomaxInboxListPengirimYm6382834094925065
       consumes: []
       produces:
         - application/json
@@ -1720,7 +1722,7 @@ paths:
         - otomax
       summary: Lihat daftar pengirim tipe YM dari downline
       description: Lihat daftar pengirim tipe YM dari downline
-      operationId: otomaxInboxListPengirimYm26822534195190635
+      operationId: otomaxInboxListPengirimYm230188897521308267
       consumes: []
       produces:
         - application/json
@@ -1745,7 +1747,7 @@ paths:
         - otomax
       summary: Non-aktifkan downline/reseller
       description: Non-aktifkan downline/reseller
-      operationId: otomaxInboxNonAktifkanDl2857458504533028
+      operationId: otomaxInboxNonAktifkanDl9270731226912343
       consumes: []
       produces:
         - application/json
@@ -1775,7 +1777,7 @@ paths:
         - otomax
       summary: Reset pin member
       description: Reset pin member
-      operationId: otomaxInboxResetPin17139539701458806
+      operationId: otomaxInboxResetPin3586046676243859
       consumes: []
       produces:
         - application/json
@@ -1805,7 +1807,7 @@ paths:
         - otomax
       summary: Tambah pengirim tipe GTalk
       description: Tambah pengirim tipe GTalk
-      operationId: otomaxInboxTambahGtalk6592236505910216
+      operationId: otomaxInboxTambahGtalk5473484073417356
       consumes: []
       produces:
         - application/json
@@ -1835,7 +1837,7 @@ paths:
         - otomax
       summary: Tambah pengirim tipe GTalk untuk downline
       description: Tambah pengirim tipe GTalk untuk downline
-      operationId: otomaxInboxTambahGtalk232967827808165917
+      operationId: otomaxInboxTambahGtalk228047616040503986
       consumes: []
       produces:
         - application/json
@@ -1870,7 +1872,7 @@ paths:
         - otomax
       summary: Tambah pengirim tipe SMS
       description: Tambah pengirim tipe SMS
-      operationId: otomaxInboxTambahNomor6777445455809274
+      operationId: otomaxInboxTambahNomor43346376956709687
       consumes: []
       produces:
         - application/json
@@ -1900,7 +1902,7 @@ paths:
         - otomax
       summary: Tambah pengirim tipe SMS untuk downline
       description: Tambah pengirim tipe SMS untuk downline
-      operationId: otomaxInboxTambahNomor249627262676702943
+      operationId: otomaxInboxTambahNomor221539713354720513
       consumes: []
       produces:
         - application/json
@@ -1935,7 +1937,7 @@ paths:
         - otomax
       summary: Tambah nomor WA
       description: Tambah nomor WA
-      operationId: otomaxInboxTambahWa5244242347758952
+      operationId: otomaxInboxTambahWa056153099844090226
       consumes: []
       produces:
         - application/json
@@ -1965,7 +1967,7 @@ paths:
         - otomax
       summary: Tambah pengirim tipe YM
       description: Tambah pengirim tipe YM
-      operationId: otomaxInboxTambahYm5470318148166611
+      operationId: otomaxInboxTambahYm2539351546541919
       consumes: []
       produces:
         - application/json
@@ -1995,7 +1997,7 @@ paths:
         - otomax
       summary: Tambah pengirim tipe YM untuk downline
       description: Tambah pengirim tipe YM untuk downline
-      operationId: otomaxInboxTambahYm26303983531745421
+      operationId: otomaxInboxTambahYm29103796065017824
       consumes: []
       produces:
         - application/json
@@ -2030,7 +2032,7 @@ paths:
         - otomax
       summary: Tiket Deposit
       description: Tiket Deposit
-      operationId: otomaxInboxTiketDeposit9233075087949532
+      operationId: otomaxInboxTiketDeposit34004187538068087
       consumes: []
       produces:
         - application/json
@@ -2060,7 +2062,7 @@ paths:
         - otomax
       summary: Transaksi pengisian pulsa
       description: Transaksi pengisian pulsa
-      operationId: otomaxInboxTransaksi06587926944752653
+      operationId: otomaxInboxTransaksi4680818067103174
       consumes: []
       produces:
         - application/json
@@ -2095,7 +2097,7 @@ paths:
         - otomax
       summary: Transaksi pengisian pulsa
       description: Transaksi pengisian pulsa
-      operationId: otomaxInboxTransaksi106272635888684714
+      operationId: otomaxInboxTransaksi108314632121511916
       consumes: []
       produces:
         - application/json
@@ -2130,7 +2132,7 @@ paths:
         - otomax
       summary: Transaksi pengisian pulsa
       description: Transaksi pengisian pulsa
-      operationId: otomaxInboxTransaksi1133336208999072703
+      operationId: otomaxInboxTransaksi117516042456982392
       consumes: []
       produces:
         - application/json
@@ -2165,7 +2167,7 @@ paths:
         - otomax
       summary: Transaksi pengisian pulsa
       description: Transaksi pengisian pulsa
-      operationId: otomaxInboxTransaksi125746862175250789
+      operationId: otomaxInboxTransaksi12008510600131880652
       consumes: []
       produces:
         - application/json
@@ -2200,7 +2202,7 @@ paths:
         - otomax
       summary: Transaksi pengisian pulsa
       description: Transaksi pengisian pulsa
-      operationId: otomaxInboxTransaksi1334856159959351785
+      operationId: otomaxInboxTransaksi1319433450139220665
       consumes: []
       produces:
         - application/json
@@ -2235,7 +2237,7 @@ paths:
         - otomax
       summary: 'Transaksi pengisian pulsa '
       description: 'Transaksi pengisian pulsa '
-      operationId: otomaxInboxTransaksi1412500106270729194
+      operationId: otomaxInboxTransaksi141214528291124446
       consumes: []
       produces:
         - application/json
@@ -2275,7 +2277,7 @@ paths:
         - otomax
       summary: Transaksi pengisian pulsa
       description: Transaksi pengisian pulsa
-      operationId: otomaxInboxTransaksi157065394883479561
+      operationId: otomaxInboxTransaksi152539654298081486
       consumes: []
       produces:
         - application/json
@@ -2315,7 +2317,7 @@ paths:
         - otomax
       summary: Transaksi pengisian pulsa
       description: Transaksi pengisian pulsa
-      operationId: otomaxInboxTransaksi1602801294063878257
+      operationId: otomaxInboxTransaksi161577598408161225
       consumes: []
       produces:
         - application/json
@@ -2350,7 +2352,7 @@ paths:
         - otomax
       summary: Transaksi pengisian pulsa
       description: Transaksi pengisian pulsa
-      operationId: otomaxInboxTransaksi1723581821455958862
+      operationId: otomaxInboxTransaksi175166621120348602
       consumes: []
       produces:
         - application/json
@@ -2385,7 +2387,7 @@ paths:
         - otomax
       summary: Transaksi pengisian pulsa
       description: Transaksi pengisian pulsa
-      operationId: otomaxInboxTransaksi187087357705948318
+      operationId: otomaxInboxTransaksi186324467723195191
       consumes: []
       produces:
         - application/json
@@ -2420,7 +2422,7 @@ paths:
         - otomax
       summary: Transaksi pengisian pulsa
       description: Transaksi pengisian pulsa
-      operationId: otomaxInboxTransaksi192122924027092934
+      operationId: otomaxInboxTransaksi195887094378090605
       consumes: []
       produces:
         - application/json
@@ -2455,7 +2457,7 @@ paths:
         - otomax
       summary: Transaksi pengisian pulsa
       description: Transaksi pengisian pulsa
-      operationId: otomaxInboxTransaksi29997684344560656
+      operationId: otomaxInboxTransaksi26363323432071286
       consumes: []
       produces:
         - application/json
@@ -2490,7 +2492,7 @@ paths:
         - otomax
       summary: Transaksi pengisian pulsa
       description: Transaksi pengisian pulsa
-      operationId: otomaxInboxTransaksi206294326076931875
+      operationId: otomaxInboxTransaksi205496909287386786
       consumes: []
       produces:
         - application/json
@@ -2525,7 +2527,7 @@ paths:
         - otomax
       summary: Transaksi pengisian pulsa
       description: Transaksi pengisian pulsa
-      operationId: otomaxInboxTransaksi2142628815209123894
+      operationId: otomaxInboxTransaksi215662951165113992
       consumes: []
       produces:
         - application/json
@@ -2560,7 +2562,7 @@ paths:
         - otomax
       summary: Transaksi pengisian pulsa
       description: Transaksi pengisian pulsa
-      operationId: otomaxInboxTransaksi227538158953997587
+      operationId: otomaxInboxTransaksi229504922549591002
       consumes: []
       produces:
         - application/json
@@ -2595,7 +2597,7 @@ paths:
         - otomax
       summary: Transaksi pengisian pulsa
       description: Transaksi pengisian pulsa
-      operationId: otomaxInboxTransaksi2307226750224690082
+      operationId: otomaxInboxTransaksi231761025557043312
       consumes: []
       produces:
         - application/json
@@ -2635,7 +2637,7 @@ paths:
         - otomax
       summary: Transaksi pengisian pulsa
       description: Transaksi pengisian pulsa
-      operationId: otomaxInboxTransaksi2439145132447496556
+      operationId: otomaxInboxTransaksi243761571338650431
       consumes: []
       produces:
         - application/json
@@ -2680,7 +2682,7 @@ paths:
         - otomax
       summary: Transaksi pengisian pulsa
       description: Transaksi pengisian pulsa
-      operationId: otomaxInboxTransaksi258577301116350784
+      operationId: otomaxInboxTransaksi2506550495214847207
       consumes: []
       produces:
         - application/json
@@ -2720,7 +2722,7 @@ paths:
         - otomax
       summary: Transaksi pengisian pulsa
       description: Transaksi pengisian pulsa
-      operationId: otomaxInboxTransaksi268637130720272173
+      operationId: otomaxInboxTransaksi26716807219694019
       consumes: []
       produces:
         - application/json
@@ -2760,7 +2762,7 @@ paths:
         - otomax
       summary: Transaksi pengisian pulsa
       description: Transaksi pengisian pulsa
-      operationId: otomaxInboxTransaksi277338481831048225
+      operationId: otomaxInboxTransaksi275370305991942166
       consumes: []
       produces:
         - application/json
@@ -2780,7 +2782,7 @@ paths:
         - otomax
       summary: Transaksi pengisian pulsa
       description: Transaksi pengisian pulsa
-      operationId: otomaxInboxTransaksi28987233591488474
+      operationId: otomaxInboxTransaksi287905534452799072
       consumes: []
       produces:
         - application/json
@@ -2820,7 +2822,7 @@ paths:
         - otomax
       summary: Transaksi pengisian pulsa
       description: Transaksi pengisian pulsa
-      operationId: otomaxInboxTransaksi296957895706751611
+      operationId: otomaxInboxTransaksi295922070539120599
       consumes: []
       produces:
         - application/json
@@ -2860,7 +2862,7 @@ paths:
         - otomax
       summary: Transaksi pengisian pulsa
       description: Transaksi pengisian pulsa
-      operationId: otomaxInboxTransaksi327212024249751954
+      operationId: otomaxInboxTransaksi33949309852346865
       consumes: []
       produces:
         - application/json
@@ -2905,7 +2907,7 @@ paths:
         - otomax
       summary: Transaksi pengisian pulsa
       description: Transaksi pengisian pulsa
-      operationId: otomaxInboxTransaksi423257813427455898
+      operationId: otomaxInboxTransaksi40404076542919074
       consumes: []
       produces:
         - application/json
@@ -2950,7 +2952,7 @@ paths:
         - otomax
       summary: Transaksi pengisian pulsa
       description: Transaksi pengisian pulsa
-      operationId: otomaxInboxTransaksi5788627352450632
+      operationId: otomaxInboxTransaksi57024905516669377
       consumes: []
       produces:
         - application/json
@@ -2970,7 +2972,7 @@ paths:
         - otomax
       summary: Transaksi pengisian pulsa
       description: Transaksi pengisian pulsa
-      operationId: otomaxInboxTransaksi67181139317098049
+      operationId: otomaxInboxTransaksi629091560280245155
       consumes: []
       produces:
         - application/json
@@ -3000,7 +3002,7 @@ paths:
         - otomax
       summary: Transaksi pengisian pulsa
       description: Transaksi pengisian pulsa
-      operationId: otomaxInboxTransaksi717590431274769314
+      operationId: otomaxInboxTransaksi77203258582305814
       consumes: []
       produces:
         - application/json
@@ -3025,7 +3027,7 @@ paths:
         - otomax
       summary: Transaksi pengisian pulsa
       description: Transaksi pengisian pulsa
-      operationId: otomaxInboxTransaksi86088060145352421
+      operationId: otomaxInboxTransaksi87458757520361761
       consumes: []
       produces:
         - application/json
@@ -3050,7 +3052,7 @@ paths:
         - otomax
       summary: Transaksi pengisian pulsa
       description: Transaksi pengisian pulsa
-      operationId: otomaxInboxTransaksi97624959302485408
+      operationId: otomaxInboxTransaksi94854732610179253
       consumes: []
       produces:
         - application/json
@@ -3080,7 +3082,7 @@ paths:
         - otomax
       summary: Transaksi pengisian pulsa TANPA pengecekan dobel
       description: Transaksi pengisian pulsa TANPA pengecekan dobel
-      operationId: otomaxInboxTransaksiBebasDobel3848444495476915
+      operationId: otomaxInboxTransaksiBebasDobel9894063521566756
       consumes: []
       produces:
         - application/json
@@ -3100,7 +3102,7 @@ paths:
         - otomax
       summary: Transfer saldo/deposit ke downline/reseller
       description: Transfer saldo/deposit ke downline/reseller
-      operationId: otomaxInboxTransferSaldo28933977133010225
+      operationId: otomaxInboxTransferSaldo42544876685895394
       consumes: []
       produces:
         - application/json
@@ -3135,7 +3137,7 @@ paths:
         - otomax
       summary: Allows transfer balance across the membership network
       description: Allows transfer balance across the membership network
-      operationId: otomaxInboxTransferSaldoLintas5711221371932036
+      operationId: otomaxInboxTransferSaldoLintas44459818324491174
       consumes: []
       produces:
         - application/json
@@ -3155,7 +3157,7 @@ paths:
         - otomax
       summary: Tukar komisi tunda dalam bentuk deposit
       description: Tukar komisi tunda dalam bentuk deposit
-      operationId: otomaxInboxTukarKomisi2630754241247475
+      operationId: otomaxInboxTukarKomisi8068777116506938
       consumes: []
       produces:
         - application/json
@@ -3185,7 +3187,7 @@ paths:
         - otomax
       summary: Tukar semua komisi tunda dalam bentuk deposit
       description: Tukar semua komisi tunda dalam bentuk deposit
-      operationId: otomaxInboxTukarKomisi207644376297752853
+      operationId: otomaxInboxTukarKomisi230718647781256503
       consumes: []
       produces:
         - application/json
@@ -3205,7 +3207,7 @@ paths:
         - otomax
       summary: Menukar poin
       description: Menukar poin
-      operationId: otomaxInboxTukarPoin17814069861867776
+      operationId: otomaxInboxTukarPoin29575381223283026
       consumes: []
       produces:
         - application/json
@@ -3235,7 +3237,7 @@ paths:
         - otomax
       summary: Change IP Address
       description: Change IP Address
-      operationId: otomaxInboxUbahAlamatIp6108518403119034
+      operationId: otomaxInboxUbahAlamatIp36329440403936775
       consumes: []
       produces:
         - application/json
@@ -3265,7 +3267,7 @@ paths:
         - otomax
       summary: Ubah level downline
       description: Ubah level downline
-      operationId: otomaxInboxUbahLevel2079337685442686
+      operationId: otomaxInboxUbahLevel2645686068801094
       consumes: []
       produces:
         - application/json
@@ -3300,7 +3302,7 @@ paths:
         - otomax
       summary: Change downline's markup
       description: Change downline's markup
-      operationId: otomaxInboxUbahMarkup006579957968973593
+      operationId: otomaxInboxUbahMarkup4356249763854494
       consumes: []
       produces:
         - application/json
@@ -3335,7 +3337,7 @@ paths:
         - otomax
       summary: Change product markup
       description: Change product markup
-      operationId: otomaxInboxUbahMarkupProduk5436749090315587
+      operationId: otomaxInboxUbahMarkupProduk8618007994850385
       consumes: []
       produces:
         - application/json
@@ -3375,7 +3377,7 @@ paths:
         - otomax
       summary: Change product markup for all downlines
       description: Change product markup for all downlines
-      operationId: otomaxInboxUbahMarkupProduk28036555383539927
+      operationId: otomaxInboxUbahMarkupProduk27463198956492068
       consumes: []
       produces:
         - application/json
@@ -3410,7 +3412,7 @@ paths:
         - otomax
       summary: Ubah nama
       description: Ubah nama
-      operationId: otomaxInboxUbahNama11803217306951663
+      operationId: otomaxInboxUbahNama9407450657543923
       consumes: []
       produces:
         - application/json
@@ -3440,7 +3442,7 @@ paths:
         - otomax
       summary: Change OID for OtomaX HTH
       description: Change OID for OtomaX HTH
-      operationId: otomaxInboxUbahOid5912793266557614
+      operationId: otomaxInboxUbahOid148976068907146
       consumes: []
       produces:
         - application/json
@@ -3470,7 +3472,7 @@ paths:
         - otomax
       summary: Change IP Password
       description: Change IP Password
-      operationId: otomaxInboxUbahPasswordIp3982548623408557
+      operationId: otomaxInboxUbahPasswordIp7764940337508208
       consumes: []
       produces:
         - application/json
@@ -3505,7 +3507,7 @@ paths:
         - otomax
       summary: Ubah PIN
       description: Ubah PIN
-      operationId: otomaxInboxUbahPin5027497346134064
+      operationId: otomaxInboxUbahPin5991350978356509
       consumes: []
       produces:
         - application/json
@@ -3535,7 +3537,7 @@ paths:
         - otomax
       summary: Change Report URL
       description: Change Report URL
-      operationId: otomaxInboxUbahReportUrl9135967551869415
+      operationId: otomaxInboxUbahReportUrl22041480605105268
       consumes: []
       produces:
         - application/json
@@ -3565,7 +3567,7 @@ paths:
         - sidompul
       summary: config
       description: config
-      operationId: sidompulConfig18143563385940986
+      operationId: sidompulConfig42150307095967143
       consumes: []
       produces:
         - application/json
@@ -3579,7 +3581,7 @@ paths:
         - sidompul
       summary: config
       description: config
-      operationId: sidompulConfig5493859571473749
+      operationId: sidompulConfig2468130494348464
       consumes:
         - application/json
       produces:
@@ -3607,7 +3609,7 @@ paths:
         - sidompul
       summary: Get Token
       description: Get Token
-      operationId: sidompulToken6056454451133617
+      operationId: sidompulToken1090758215374108
       consumes: []
       produces:
         - application/json
@@ -3637,7 +3639,7 @@ paths:
         - sidompul
       summary: Encrypt
       description: Encrypt
-      operationId: sidompulPostEncrypt33868208579371983
+      operationId: sidompulPostEncrypt4107268219344298
       consumes: []
       produces:
         - application/json
@@ -3657,7 +3659,7 @@ paths:
         - sidompul
       summary: Purchase Package
       description: Purchase Package
-      operationId: sidompulPostPackage2959221035591866
+      operationId: sidompulPostPackage6842150529292805
       consumes: []
       produces:
         - application/json
@@ -3687,7 +3689,7 @@ paths:
         - sidompul
       summary: Transaction History
       description: Transaction History
-      operationId: sidompulGetTransactionhistory5345618229682005
+      operationId: sidompulGetTransactionhistory6345230808904798
       consumes: []
       produces:
         - application/json
@@ -3712,7 +3714,7 @@ paths:
         - sidompul
       summary: Reload Pulsa (W2P)
       description: Reload Pulsa (W2P)
-      operationId: sidompulPostW2p07843134880559521
+      operationId: sidompulPostW2p650939067817224
       consumes: []
       produces:
         - application/json
@@ -3742,7 +3744,7 @@ paths:
         - sidompul
       summary: Get Dompul Balance
       description: Get Dompul Balance
-      operationId: sidompulGetDompulBalance11583799189766264
+      operationId: sidompulGetDompulBalance15152837433829514
       consumes: []
       produces:
         - application/json
@@ -3757,7 +3759,7 @@ paths:
         - sidompul
       summary: Get Pulsa Balance
       description: Get Pulsa Balance
-      operationId: sidompulGetPulsaBalance4237761971580818
+      operationId: sidompulGetPulsaBalance3208863522390468
       consumes: []
       produces:
         - application/json
@@ -3772,7 +3774,7 @@ paths:
         - sidompul
       summary: Get List Product Code
       description: Get List Product Code
-      operationId: sidompulGetProductList20318094168127976
+      operationId: sidompulGetProductList9402104040465284
       consumes: []
       produces:
         - application/json
@@ -3787,7 +3789,7 @@ paths:
         - sidompul
       summary: Purchase Package Deduct Pulsa
       description: Purchase Package Deduct Pulsa
-      operationId: sidompulPostPackagePulsa10665431767606703
+      operationId: sidompulPostPackagePulsa09386083231067244
       consumes: []
       produces:
         - application/json
@@ -3817,7 +3819,7 @@ paths:
         - sidompul
       summary: AWG Get Stock
       description: AWG Get Stock
-      operationId: sidompulGetAwgStock9430997213948165
+      operationId: sidompulGetAwgStock7800950030847991
       consumes: []
       produces:
         - application/json
@@ -3832,7 +3834,7 @@ paths:
         - sidompul
       summary: AWG Get Info Transaction
       description: AWG Get Info Transaction
-      operationId: sidompulGetAwgTransactioninfo829917817533459
+      operationId: sidompulGetAwgTransactioninfo3631808177052118
       consumes: []
       produces:
         - application/json
@@ -3862,7 +3864,7 @@ paths:
         - sidompul
       summary: AWG Get Info Transaction Detail
       description: AWG Get Info Transaction Detail
-      operationId: sidompulPostAwgTransactionInfoDetail2665262674573208
+      operationId: sidompulPostAwgTransactionInfoDetail6300000222595841
       consumes: []
       produces:
         - application/json
@@ -3887,7 +3889,7 @@ paths:
         - sidompul
       summary: AWG Inject Stock
       description: AWG Inject Stock
-      operationId: sidompulPostAwgTembak18177625479943016
+      operationId: sidompulPostAwgTembak7733936571814577
       consumes: []
       produces:
         - application/json
@@ -3927,7 +3929,7 @@ paths:
         - sidompul
       summary: XWG Get Stock
       description: XWG Get Stock
-      operationId: sidompulGetXwgStock7405874538906492
+      operationId: sidompulGetXwgStock9592532595472909
       consumes: []
       produces:
         - application/json
@@ -3947,7 +3949,7 @@ paths:
         - sidompul
       summary: XWG Get Info Transaction
       description: XWG Get Info Transaction
-      operationId: sidompulGetXwgTransactioninfo15507992574720286
+      operationId: sidompulGetXwgTransactioninfo053138404136668704
       consumes: []
       produces:
         - application/json
@@ -3977,7 +3979,7 @@ paths:
         - sidompul
       summary: XWG Get Info Transaction Detail
       description: XWG Get Info Transaction Detail
-      operationId: sidompulPostXwgTransactionInfoDetail3215999344545273
+      operationId: sidompulPostXwgTransactionInfoDetail15019987452415418
       consumes: []
       produces:
         - application/json
@@ -4002,7 +4004,7 @@ paths:
         - sidompul
       summary: XWG Inject Stock
       description: XWG Inject Stock
-      operationId: sidompulPostXwgTembak4936599785136482
+      operationId: sidompulPostXwgTembak4248243901681312
       consumes: []
       produces:
         - application/json
@@ -4042,7 +4044,7 @@ paths:
         - sidompul
       summary: Transaction History Detail
       description: Transaction History Detail
-      operationId: sidompulGetTransactionHistorydetail5506885800516894
+      operationId: sidompulGetTransactionHistorydetail8863197156893614
       consumes: []
       produces:
         - application/json
@@ -4072,7 +4074,7 @@ paths:
         - messenger
       summary: Tambah center
       description: Tambah center
-      operationId: messenger8705121250708241
+      operationId: messenger568488154475006
       consumes:
         - application/json
       produces:
@@ -4099,7 +4101,7 @@ paths:
         - messenger
       summary: Center account
       description: Center account
-      operationId: messenger15315680479423244
+      operationId: messenger7817549865036633
       consumes: []
       produces:
         - application/json
@@ -4118,7 +4120,7 @@ paths:
         - messenger
       summary: Setting...
       description: Setting...
-      operationId: messenger6969349427743814
+      operationId: messenger9261675322547811
       consumes:
         - application/json
       produces:
@@ -4145,7 +4147,7 @@ paths:
         - messenger
       summary: Remove
       description: Remove
-      operationId: messenger1851083907460318
+      operationId: messenger6787249487691815
       consumes: []
       produces:
         - application/json
@@ -4165,7 +4167,7 @@ paths:
         - messenger
       summary: Login
       description: Login
-      operationId: messengerStart6549942766522292
+      operationId: messengerStart8110858870109676
       consumes: []
       produces:
         - application/json
@@ -4185,7 +4187,7 @@ paths:
         - messenger
       summary: Logout
       description: Logout
-      operationId: messengerStop7552937611842327
+      operationId: messengerStop6772361766721855
       consumes: []
       produces:
         - application/json
@@ -4205,7 +4207,7 @@ paths:
         - messenger
       summary: Kirim
       description: Kirim
-      operationId: messengerSend7861508949250076
+      operationId: messengerSend6020277705434163
       consumes:
         - application/json
       produces:
@@ -4232,7 +4234,7 @@ paths:
         - messenger
       summary: Kirim
       description: Kirim
-      operationId: messengerSend9292721627262084
+      operationId: messengerSend4513986431118395
       consumes: []
       produces:
         - application/json
@@ -4267,7 +4269,7 @@ paths:
         - tokoxl
       summary: sendOTP
       description: sendOTP
-      operationId: tokoxlSendOTP7561919034696436
+      operationId: tokoxlSendOTP7188706822124606
       consumes: []
       produces:
         - application/json
@@ -4287,7 +4289,7 @@ paths:
         - tokoxl
       summary: login
       description: login
-      operationId: tokoxlLogin46409853015255864
+      operationId: tokoxlLogin6693053031566552
       consumes: []
       produces:
         - application/json
@@ -4317,7 +4319,7 @@ paths:
         - tokoxl
       summary: refreshToken
       description: refreshToken
-      operationId: tokoxlRefreshToken6406800837014843
+      operationId: tokoxlRefreshToken8009528957105172
       consumes: []
       produces:
         - application/json
@@ -4332,7 +4334,7 @@ paths:
         - tokoxl
       summary: logout
       description: logout
-      operationId: tokoxlLogout296218704941801
+      operationId: tokoxlLogout7235301581201747
       consumes: []
       produces:
         - application/json
@@ -4347,7 +4349,7 @@ paths:
         - tokoxl
       summary: getBalance
       description: getBalance
-      operationId: tokoxlGetBalance37563652544964965
+      operationId: tokoxlGetBalance36226191025243093
       consumes: []
       produces:
         - application/json
@@ -4362,7 +4364,7 @@ paths:
         - tokoxl
       summary: getProfile
       description: getProfile
-      operationId: tokoxlGetProfile6357590599150515
+      operationId: tokoxlGetProfile4269257228861829
       consumes: []
       produces:
         - application/json
@@ -4377,7 +4379,7 @@ paths:
         - tokoxl
       summary: getPulsaList
       description: getPulsaList
-      operationId: tokoxlGetPulsaList39274402259992836
+      operationId: tokoxlGetPulsaList811616300692992
       consumes: []
       produces:
         - application/json
@@ -4397,7 +4399,7 @@ paths:
         - tokoxl
       summary: Isi Pulsa
       description: Isi Pulsa
-      operationId: tokoxlWallet2person289821640978263
+      operationId: tokoxlWallet2person07912207574098407
       consumes: []
       produces:
         - application/json
@@ -4427,7 +4429,7 @@ paths:
         - tokoxl
       summary: getNboPackages
       description: getNboPackages
-      operationId: tokoxlGetNboPackages3256001023251891
+      operationId: tokoxlGetNboPackages5879506199258362
       consumes: []
       produces:
         - application/json
@@ -4457,7 +4459,7 @@ paths:
         - tokoxl
       summary: getProductCategoriesProfiling
       description: getProductCategoriesProfiling
-      operationId: tokoxlGetProductCategoriesProfiling212423181824007
+      operationId: tokoxlGetProductCategoriesProfiling2801109545182541
       consumes: []
       produces:
         - application/json
@@ -4477,7 +4479,7 @@ paths:
         - tokoxl
       summary: getProductItemListProfiling
       description: getProductItemListProfiling
-      operationId: tokoxlGetProductItemListProfiling5677962249046675
+      operationId: tokoxlGetProductItemListProfiling13805677169171982
       consumes: []
       produces:
         - application/json
@@ -4512,7 +4514,7 @@ paths:
         - tokoxl
       summary: getBestOffer
       description: getBestOffer
-      operationId: tokoxlGetBestOffer3090040572587476
+      operationId: tokoxlGetBestOffer27934815147005665
       consumes: []
       produces:
         - application/json
@@ -4547,7 +4549,7 @@ paths:
         - tokoxl
       summary: Isi Paket
       description: Isi Paket
-      operationId: tokoxlPackage2person6606050418334808
+      operationId: tokoxlPackage2person44749153679349685
       consumes: []
       produces:
         - application/json
@@ -4587,7 +4589,7 @@ paths:
         - tokoxl
       summary: CuanKu Spesial
       description: CuanKu Spesial
-      operationId: tokoxlReloadNboPackage312944853303633
+      operationId: tokoxlReloadNboPackage5080104939467895
       consumes: []
       produces:
         - application/json
@@ -4632,7 +4634,7 @@ paths:
         - tokoxl
       summary: getItemList
       description: getItemList
-      operationId: tokoxlGetItemList4292292081952387
+      operationId: tokoxlGetItemList7121190210877162
       consumes: []
       produces:
         - application/json
@@ -4667,7 +4669,7 @@ paths:
         - tokoxl
       summary: Tagging HOT
       description: Tagging HOT
-      operationId: tokoxlTaggingHotTransaction047903413541173556
+      operationId: tokoxlTaggingHotTransaction7592665193897536
       consumes: []
       produces:
         - application/json
@@ -4707,7 +4709,7 @@ paths:
         - tokoxl
       summary: Transfer Kuota
       description: Transfer Kuota
-      operationId: tokoxlHrnc2c03667072450693376
+      operationId: tokoxlHrnc2c23633664698557255
       consumes: []
       produces:
         - application/json
@@ -4737,7 +4739,7 @@ paths:
         - tokoxl
       summary: Cek Status Voucher
       description: Cek Status Voucher
-      operationId: tokoxlCheckVoucherStatus19206604072015687
+      operationId: tokoxlCheckVoucherStatus7046296146148476
       consumes: []
       produces:
         - application/json
@@ -4762,7 +4764,7 @@ paths:
         - tokoxl
       summary: Info Nomor - doCheckPrefix
       description: Info Nomor - doCheckPrefix
-      operationId: tokoxlDoCheckPrefix9084551990613994
+      operationId: tokoxlDoCheckPrefix45613710847061606
       consumes: []
       produces:
         - application/json
@@ -4782,7 +4784,7 @@ paths:
         - tokoxl
       summary: Info Nomor - doCheckDukcapil
       description: Info Nomor - doCheckDukcapil
-      operationId: tokoxlDoCheckDukcapil5393097790290551
+      operationId: tokoxlDoCheckDukcapil05820438929713223
       consumes: []
       produces:
         - application/json
@@ -4802,7 +4804,7 @@ paths:
         - tokoxl
       summary: Info Nomor - doCheckGraceDate
       description: Info Nomor - doCheckGraceDate
-      operationId: tokoxlDoCheckGraceDate6608520502579245
+      operationId: tokoxlDoCheckGraceDate4055757662007442
       consumes: []
       produces:
         - application/json
@@ -4822,7 +4824,7 @@ paths:
         - tokoxl
       summary: Info Nomor - doCheck4G
       description: Info Nomor - doCheck4G
-      operationId: tokoxlDoCheck4G8593573536553225
+      operationId: tokoxlDoCheck4G37252392918189003
       consumes: []
       produces:
         - application/json
@@ -4842,7 +4844,7 @@ paths:
         - tokoxl
       summary: Info Nomor - doCheckSPExpired
       description: Info Nomor - doCheckSPExpired
-      operationId: tokoxlDoCheckSPExpired738675214253182
+      operationId: tokoxlDoCheckSPExpired9896825281132602
       consumes: []
       produces:
         - application/json
@@ -4862,7 +4864,7 @@ paths:
         - tokoxl
       summary: Info Nomor - doCheckPackageInfo
       description: Info Nomor - doCheckPackageInfo
-      operationId: tokoxlDoCheckPackageInfo33640756503515457
+      operationId: tokoxlDoCheckPackageInfo5743515719924142
       consumes: []
       produces:
         - application/json
@@ -4882,7 +4884,7 @@ paths:
         - tokoxl
       summary: Info Nomor - doCheckTenure
       description: Info Nomor - doCheckTenure
-      operationId: tokoxlDoCheckTenure785849825555702
+      operationId: tokoxlDoCheckTenure35669043148532276
       consumes: []
       produces:
         - application/json
@@ -4902,7 +4904,7 @@ paths:
         - tokoxl
       summary: Info Nomor - getListBonusXcf
       description: Info Nomor - getListBonusXcf
-      operationId: tokoxlGetListBonusXcf3795450916989611
+      operationId: tokoxlGetListBonusXcf6001702928843042
       consumes: []
       produces:
         - application/json
@@ -4922,7 +4924,7 @@ paths:
         - tokoxl
       summary: Cek Transfer Kuota - checkEligibilitySender
       description: Cek Transfer Kuota - checkEligibilitySender
-      operationId: tokoxlCheckEligibilitySender7632689976042388
+      operationId: tokoxlCheckEligibilitySender5786940263678362
       consumes: []
       produces:
         - application/json
@@ -4942,7 +4944,7 @@ paths:
         - tokoxl
       summary: Cek Transfer Kuota - checkEligibilityRecipient
       description: Cek Transfer Kuota - checkEligibilityRecipient
-      operationId: tokoxlCheckEligibilityRecipient21418220763860818
+      operationId: tokoxlCheckEligibilityRecipient4559082357298514
       consumes: []
       produces:
         - application/json
@@ -4962,7 +4964,7 @@ paths:
         - tokoxl
       summary: Cek Voucher Hybrid
       description: Cek Voucher Hybrid
-      operationId: tokoxlCheckVoucherValidity3679664933630027
+      operationId: tokoxlCheckVoucherValidity4499246569996498
       consumes: []
       produces:
         - application/json
@@ -4993,93 +4995,181 @@ definitions:
     properties:
       username:
         type: string
+        example: '+6212345678916'
   authSignin:
     type: object
     properties:
       username:
         type: string
+        example: ''
   authChallenge:
     type: object
     properties:
       username:
         type: string
+        example: ''
       password:
         type: string
+        example: '524088'
   bank:
     type: object
     properties:
       corp_id:
         type: string
+        example: ''
       user_id:
         type: string
+        example: ''
       password:
         type: string
+        example: ''
       norek:
         type: string
+        example: ''
       service:
         type: string
+        example: newbiz
       auto_start:
         type: string
+        example: 1
       interval:
         type: string
+        example: 60000
   sidompulConfig:
     type: object
     properties:
       postEncrypt:
         type: string
+        example:
+          API: ''
+          API-ID: ''
+          API-KEY: ''
       postPackage:
         type: string
+        example:
+          API: ''
+          API-ID: ''
+          API-KEY: ''
       getTransactionhistory:
         type: string
+        example:
+          API: ''
+          API-ID: ''
+          API-KEY: ''
       postW2p:
         type: string
+        example:
+          API: ''
+          API-ID: ''
+          API-KEY: ''
       getDompulBalance:
         type: string
+        example:
+          API: ''
+          API-ID: ''
+          API-KEY: ''
       getPulsaBalance:
         type: string
+        example:
+          API: ''
+          API-ID: ''
+          API-KEY: ''
       getProductList:
         type: string
+        example:
+          API: ''
+          API-ID: ''
+          API-KEY: ''
       postPackagePulsa:
         type: string
+        example:
+          API: ''
+          API-ID: ''
+          API-KEY: ''
       getAwgStock:
         type: string
+        example:
+          API: ''
+          API-ID: ''
+          API-KEY: ''
       getAwgTransactioninfo:
         type: string
+        example:
+          API: ''
+          API-ID: ''
+          API-KEY: ''
       postAwgTransactionInfoDetail:
         type: string
+        example:
+          API: ''
+          API-ID: ''
+          API-KEY: ''
       postAwgTembak:
         type: string
+        example:
+          API: ''
+          API-ID: ''
+          API-KEY: ''
       getXwgStock:
         type: string
+        example:
+          API: ''
+          API-ID: ''
+          API-KEY: ''
       getXwgTransactioninfo:
         type: string
+        example:
+          API: ''
+          API-ID: ''
+          API-KEY: ''
       postXwgTransactionInfoDetail:
         type: string
+        example:
+          API: ''
+          API-ID: ''
+          API-KEY: ''
       postXwgTembak:
         type: string
+        example:
+          API: ''
+          API-ID: ''
+          API-KEY: ''
       getTransactionHistorydetail:
         type: string
+        example:
+          API: ''
+          API-ID: ''
+          API-KEY: ''
   messenger:
     type: object
     properties:
       username:
         type: string
+        example: ''
       password:
         type: string
+        example: ''
       service:
         type: string
+        example: xmpp
       startup_login:
         type: string
+        example: 1
       center:
         type: string
+        example: 1
   messengerSend:
     type: object
     properties:
       username:
         type: string
+        example: ''
       service:
         type: string
+        example: xmpp
       penerima:
         type: string
+        example: connect_client@jabb.im
       pesan:
         type: string
+        example: This message from server
