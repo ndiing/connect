@@ -34,7 +34,7 @@ npm install
 ### Memulai aplikasi
 
 ```bash
-npm start
+node dist/index.js
 ```
 
 ### Memperbarui aplikasi
