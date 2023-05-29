@@ -11,7 +11,7 @@ npm -v && node -v
 8.17.0
 v18.16.0
 ```
-
+<!-- 
 ## Instalasi
 
 Sebelum Anda menginstal: silakan baca Prasyarat
@@ -27,7 +27,7 @@ Untuk menginstal, jalankan:
 
 ```bash
 npm install
-```
+``` -->
 
 ## Penggunaan
 
