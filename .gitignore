@@ -110,3 +110,6 @@ dist/query.js
 specification.js
 client.js
 server.js
+
+data.json
+data2.json
