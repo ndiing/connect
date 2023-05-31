@@ -111,5 +111,4 @@ specification.js
 client.js
 server.js
 
-data.json
-data2.json
+users.json
