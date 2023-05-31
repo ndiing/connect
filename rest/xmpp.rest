@@ -7,6 +7,7 @@ Content-Type: application/json
     "password":"{{xmpp_password}}",
     "service":"xmpp",
     "startup_login":0,
+    "sender_speed":0,
     "center":1
 }
 
@@ -25,6 +26,7 @@ Content-Type: application/json
     "password":"{{xmpp_password}}",
     "service":"xmpp",
     "startup_login":1,
+    "sender_speed":0,
     "center":1
 }
 
