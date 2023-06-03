@@ -1,2 +1,6 @@
 ### example
+GET http://localhost/
+### example
+GET http://localhost/api/
+### example
 GET http://localhost/api/example
