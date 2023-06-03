@@ -1,0 +1,258 @@
+### Api Autentikasi/Login - Server 1
+GET http://localhost/api/linkita/login?username={{linkita_username}}&password={{linkita_password}}
+
+### METHOD pln_pas_inq
+GET http://localhost/api/linkita?method=pln_pas_inq&kode_produk=PLNPASCA&waktu=2018-12-12+15%3A23%3A00&id_pelanggan=123456789012&id_member=760&signature=&ref1=123
+
+### METHOD pln_pas_inq_check
+GET http://localhost/api/linkita?method=pln_pas_inq_check&id_transaksi_inq=1-284&kode_produk=PLNPASCA&waktu=2022-12-12+15%3A55%3A00&id_pelanggan=123456789012&id_member=760&signature=&ref1=123
+
+### METHOD pln_pas_pay
+GET http://localhost/api/linkita?method=pln_pas_pay&kode_produk=PLNPASCA&waktu=2022-12-12+15%3A54%3A00&id_transaksi_inq=1-284&id_pelanggan=123456789012&id_member=760&signature=&ref1=123
+
+### METHOD pln_pas_pay_check
+GET http://localhost/api/linkita?method=pln_pas_pay_check&id_transaksi_pay=1-235&kode_produk=PLNPASCA&waktu=2022-12-12+15%3A58%3A00&id_pelanggan=123456789012&id_member=760&signature=&ref1=123
+
+### METHOD pln_pra_inq
+GET http://localhost/api/linkita?method=pln_pra_inq&kode_produk=PLNPRA&waktu=2022-12-12+16%3A00%3A00&id_pelanggan=123456789012&id_member=760&signature=&ref1=123
+
+### METHOD pln_pra_inq_check
+GET http://localhost/api/linkita?method=pln_pra_inq_check&id_transaksi_inq=1-284&kode_produk=PLNPRA&waktu=2022-12-12+16%3A07%3A00&id_pelanggan=123456789012&id_member=760&password=*AbC-155%23&signature=07a50062426161458bf4a3e249618eb1&ref1=123
+
+### METHOD pln_pra_pay
+GET http://localhost/api/linkita?method=pln_pra_pay&kode_produk=PLNPRA&waktu=2022-12-12+16%3A00%3A04&id_transaksi_inq=1-290&id_pelanggan=123456789012&no_hp_pelanggan=6282310923525&nominal=50000&id_member=760&signature=07a50062426161458bf4a3e249618eb1&ref1=123
+
+### METHOD pln_pra_pay_check
+GET http://localhost/api/linkita?method=pln_pra_pay_check&id_transaksi_pay=1-291&kode_produk=PLNPRA&waktu=2018-05-03+15%3A00%3A07&id_pelanggan=123456789012&no_hp_pelanggan=6282310923525&id_member=760&signature=&ref1=123
+
+### METHOD pln_nontag_inq
+GET http://localhost/api/linkita?method=pln_nontag_inq&kode_produk=PLNNONTAG&waktu=2022-12-12+16%3A13%3A00&id_pelanggan=123456789012&id_member=760&signature=&ref1=123
+
+### METHOD pln_nontag_inq_check
+GET http://localhost/api/linkita?method=pln_nontag_inq_check&id_transaksi_inq=1-284&kode_produk=PLNNONTAG&waktu=2022-12-12+16%3A19%3A00&id_pelanggan=123456789012&id_member=760&signature=&ref1=123
+
+### METHOD pln_nontag_pay
+GET http://localhost/api/linkita?method=pln_nontag_pay&kode_produk=PLNNONTAG&waktu=2022-12-12+16%3A17%3A00&id_transaksi_inq=1-284&id_pelanggan=123456789012&id_member=760&password=*AbC-155%23&signature=&ref1=123
+
+### METHOD pln_nontag_pay_check
+GET http://localhost/api/linkita?method=pln_nontag_pay_check&id_transaksi_pay=1-289&kode_produk=PLNNONTAG&waktu=2022-12-12+16%3A21%3A00&id_pelanggan=123456789012&id_member=760&signature=&ref1=123
+
+### METHOD pdam_inq
+GET http://localhost/api/linkita?method=pdam_inq&kode_produk=PAMKOTSMRG&waktu=2022-12-12+16%3A22%3A00&id_pelanggan=123456789012&id_member=760&signature=&ref1=123
+
+### METHOD pdam_inq_check
+GET http://localhost/api/linkita?method=pdam_inq_check&id_transaksi_inq=1-44&kode_produk=PAMKOTSMRG&waktu=2022-12-12+16%3A25%3A00&id_pelanggan=123456789012&id_member=760&signature=&ref1=123
+
+### METHOD pdam_pay
+GET http://localhost/api/linkita?method=pdam_pay&kode_produk=PAMKOTSMRG&waktu=2022-12-12+16%3A24%3A00&id_transaksi_inq=1-44&id_pelanggan=123456789012&id_member=760&signature=&ref1=123
+
+### METHOD pdam_pay_check
+GET http://localhost/api/linkita?method=pdam_pay_check&id_transaksi_pay=1-99&kode_produk=PAMKOTSMRG&waktu=2022-12-12+16%3A27%3A00&id_pelanggan=123456789012&id_member=760&signature=&ref1=123
+
+### METHOD angsuran_inq
+GET http://localhost/api/linkita?method=angsuran_inq&kode_produk=MFWOM&waktu=2022-12-12+16%3A29%3A00&id_pelanggan=123456789012&id_member=760&signature=&ref1=123
+
+### METHOD angsuran_inq_check
+GET http://localhost/api/linkita?method=angsuran_inq_check&id_transaksi_inq=1-44&kode_produk=MFBAF&waktu=2022-12-12+16%3A34%3A00&id_pelanggan=123456789012&id_member=760&signature=&ref1=123
+
+### METHOD angsuran_pay
+GET http://localhost/api/linkita?method=angsuran_pay&kode_produk=MFBAF&waktu=2022-12-12+16%3A31%3A00&id_transaksi_inq=1-44&id_pelanggan=123456789012&id_member=760&signature=&ref1=123
+
+### METHOD angsuran_pay_check
+GET http://localhost/api/linkita?method=angsuran_pay_check&id_transaksi_pay=1-107&kode_produk=MFBAF&waktu=2022-12-12+16%3A36%3A00&id_pelanggan=123456789012&id_member=760&signature=&ref1=123
+
+### METHOD tv_berlangganan_inq
+GET http://localhost/api/linkita?method=tv_berlangganan_inq&kode_produk=TVINDOVIS&waktu=2022-12-12+16%3A37%3A00&id_pelanggan=123456789012&id_member=760&signature=&ref1=123
+
+### METHOD tv_berlangganan_inq_check
+GET http://localhost/api/linkita?method=tv_berlangganan_inq_check&id_transaksi_inq=1-44&kode_produk=TVINDOVIS&waktu=2022-12-12+16%3A41%3A00&id_pelanggan=123456789012&id_member=760&signature=&ref1=123
+
+### METHOD tv_berlangganan_pay
+GET http://localhost/api/linkita?method=tv_berlangganan_pay&kode_produk=TVINDOVIS&waktu=2022-12-12+16%3A40%3A00&id_transaksi_inq=1-44&id_pelanggan=123456789012&id_member=760&signature=&ref1=123
+
+### METHOD tv_berlangganan_pay_check
+GET http://localhost/api/linkita?method=tv_berlangganan_pay_check&id_transaksi_pay=1-75&kode_produk=TVINDOVIS&waktu=2022-12-12+16%3A43%3A00&id_pelanggan=123456789012&id_member=760&signature=&ref1=123
+
+### METHOD telkom_inq
+GET http://localhost/api/linkita?method=telkom_inq&kode_produk=TELEPON&waktu=2022-12-12+16%3A44%3A00&id_pelanggan=123456789012&id_member=760&signature=&ref1=123
+
+### METHOD telkom_inq_check
+GET http://localhost/api/linkita?method=telkom_inq_check&id_transaksi_inq=1-44&kode_produk=TELEPON&waktu=2022-12-12+16%3A47%3A00&id_pelanggan=123456789012&id_member=760&signature=&ref1=123
+
+### METHOD telkom_pay
+GET http://localhost/api/linkita?method=telkom_pay&kode_produk=TELEPON&waktu=2022-12-12+16%3A46%3A00&id_transaksi_inq=1-44&id_pelanggan=123456789012&id_member=760&signature=&ref1=123
+
+### METHOD telkom_pay_check
+GET http://localhost/api/linkita?method=telkom_pay_check&id_transaksi_pay=1-44&kode_produk=TELEPON&waktu=2022-12-12+16%3A48%3A01&id_pelanggan=123456789012&id_member=760&signature=&ref1=123
+
+### METHOD bpjs_kes_inq
+GET http://localhost/api/linkita?method=bpjs_kes_inq&kode_produk=BPJSKES&waktu=2022-12-12+16%3A50%3A00&id_pelanggan=123456789012&id_member=760&signature=&ref1=123
+
+### METHOD bpjs_kes_inq_check
+GET http://localhost/api/linkita?method=bpjs_kes_inq_check&id_transaksi_inq=1-44&kode_produk=BPJSKES&waktu=2022-12-12+16%3A52%3A00&id_pelanggan=123456789012&id_member=760&signature=&ref1=123
+
+### METHOD bpjs_kes_pay
+GET http://localhost/api/linkita?method=bpjs_kes_pay&kode_produk=BPJSKES&waktu=2022-12-12+16%3A51%3A00&id_transaksi_inq=1-44&id_pelanggan=123456789012&id_member=760&signature=&ref1=123
+
+### METHOD bpjs_kes_pay_check
+GET http://localhost/api/linkita?method=bpjs_kes_pay_check&id_transaksi_pay=1-75&kode_produk=BPJSKES&waktu=2022-12-12+16%3A53%3A02&id_pelanggan=123456789012&id_member=760&signature=&ref1=123
+
+### METHOD gas_pra_inq
+GET http://localhost/api/linkita?method=gas_pra_inq&kode_produk=PGASPRA&waktu=2022-12-12+16%3A55%3A00&id_pelanggan=123456789012&id_member=760&signature=&ref1=123
+
+### METHOD gas_pra_inq_check
+GET http://localhost/api/linkita?method=gas_pra_inq_check&id_transaksi_inq=1-44&kode_produk=PGASPRA&waktu=2022-12-12+16%3A57%3A03&id_pelanggan=123456789012&id_member=760&signature=&ref1=123
+
+### METHOD gas_pra_pay
+GET http://localhost/api/linkita?method=gas_pra_pay&kode_produk=PGASPRA&waktu=2022-12-12+16%3A56%3A05&id_transaksi_inq=1-44&id_pelanggan=123456789012&nominal=50000.00&id_member=760&signature=&ref1=123
+
+### METHOD gas_pra_pay_check
+GET http://localhost/api/linkita?method=gas_pra_pay_check&id_transaksi_pay=1-75&kode_produk=PGASPRA&waktu=2022-12-12+16%3A58%3A08&id_pelanggan=123456789012&id_member=760&signature=&ref1=123
+
+### METHOD gas_pas_inq
+GET http://localhost/api/linkita?method=gas_pas_inq&kode_produk=PGNPAS&waktu=2022-12-13+08%3A28%3A00&id_pelanggan=123456789012&id_member=760&signature=&ref1=123
+
+### METHOD gas_pas_inq_check
+GET http://localhost/api/linkita?method=gas_pas_inq_check&id_transaksi_inq=1-44&kode_produk=PGNPAS&waktu=2022-12-13+08%3A24%3A02&id_pelanggan=123456789012&id_member=760&signature=&ref1=123
+
+### METHOD gas_pas_pay
+GET http://localhost/api/linkita?method=gas_pas_pay&kode_produk=PGNPAS&waktu=2022-12-13+08%3A29%3A00&id_transaksi_inq=1-44&id_pelanggan=123456789012&id_member=760&signature=&ref1=123
+
+### METHOD gas_pas_pay_check
+GET http://localhost/api/linkita?method=gas_pas_pay_check&id_transaksi_pay=1-75&kode_produk=PGNPAS&waktu=2022-12-13+08%3A25%3A08&id_pelanggan=123456789012&id_member=760&signature=&ref1=123
+
+### METHOD asuransi_inq
+GET http://localhost/api/linkita?method=asuransi_inq&kode_produk=ASRCAR&waktu=2022-12-13+08%3A27%3A00&id_pelanggan=123456789012&id_member=760&signature=&ref1=123
+
+### METHOD asuransi_inq_check
+GET http://localhost/api/linkita?method=asuransi_inq_check&id_transaksi_inq=1-44&kode_produk=ASRCAR&waktu=2022-12-13+08%3A30%3A00&id_pelanggan=123456789012&id_member=760&signature=&ref1=123
+
+### METHOD asuransi_pay
+GET http://localhost/api/linkita?method=asuransi_pay&kode_produk=ASRCAR&waktu=2022-12-13+08%3A28%3A05&id_transaksi_inq=1-44&id_pelanggan=123456789012&id_member=760&signature=&ref1=123
+
+### METHOD asuransi_pay_check
+GET http://localhost/api/linkita?method=asuransi_pay_check&id_transaksi_pay=1-75&kode_produk=ASRCAR&waktu=2022-12-13+08%3A32%3A08&id_pelanggan=123456789012&id_member=760&signature=&ref1=123
+
+### METHOD hp_pra_pay
+GET http://localhost/api/linkita?method=hp_pra_pay&kode_produk=I100H&waktu=2022-12-13+08%3A33%3A00&no_hp=6282310923525&sequence=2&id_member=760&signature=&ref1=123
+
+### METHOD hp_pra_pay_check
+GET http://localhost/api/linkita?method=hp_pra_pay_check&id_transaksi_pay=1-75&kode_produk=I100H&waktu=2022-12-13+08%3A37%3A00&no_hp=6282310923525&sequence=2&id_member=760&signature=&ref1=123
+
+### METHOD tarik_tunai_pay
+GET http://localhost/api/linkita
+
+### METHOD tarik_tunai_pay_check
+GET http://localhost/api/linkita?method=tarik_tunai_pay_check&id_transaksi_pay=1-75&kode_produk=TARIKINDOMARET&waktu=2022-12-13+08%3A37%3A00&id_pelanggan=&id_member=760&signature=&ref1=123
+
+### METHOD hp_pas_inq
+GET http://localhost/api/linkita?method=hp_pas_inq&kode_produk=HPTSEL&waktu=2022-12-13+08%3A39%3A00&no_hp=6282310923525&id_member=760&signature=&ref1=123
+
+### METHOD hp_pas_inq_check
+GET http://localhost/api/linkita?method=hp_pas_inq_check&kode_produk=HPTSEL&id_transaksi_inq=1-44&waktu=2022-12-13+08%3A41%3A02&no_hp=6282310923525&id_member=760&signature=&ref1=123
+
+### METHOD hp_pas_pay
+GET http://localhost/api/linkita?method=hp_pas_pay&id_transaksi_inq=1-44&kode_produk=HPTSEL&waktu=2022-12-13+08%3A40%3A00&no_hp=6282310923525&id_member=760&signature=&ref1=123
+
+### METHOD hp_pas_pay_check
+GET http://localhost/api/linkita?method=hp_pas_pay_check&id_transaksi_pay=1-75&kode_produk=HPTSEL&waktu=2022-12-13+08%3A43%3A00&no_hp=6282310923525&id_member=760&signature=&ref1=123
+
+### METHOD game_pay
+GET http://localhost/api/linkita?method=game_pay&kode_produk=GML36&waktu=2022-12-13+08%3A44%3A00&id_pelanggan=123456789012&id_member=760&signature=&ref1=123
+
+### METHOD game_pay_check
+GET http://localhost/api/linkita?method=game_pay_check&id_transaksi_pay=1-75&kode_produk=GML36&waktu=2022-12-13+08%3A46%3A00&id_pelanggan=123456789012&id_member=760&signature=&ref1=123
+
+### METHOD transfer_bank_inq
+GET http://localhost/api/linkita?method=transfer_bank_inq&kode_produk=TRSFBANK&waktu=2022-12-13+08%3A47%3A00&id_pelanggan=002-123456789012&nominal=10000&id_member=760&signature=&ref1=123&nama_pengirim=NAMA_PENGIRIM
+
+### METHOD transfer_bank_inq_check
+GET http://localhost/api/linkita?method=transfer_bank_inq_check&id_transaksi_inq=1-44&kode_produk=TRSFBANK&waktu=2022-12-13+08%3A48%3A00&id_pelanggan=002-123456789012&id_member=760&signature=&ref1=123
+
+### METHOD transfer_bank_payment
+GET http://localhost/api/linkita?method=transfer_bank_payment&kode_produk=TRSFBANK&waktu=2022-12-13+08%3A48%3A00&id_transaksi_inq=1-44&id_pelanggan=002-123456789012&id_member=760&nominal=20000&signature=&ref1=123
+
+### METHOD transfer_bank_payment_check
+GET http://localhost/api/linkita?method=transfer_bank_payment_check&id_transaksi_pay=1-44&kode_produk=TRFSBANK&waktu=2022-12-13+08%3A50%3A01&id_pelanggan=002-123456789012&id_member=760&signature=&ref1=123&nama_pengirim=NAMA_PENGIRIM
+
+### METHOD emoney_inq
+GET http://localhost/api/linkita?method=emoney_inq&kode_produk=OVO&waktu=2022-12-13+08%3A52%3A00&id_pelanggan=0812345678910&nominal=10000&id_member=760&signature=&ref1=123
+
+### METHOD emoney_inq_check
+GET http://localhost/api/linkita?method=emoney_inq_check&id_transaksi_inq=1-44&kode_produk=OVO&waktu=2022-12-13+08%3A54%3A00&id_pelanggan=0812345678910&id_member=760&signature=&ref1=123
+
+### METHOD emoney_payment
+GET http://localhost/api/linkita?method=emoney_payment&kode_produk=OVO&waktu=2022-12-13+08%3A53%3A00&id_transaksi_inq=1-44&id_pelanggan=0812345678910&nominal=10000&id_member=760&signature=&ref1=123
+
+### METHOD emoney_payment_check
+GET http://localhost/api/linkita?method=emoney_payment_check&id_transaksi_pay=1-44&kode_produk=OVO&waktu=2022-12-14+10%3A11%3A00&id_pelanggan=0812345678910&id_member=760&signature=&ref1=123
+
+### METHOD cash_in_pay
+GET http://localhost/api/linkita?method=emoney_payment&kode_produk=OVO&waktu=2022-12-13+08%3A53%3A00&id_transaksi_inq=1-44&id_pelanggan=0812345678910&nominal=10000&id_member=760&signature=&ref1=123
+
+### METHOD cash_in_pay_check
+GET http://localhost/api/linkita?method=emoney_payment&kode_produk=OVO&waktu=2022-12-13+08%3A53%3A00&id_transaksi_inq=1-44&id_pelanggan=0812345678910&nominal=10000&id_member=760&signature=&ref1=123
+
+### Request Saldo Transaksi
+GET http://localhost/api/linkita?request=saldo&id_member=760
+
+### Request Data Bank
+GET http://localhost/api/linkita?request=bank&id_member=760
+
+### Produk PLN Pascabayar - Server 1
+GET http://localhost/api/linkita?request=struk&cetak_ulang=0&data.method=pln_pas_pay_check&data.id_transaksi_pay=1-11&data.kode_produk=PLNPASCA&data.waktu=2022-12-14+08%3A38%3A00&data.id_pelanggan=123456789012&data.id_member=760&data.signature=&data.ref1=123
+
+### Produk PLN Prabayar - Server 1
+GET http://localhost/api/linkita?request=struk&cetak_ulang=0&data.method=pln_pra_pay_check&data.id_transaksi_pay=1-11&data.kode_produk=PLNPRA&data.waktu=2022-12-13+09%3A18%3A03&data.id_pelanggan=123456789012&data.id_member=760&data.signature=&data.ref1=123
+
+### Produk PLN Non Tagihan
+GET http://localhost/api/linkita?request=struk&cetak_ulang=0&data.method=pln_nontag_pay_check&data.id_transaksi_pay=1-11&data.kode_produk=PLNNONTAG&data.waktu=2022-12-13+09%3A22%3A03&data.id_pelanggan=123456789012&data.id_member=760&data.signature=&data.ref1=123
+
+### Produk PDAM
+GET http://localhost/api/linkita?request=struk&cetak_ulang=0&data.method=pdam_pay_check&data.id_transaksi_pay=1-99&data.kode_produk=PAMAETJKT&data.waktu=2022-12-13+09%3A34%3A03&data.id_pelanggan=123456789012&data.id_member=760&data.signature=&data.ref1=
+
+### Produk Angsuran
+GET http://localhost/api/linkita?request=struk&cetak_ulang=0&data.method=angsuran_pay_check&data.id_transaksi_pay=1-107&data.kode_produk=MFWOM&data.waktu=2022-12-13+09%3A39%3A03&data.id_pelanggan=123456789012&data.id_member=760&data.signature=&data.ref1=
+
+### Produk TV Berlangganan
+GET http://localhost/api/linkita?request=struk&cetak_ulang=0&data.method=tv_berlangganan_pay_check&data.id_transaksi_pay=1-96&data.kode_produk=TVMNCVIS&data.waktu=2022-12-13+09%3A39%3A03&data.id_pelanggan=123456789012&data.id_member=760&data.signature=&data.ref1=
+
+### Produk Telkom
+GET http://localhost/api/linkita?request=struk&cetak_ulang=0&data.method=telkom_pay_check&data.id_transaksi_pay=1-11&data.kode_produk=INDIHOME&data.waktu=2022-12-13+09%3A39%3A03&data.id_pelanggan=123456789012&data.id_member=760&data.signature=&data.ref1=
+
+### Produk BPJS Kesehatan
+GET http://localhost/api/linkita?request=struk&cetak_ulang=0&data.method=bpjs_kes_pay_check&data.id_transaksi_pay=1-11&data.kode_produk=BPJSKES&data.waktu=2022-12-13+09%3A43%3A03&data.id_pelanggan=123456789012&data.id_member=760&data.signature=&data.ref1=
+
+### Produk Gas Prabayar
+GET http://localhost/api/linkita?request=struk&cetak_ulang=0&data.method=gas_pra_pay_check&data.id_transaksi_pay=1-94&data.kode_produk=PGASPRA&data.waktu=2022-12-13+09%3A43%3A03&data.id_pelanggan=123456789012&data.id_member=760&data.signature=&data.ref1=
+
+### Produk Gas Pascabayar
+GET http://localhost/api/linkita?request=struk&cetak_ulang=0&data.method=gas_pas_pay_check&data.id_transaksi_pay=1-12&data.kode_produk=PGNPAS&data.waktu=2022-12-14+09%3A08%3A00&data.id_pelanggan=123456789012&data.id_member=760&data.signature=&data.ref1=
+
+### Produk Asuransi
+GET http://localhost/api/linkita?request=struk&cetak_ulang=0&data.method=asuransi_pay_check&data.id_transaksi_pay=1-251&data.kode_produk=ASRJWS&data.waktu=2022-12-13+09%3A52%3A03&data.id_pelanggan=123456789012&data.id_member=760&data.signature=&data.ref1=
+
+### Produk HP Prabayar
+GET http://localhost/api/linkita?request=struk&cetak_ulang=0&data.method=hp_pra_pay_check&data.kode_produk=TRR10&data.waktu=2022-12-13+09%3A54%3A03&data.no_hp=123456789012&data.id_member=760&data.sequence=2&data.signature=&data.id_transaksi_pay=1-246&data.ref1=
+
+### Produk HP Pascabayar
+GET http://localhost/api/linkita?request=struk&cetak_ulang=0&data.method=hp_pas_pay_check&data.id_transaksi_pay=1-235&data.kode_produk=HPTSEL&data.waktu=2022-12-13+09%3A56%3A03&data.no_hp=123456789012&data.id_member=760&data.signature=&data.ref1=
+
+### Produk Voucher Game
+GET http://localhost/api/linkita?request=struk&cetak_ulang=0&data.method=game_pay_check&data.kode_produk=GML36&data.waktu=2022-12-13+09%3A58%3A03&data.id_pelanggan=123456789012&data.id_member=760&data.signature=&data.id_transaksi_pay=1-246&data.ref1=
+
+### Produk Transfer Bank
+GET http://localhost/api/linkita?request=struk&cetak_ulang=0&data.method=transfer_bank_payment_check&data.id_transaksi_pay=1-11&data.kode_produk=TRSFBANK&data.waktu=2022-12-13+09%3A58%3A03&data.id_pelanggan=002-123456789012&data.id_member=760&data.signature=&data.ref1=
+
+### Produk Topup E-Money
+GET http://localhost/api/linkita?request=struk&cetak_ulang=0&data.method=emoney_payment_check&data.id_transaksi_pay=1-11&data.kode_produk=OVO&data.waktu=2022-12-14+09%3A12%3A00&data.id_pelanggan=0812345678910&data.id_member=760&data.signature=&data.ref1=
+
+### Request URL Widget
+GET http://localhost/api/linkita?request=url_widget&email_member=marquezwildan%40gmail.com
+
+### Request Laporan Transaksi
+GET http://localhost/api/linkita?request=transaksi&id_member=1&id_transaksi=&id_pelanggan=&status=&page=1&start_date=&end_date=
+
+### Request Laporan Mutasi
+GET http://localhost/api/linkita?request=mutasi&id_member=1&id_mutasi=&id_transaksi=&id_jenis_mutasi=&page=1&start_date=&end_date=
+
