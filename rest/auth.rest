@@ -1,6 +1,6 @@
 
 ### Registration
-POST {{base}}/api/auth/signup
+POST http://localhost/api/auth/signup
 Authorization: Basic token
 Content-Type: application/json
 
@@ -9,7 +9,7 @@ Content-Type: application/json
 }
 
 ### Login
-POST {{base}}/api/auth/signin
+POST http://localhost/api/auth/signin
 Authorization: Basic token
 Content-Type: application/json
 
@@ -18,7 +18,7 @@ Content-Type: application/json
 }
 
 ### Verify / Create token
-POST {{base}}/api/auth/challenge
+POST http://localhost/api/auth/challenge
 Authorization: Basic token
 Content-Type: application/json
 
@@ -28,9 +28,9 @@ Content-Type: application/json
 }
 
 ### Refresh / Renew token
-GET {{base}}/api/auth/refresh
+GET http://localhost/api/auth/refresh
 Authorization: Bearer {{refresh_token}}
 
 ### Logout / Revoke token
-GET {{base}}/api/auth/signout
+GET http://localhost/api/auth/signout
 Authorization: Bearer {{access_token}}

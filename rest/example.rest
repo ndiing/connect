@@ -1,2 +1,2 @@
 ### example
-GET {{base}}/api/example
+GET http://localhost/api/example

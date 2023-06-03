@@ -1,5 +1,5 @@
 ### Tambah bank
-POST {{base}}/api/bank
+POST http://localhost/api/bank
 Content-Type: application/json
 
 {
@@ -13,13 +13,13 @@ Content-Type: application/json
 }
 
 ### Bank
-GET {{base}}/api/bank
+GET http://localhost/api/bank
 
 ### Bank account
-GET {{base}}/api/bank?norek={{newbiz_norek}}
+GET http://localhost/api/bank?norek={{newbiz_norek}}
 
 ### Setting...
-PATCH {{base}}/api/bank
+PATCH http://localhost/api/bank
 Content-Type: application/json
 
 {
@@ -33,13 +33,13 @@ Content-Type: application/json
 }
 
 ### Remove
-DELETE {{base}}/api/bank?norek={{newbiz_norek}}
+DELETE http://localhost/api/bank?norek={{newbiz_norek}}
 
 ### Login
-GET {{base}}/api/bank/login?norek={{newbiz_norek}}
+GET http://localhost/api/bank/login?norek={{newbiz_norek}}
 
 ### Logout
-GET {{base}}/api/bank/logout?norek={{newbiz_norek}}
+GET http://localhost/api/bank/logout?norek={{newbiz_norek}}
 
 ### History
-GET {{base}}/api/bank/history?norek={{newbiz_norek}}
+GET http://localhost/api/bank/history?norek={{newbiz_norek}}

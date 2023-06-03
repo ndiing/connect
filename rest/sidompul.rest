@@ -1,8 +1,8 @@
 ### config
-GET {{base}}/api/sidompul/config
+GET http://localhost/api/sidompul/config
 
 ### config
-POST {{base}}/api/sidompul/config
+POST http://localhost/api/sidompul/config
 Content-Type: application/json
 
 {
@@ -94,56 +94,56 @@ Content-Type: application/json
 }
 
 ### Get Token
-GET {{base}}/api/sidompul/token?grant_type=client_credentials&client_id={{sidompul_client_id}}&client_secret={{sidompul_client_secret}}
+GET http://localhost/api/sidompul/token?grant_type=client_credentials&client_id={{sidompul_client_id}}&client_secret={{sidompul_client_secret}}
 
 ### Encrypt
-GET {{base}}/api/sidompul/postEncrypt?data=123456
+GET http://localhost/api/sidompul/postEncrypt?data=123456
 
 ### Purchase Package
-GET {{base}}/api/sidompul/postPackage?msisdn=&pin=&productCode=
+GET http://localhost/api/sidompul/postPackage?msisdn=&pin=&productCode=
 
 ### Transaction History
-GET {{base}}/api/sidompul/getTransactionhistory?startdate=&enddate=
+GET http://localhost/api/sidompul/getTransactionhistory?startdate=&enddate=
 
 ### Reload Pulsa (W2P)
-GET {{base}}/api/sidompul/postW2p?msisdn=&pin=&denom=
+GET http://localhost/api/sidompul/postW2p?msisdn=&pin=&denom=
 
 ### Get Dompul Balance
-GET {{base}}/api/sidompul/getDompulBalance?
+GET http://localhost/api/sidompul/getDompulBalance?
 
 ### Get Pulsa Balance
-GET {{base}}/api/sidompul/getPulsaBalance?
+GET http://localhost/api/sidompul/getPulsaBalance?
 
 ### Get List Product Code
-GET {{base}}/api/sidompul/getProductList?
+GET http://localhost/api/sidompul/getProductList?
 
 ### Purchase Package Deduct Pulsa
-GET {{base}}/api/sidompul/postPackagePulsa?msisdn=&pin=&productCode=
+GET http://localhost/api/sidompul/postPackagePulsa?msisdn=&pin=&productCode=
 
 ### AWG Get Stock
-GET {{base}}/api/sidompul/getAwgStock?
+GET http://localhost/api/sidompul/getAwgStock?
 
 ### AWG Get Info Transaction
-GET {{base}}/api/sidompul/getAwgTransactioninfo?beginDate=&endDate=&servicetype=
+GET http://localhost/api/sidompul/getAwgTransactioninfo?beginDate=&endDate=&servicetype=
 
 ### AWG Get Info Transaction Detail
-GET {{base}}/api/sidompul/postAwgTransactionInfoDetail?command=&masterTrxId=
+GET http://localhost/api/sidompul/postAwgTransactionInfoDetail?command=&masterTrxId=
 
 ### AWG Inject Stock
-GET {{base}}/api/sidompul/postAwgTembak?target=&pin=&vId=&command=&allowType=
+GET http://localhost/api/sidompul/postAwgTembak?target=&pin=&vId=&command=&allowType=
 
 ### XWG Get Stock
-GET {{base}}/api/sidompul/getXwgStock?roType=MINI-GROSIR
+GET http://localhost/api/sidompul/getXwgStock?roType=MINI-GROSIR
 
 ### XWG Get Info Transaction
-GET {{base}}/api/sidompul/getXwgTransactioninfo?beginDate=&endDate=&servicetype=
+GET http://localhost/api/sidompul/getXwgTransactioninfo?beginDate=&endDate=&servicetype=
 
 ### XWG Get Info Transaction Detail
-GET {{base}}/api/sidompul/postXwgTransactionInfoDetail?command=&masterTrxId=
+GET http://localhost/api/sidompul/postXwgTransactionInfoDetail?command=&masterTrxId=
 
 ### XWG Inject Stock
-GET {{base}}/api/sidompul/postXwgTembak?allowType=&command=&pin=&target=&vId=
+GET http://localhost/api/sidompul/postXwgTembak?allowType=&command=&pin=&target=&vId=
 
 ### Transaction History Detail
-GET {{base}}/api/sidompul/getTransactionHistorydetail?transactionId=&msisdnB=&orderStatus=
+GET http://localhost/api/sidompul/getTransactionHistorydetail?transactionId=&msisdnB=&orderStatus=
 

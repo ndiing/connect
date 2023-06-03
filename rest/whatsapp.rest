@@ -1,5 +1,5 @@
 ### Tambah center
-POST {{base}}/api/messenger
+POST http://localhost/api/messenger
 Content-Type: application/json
 
 {
@@ -12,13 +12,13 @@ Content-Type: application/json
 }
 
 ### Center
-GET {{base}}/api/messenger
+GET http://localhost/api/messenger
 
 ### Center account
-GET {{base}}/api/messenger?username={{whatsapp_username}}
+GET http://localhost/api/messenger?username={{whatsapp_username}}
 
 ### Setting...
-PATCH {{base}}/api/messenger
+PATCH http://localhost/api/messenger
 Content-Type: application/json
 
 {
@@ -31,16 +31,16 @@ Content-Type: application/json
 }
 
 ### Remove
-DELETE {{base}}/api/messenger?username={{whatsapp_username}}
+DELETE http://localhost/api/messenger?username={{whatsapp_username}}
 
 ### Login
-GET {{base}}/api/messenger/start?username={{whatsapp_username}}
+GET http://localhost/api/messenger/start?username={{whatsapp_username}}
 
 ### Logout
-GET {{base}}/api/messenger/stop?username={{whatsapp_username}}
+GET http://localhost/api/messenger/stop?username={{whatsapp_username}}
 
 ### Kirim
-POST {{base}}/api/messenger/send
+POST http://localhost/api/messenger/send
 Content-Type: application/json
 
 {
@@ -51,4 +51,4 @@ Content-Type: application/json
 }
 
 ### Kirim
-GET {{base}}/api/messenger/send?username={{whatsapp_username}}&service=whatsapp&penerima=6281935155404&pesan=This message from server
+GET http://localhost/api/messenger/send?username={{whatsapp_username}}&service=whatsapp&penerima=6281935155404&pesan=This message from server
