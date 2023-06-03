@@ -73,6 +73,7 @@ git pull
 
 -   [x] **[sidompul.rest](./rest/sidompul.rest)**
 -   [x] **[tokoxl.rest](./rest/tokoxl.rest)**
+-   [ ] **[linkita.rest](./rest/linkita.rest)**
 
 ## Catatan
 
