@@ -103,10 +103,6 @@ webpack.server.config.js
 package.json
 package-lock.json
 
-dist/*.sql
-!dist/index.js
-dist/query.js
-
 specification.js
 client.js
 server.js
