@@ -1,4 +1,4 @@
-# Connect
+# Connect (1.3.1)
 
 [![Connect](./connect.png)](https://github.com/ndiing/connect.git)
 
