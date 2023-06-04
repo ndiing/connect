@@ -46,17 +46,19 @@ node dist/index.js
 git pull
 ```
 
-### Folder Data
+## Folder
+
+### Data
 ```
 %LOCALAPPDATA%/connect-data
 ```
 
-### Folder Konfigurasi
+### Konfigurasi
 ```
 %LOCALAPPDATA%/connect-data/config/config.json
 ```
 
-### Folder Akses
+### Akses
 ```
 %LOCALAPPDATA%/connect-data/auth/permission.json
 ```
