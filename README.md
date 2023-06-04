@@ -46,6 +46,21 @@ node dist/index.js
 git pull
 ```
 
+### Folder Data
+```
+%LOCALAPPDATA%/connect-data
+```
+
+### Folder Konfigurasi
+```
+%LOCALAPPDATA%/connect-data/config/config.json
+```
+
+### Folder Akses
+```
+%LOCALAPPDATA%/connect-data/auth/permission.json
+```
+
 ## REST
 
 [Dokumentasi](https://ndiing.gitbook.io/connect/) API
