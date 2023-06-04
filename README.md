@@ -58,26 +58,26 @@ git pull
 
 ### OtomaX
 
--   [x] **[auth.rest](./rest/auth.rest)**
--   [x] **[otomax.rest](./rest/otomax.rest)**
+-   [x] **[auth](./rest/auth.rest)**
+-   [x] **[otomax](./rest/otomax.rest)**
 
 ### Bank
 
--   [x] **[bnidirect.rest](./rest/bnidirect.rest)**
--   [x] **[ibank.rest](./rest/ibank.rest)**
--   [x] **[newbiz.rest](./rest/newbiz.rest)**
--   [x] **[mcm2.rest](./rest/mcm2.rest)**
--   [ ] **[klikbca.rest](./rest/klikbca.rest)**
+-   [x] **[bnidirect](./rest/bnidirect.rest)**
+-   [x] **[ibank](./rest/ibank.rest)**
+-   [x] **[newbiz](./rest/newbiz.rest)**
+-   [x] **[mcm2](./rest/mcm2.rest)**
+-   [ ] **[klikbca](./rest/klikbca.rest)**
 
 ### Messenger
 
--   [x] **[whatsapp.rest](./rest/whatsapp.rest)**
--   [x] **[telegram.rest](./rest/telegram.rest)**
--   [x] **[xmpp.rest](./rest/xmpp.rest)**
+-   [x] **[whatsapp](./rest/whatsapp.rest)**
+-   [x] **[telegram](./rest/telegram.rest)**
+-   [x] **[xmpp](./rest/xmpp.rest)**
 
 ### Provider
 
--   [x] **[sidompul.rest](./rest/sidompul.rest)**
--   [x] **[tokoxl.rest](./rest/tokoxl.rest)**
--   [ ] **[linkita.rest](./rest/linkita.rest)**
--   [ ] **[kiosgamer.rest](./rest/kiosgamer.rest)**
+-   [x] **[sidompul](./rest/sidompul.rest)**
+-   [x] **[tokoxl](./rest/tokoxl.rest)**
+-   [ ] **[linkita](./rest/linkita.rest)**
+-   [ ] **[kiosgamer](./rest/kiosgamer.rest)**
