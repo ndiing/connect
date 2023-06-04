@@ -1,7 +1,7 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 43244:
+/***/ 97878:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -57,11 +57,11 @@ const compileElectronCode = function (javascriptCode) {
     if (!fs.existsSync(electronPath)) {
       throw new Error('Electron not installed');
     }
-    const bytenodePath = path.join(__dirname, 'cli.js');
+    const bytenodePath = __webpack_require__.ab + "cli.js";
 
     // create a subprocess in which we run Electron as our Node and V8 engine
     // running Bytenode to compile our code through stdin/stdout
-    const proc = fork(electronPath, [bytenodePath, '--compile', '--no-module', '-'], {
+    const proc = fork(electronPath, [__webpack_require__.ab + "cli.js", '--compile', '--no-module', '-'], {
       env: { ELECTRON_RUN_AS_NODE: '1' },
       stdio: ['pipe', 'pipe', 'pipe', 'ipc']
     });
@@ -341,7 +341,7 @@ const loaderCodeCommonJS = function (targetPath) {
 
 const loaderCodeModule = function (targetPath, loaderFilePath) {
   // TODO: Based on the spec, should we keep `default` as part of named exports?
-  let { default: defaultExport, ...namedExports } = __webpack_require__(91564)(loaderFilePath)
+  let { default: defaultExport, ...namedExports } = require(loaderFilePath)
 
   defaultExport = defaultExport ? 'default: defaultExport' : ''
   namedExports = Object.keys(namedExports)
@@ -386,21 +386,6 @@ global.bytenode = {
 
 module.exports = global.bytenode;
 
-
-/***/ }),
-
-/***/ 91564:
-/***/ ((module) => {
-
-function webpackEmptyContext(req) {
-	var e = new Error("Cannot find module '" + req + "'");
-	e.code = 'MODULE_NOT_FOUND';
-	throw e;
-}
-webpackEmptyContext.keys = () => ([]);
-webpackEmptyContext.resolve = webpackEmptyContext;
-webpackEmptyContext.id = 91564;
-module.exports = webpackEmptyContext;
 
 /***/ }),
 
@@ -495,11 +480,6 @@ module.exports = require("vm");
 /******/ 	}
 /******/ 	
 /************************************************************************/
-/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
-/******/ 	(() => {
-/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/compat */
 /******/ 	
 /******/ 	if (typeof __webpack_require__ !== 'undefined') __webpack_require__.ab = __dirname + "//";
@@ -508,7 +488,7 @@ module.exports = require("vm");
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
-__webpack_require__(43244);
+__webpack_require__(97878);
 __webpack_require__(19651);
 })();
 
