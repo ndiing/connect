@@ -48,20 +48,9 @@ git pull
 
 ## Folder
 
-### Data
-```
-%LOCALAPPDATA%/connect-data
-```
-
-### Konfigurasi
-```
-%LOCALAPPDATA%/connect-data/config/config.json
-```
-
-### Akses
-```
-%LOCALAPPDATA%/connect-data/auth/permission.json
-```
+-   Data `%LOCALAPPDATA%/connect-data`
+-   Konfigurasi `%LOCALAPPDATA%/connect-data/config/config.json`
+-   Akses `%LOCALAPPDATA%/connect-data/auth/permission.json`
 
 ## REST
 
@@ -92,7 +81,3 @@ git pull
 -   [x] **[tokoxl.rest](./rest/tokoxl.rest)**
 -   [ ] **[linkita.rest](./rest/linkita.rest)**
 -   [ ] **[kiosgamer.rest](./rest/kiosgamer.rest)**
-
-## Catatan
-
--   `connect.exe` kompatibilitas terbatas, dihentikan sejak `v1.0.37`
