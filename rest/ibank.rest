@@ -42,4 +42,4 @@ GET http://localhost/api/bank/login?norek={{ibank_norek}}
 GET http://localhost/api/bank/logout?norek={{ibank_norek}}
 
 ### History
-GET http://localhost/api/bank/history?norek={{ibank_norek}}&fromDate=2023-05-01&toDate=2023-05-28
+GET http://localhost/api/bank/history?norek={{ibank_norek}}&fromDate=2023-06-04&toDate=2023-06-04
