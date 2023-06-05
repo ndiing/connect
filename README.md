@@ -47,10 +47,10 @@ git pull
 
 ### Internet Banking
 
--   [x] **[BNI Direct](./rest/bnidirect.rest)**
+-   [x] **[BNIDirect](./rest/bnidirect.rest)**
 -   [x] **[KlikBCA Individu](./rest/ibank.rest)**
 -   [x] **[Mandiri Cash Management](./rest/mcm2.rest)**
--   [x] **[BRI Bisnis](./rest/newbiz.rest)**
+-   [x] **[IBBIZ BRIBisnis](./rest/newbiz.rest)**
 -   [ ] **[KlikBCA Bisnis](./rest/klikbca.rest)**
 
 ### Center/Sender
@@ -61,6 +61,6 @@ git pull
 
 ### Provider
 
--   [x] **[SiDOMPUL OPEN API](./rest/sidompul.rest)**
+-   [x] **[SiDOMPUL Open API](./rest/sidompul.rest)**
 -   [x] **[SiDOMPUL](./rest/tokoxl.rest)**
 -   [ ] **[Linkita](./rest/linkita.rest)**
