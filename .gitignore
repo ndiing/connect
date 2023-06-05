@@ -91,21 +91,16 @@ typings/
 # Electron-Forge
 out/
 
+#
 src/
-
 .babelrc
-
+build.js
+client.js
 nodemon.json
-
-webpack.config.js
-webpack.server.config.js
-
 package.json
 package-lock.json
-
-specification.js
-client.js
 server.js
-
+specification.js
 users.json
-index.js
+webpack.config.js
+webpack.server.config.js
