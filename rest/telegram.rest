@@ -8,7 +8,7 @@ Content-Type: application/json
     "service":"telegram",
     "startup_login":0,
     "sender_speed":0,
-    "center":1
+    "service_center":1
 }
 
 ### Center
@@ -27,7 +27,7 @@ Content-Type: application/json
     "service":"telegram",
     "startup_login":1,
     "sender_speed":0,
-    "center":1
+    "service_center":1
 }
 
 ### Remove

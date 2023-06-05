@@ -7385,7 +7385,7 @@
                     "type": "string",
                     "example": 1
                 },
-                "center": {
+                "service_center": {
                     "type": "string",
                     "example": 1
                 }
