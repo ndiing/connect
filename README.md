@@ -34,25 +34,25 @@ git pull
 
 ### OtomaX
 
--   [x] **[auth](./rest/auth.rest)**
--   [x] **[otomax](./rest/otomax.rest)**
+-   [x] **[Auth(entication/orization)](./rest/auth.rest)**
+-   [x] **[OtomaX](./rest/otomax.rest)**
 
 ### Internet Banking
 
--   [x] **[bnidirect](./rest/bnidirect.rest)**
--   [x] **[ibank](./rest/ibank.rest)**
--   [x] **[mcm2](./rest/mcm2.rest)**
--   [x] **[newbiz](./rest/newbiz.rest)**
--   [ ] **[klikbca](./rest/klikbca.rest)**
+-   [x] **[BNI Direct](./rest/bnidirect.rest)**
+-   [x] **[KlikBCA Individu](./rest/ibank.rest)**
+-   [x] **[Mandiri Cash Management](./rest/mcm2.rest)**
+-   [x] **[BRI Bisnis](./rest/newbiz.rest)**
+-   [ ] **[KlikBCA Bisnis](./rest/klikbca.rest)**
 
 ### Center/Sender
 
--   [x] **[telegram](./rest/telegram.rest)**
--   [x] **[whatsapp](./rest/whatsapp.rest)**
--   [x] **[xmpp](./rest/xmpp.rest)**
+-   [x] **[Telegram](./rest/telegram.rest)**
+-   [x] **[WhatsApp](./rest/whatsapp.rest)**
+-   [x] **[XMPP](./rest/xmpp.rest)**
 
 ### Provider
 
--   [x] **[sidompul](./rest/sidompul.rest)**
--   [x] **[tokoxl](./rest/tokoxl.rest)**
--   [ ] **[linkita](./rest/linkita.rest)**
+-   [x] **[SiDOMPUL OPEN API](./rest/sidompul.rest)**
+-   [x] **[SiDOMPUL](./rest/tokoxl.rest)**
+-   [ ] **[Linkita](./rest/linkita.rest)**
