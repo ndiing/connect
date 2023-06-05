@@ -48,9 +48,9 @@ git pull
 ### Internet Banking
 
 -   [x] **[BNIDirect](./rest/bnidirect.rest)**
--   [x] **[KlikBCA Individu](./rest/ibank.rest)**
+-   [x] **[KlikBCA Individual](./rest/ibank.rest)**
 -   [x] **[Mandiri Cash Management](./rest/mcm2.rest)**
--   [x] **[IBBIZ BRIBisnis](./rest/newbiz.rest)**
+-   [x] **[IBBIZ BRI](./rest/newbiz.rest)**
 -   [ ] **[KlikBCA Bisnis](./rest/klikbca.rest)**
 
 ### Center/Sender
