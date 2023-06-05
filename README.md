@@ -1,14 +1,22 @@
 # Connect
 
-Connect
+Koleksi API Pihak Ketiga
 
 ## Persyaratan
 
--   [nodejs](https://nodejs.org/dist/v18.16.0/node-v18.16.0-x64.msi)
+-   [node-v18+](https://nodejs.org/dist/v18.16.0/node-v18.16.0-x64.msi)
+
+Cek sistem apakah node dan npm sudah terpasang
+
+```bash
+npm -v && node -v
+8.17.0
+v18.16.0
+```
 
 ## Instalasi
 
-Clone project
+Klon / [Download](https://github.com/ndiing/connect/archive/refs/heads/main.zip)
 
 ```bash
 git clone https://github.com/ndiing/connect.git
