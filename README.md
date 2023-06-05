@@ -43,6 +43,7 @@ git pull
 -   [x] **[ibank](./rest/ibank.rest)**
 -   [x] **[mcm2](./rest/mcm2.rest)**
 -   [x] **[newbiz](./rest/newbiz.rest)**
+-   [ ] **[klikbca](./rest/klikbca.rest)**
 
 ### Center/Sender
 
