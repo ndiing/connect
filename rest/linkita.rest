@@ -11,11 +11,6 @@ Content-Type: application/json
     "webhook":"http://localhost/report"
 }
 
-
-
-
-
-
 ### Webhook
 GET http://localhost/api/linkita/webhook
 
@@ -25,18 +20,8 @@ Content-Type: application/json
 
 {}
 
-
-
-
-
-
 ### Api Autentikasi/Login - Server 1
 GET http://localhost/api/linkita/login?username={{linkita_username}}&password={{linkita_password}}
-
-
-
-
-
 
 ### METHOD pln_pas_inq
 GET http://localhost/api/linkita?method=pln_pas_inq&kode_produk=PLNPASCA&waktu=2018-12-12+15%3A23%3A00&id_pelanggan=123456789012&id_member=&signature=&ref1=123
@@ -229,11 +214,6 @@ GET http://localhost/api/linkita?method=cash_in_pay&kode_produk=OVO&waktu=2022-1
 
 ### METHOD cash_in_pay_check
 GET http://localhost/api/linkita?method=cash_in_pay_check&kode_produk=OVO&waktu=2022-12-13+08%3A53%3A00&id_transaksi_inq=1-44&id_pelanggan=0812345678910&nominal=10000&id_member=&signature=&ref1=123
-
-
-
-
-
 
 ### Request Saldo Transaksi
 GET http://localhost/api/linkita?request=saldo&id_member=
