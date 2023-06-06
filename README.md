@@ -63,4 +63,4 @@ git pull
 
 -   [x] **[SiDOMPUL Open API](./rest/sidompul.rest)**
 -   [x] **[SiDOMPUL](./rest/tokoxl.rest)**
--   [ ] **[Linkita](./rest/linkita.rest)**
+-   [x] **[Linkita](./rest/linkita.rest)**
