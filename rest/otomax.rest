@@ -1,96 +1,39 @@
-### otomax
-GET http://localhost/api/otomax
-Authorization: Bearer {{access_token}}
-
-### provider
-GET http://localhost/api/otomax/provider
-Authorization: Bearer {{access_token}}
-
-
-
-
-
 
 ### inbox?kode=&tgl_awal=&tgl_akhir=&pengirim=&tipe_pengirim=&pesan=&status=&page=&limit=
 GET http://localhost/api/otomax/inbox
 Authorization: Bearer {{access_token}}
 
-
-
-
-
-
 ### outbox?kode=&tgl_awal=&tgl_akhir=&pengirim=&tipe_pengirim=&pesan=&status=&page=&limit=
 GET http://localhost/api/otomax/outbox
 Authorization: Bearer {{access_token}}
-
-
-
-
-
 
 ### mutasi?kode=&tanggal_awal=&tanggal_akhir=&jumlah=&keterangan=&jenis=&page=&limit=
 GET http://localhost/api/otomax/mutasi
 Authorization: Bearer {{access_token}}
 
-
-
-
-
-
 ### operator?kode=&nama=&page=&limit=
 GET http://localhost/api/otomax/operator
 Authorization: Bearer {{access_token}}
-
-
-
-
-
 
 ### produk?kode=&nama=&kode_operator=&nominal=&page=&limit=
 GET http://localhost/api/otomax/produk
 Authorization: Bearer {{access_token}}
 
-
-
-
-
-
 ### level
 GET http://localhost/api/otomax/level
 Authorization: Bearer {{access_token}}
-
-
-
-
-
 
 ### reseller
 GET http://localhost/api/otomax/reseller
 Authorization: Bearer {{access_token}}
 
-
-
-
-
-
 ### pengirim
 GET http://localhost/api/otomax/pengirim
 Authorization: Bearer {{access_token}}
 
-
-
-
-
-
 ### parameter?grup=&nama=&name=
 GET http://localhost/api/otomax/parameter
 Authorization: Bearer {{access_token}}
-
-
-
-
-
 
 ### Aktifkan downline/reseller
 GET http://localhost/api/otomax/inbox/aktifkan-dl?kodereseller=OX0004&pin=1234
@@ -320,19 +263,9 @@ Authorization: Bearer {{access_token}}
 GET http://localhost/api/otomax/inbox/transaksi13?tujuan=&kodeproduk=AIGO1&pin=1234
 Authorization: Bearer {{access_token}}
 
-
-
-
-
-
 ### Transaksi pengisian pulsa 
-GET http://localhost/api/otomax/inbox/transaksi14?kodeproduk=AIGO1&counter=3&tujuan=0877758437457&pin=1234
+GET http://localhost/api/otomax/inbox/transaksi14?kodeproduk=TEST&counter=1&tujuan=0877758437457&pin=1234
 Authorization: Bearer {{access_token}}
-
-
-
-
-
 
 ### Transaksi pengisian pulsa
 GET http://localhost/api/otomax/inbox/transaksi15?tujuan=&nominal=&counter=&pin=1234
@@ -399,11 +332,11 @@ GET http://localhost/api/otomax/inbox/transaksi29?kodeproduk=AIGO1&qty=&tujuan=&
 Authorization: Bearer {{access_token}}
 
 ### Transaksi pengisian pulsa
-GET http://localhost/api/otomax/inbox/transaksi3?counter=&kodeproduk=AIGO1&qty=&tujuan=&pin=1234
+GET http://localhost/api/otomax/inbox/transaksi3?counter=1&kodeproduk=TEST&qty=12000&tujuan=081935155404&pin=1234
 Authorization: Bearer {{access_token}}
 
 ### Transaksi pengisian pulsa
-GET http://localhost/api/otomax/inbox/transaksi4?kodeproduk=AIGO1&nominal=&tujuan=&pin=1234&enduser=
+GET http://localhost/api/otomax/inbox/transaksi4?kodeproduk=TEST&nominal=10000&tujuan=081935155404&pin=1234&enduser=
 Authorization: Bearer {{access_token}}
 
 ### Transaksi pengisian pulsa
@@ -489,11 +422,6 @@ Authorization: Bearer {{access_token}}
 ### Change Report URL
 GET http://localhost/api/otomax/inbox/ubah-report-url?newurl=&pin=1234
 Authorization: Bearer {{access_token}}
-
-
-
-
-
 
 ### Check downline's markup
 GET http://localhost/api/otomax/inbox/cek-markup?kodereseller=OX0004&pin=1234
