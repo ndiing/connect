@@ -6,8 +6,8 @@ PATCH http://localhost/api/linkita/Config
 Content-Type: application/json
 
 {
-    "client_key":"5C22FD924C31A49AEEB17A650673D7B2",
-    "id_member":"5521",
+    "client_key":"{{linkita_client_key}}",
+    "id_member":"{{linkita_id_member}}",
     "webhook":"http://localhost/report"
 }
 
