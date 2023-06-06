@@ -1,5 +1,43 @@
+
+### Config
+GET http://localhost/api/linkita/Config
+
+### Config
+PATCH http://localhost/api/linkita/Config
+Content-Type: application/json
+
+{
+    "client_key":"5C22FD924C31A49AEEB17A650673D7B2",
+    "id_member":"RCBHAQ",
+    "webhook":"http://localhost/report"
+}
+
+
+
+
+
+
+### Webhook
+GET http://localhost/api/linkita/webhook
+
+### Webhook
+POST http://localhost/api/linkita/webhook
+Content-Type: application/json
+
+{}
+
+
+
+
+
+
 ### Api Autentikasi/Login - Server 1
 GET http://localhost/api/linkita/login?username={{linkita_username}}&password={{linkita_password}}
+
+
+
+
+
 
 ### METHOD pln_pas_inq
 GET http://localhost/api/linkita?method=pln_pas_inq&kode_produk=PLNPASCA&waktu=2018-12-12+15%3A23%3A00&id_pelanggan=123456789012&id_member=760&signature=&ref1=123
