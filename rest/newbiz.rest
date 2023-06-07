@@ -9,7 +9,8 @@ Content-Type: application/json
     "norek": "{{newbiz_norek}}",
     "service": "newbiz",
     "auto_start": 0,
-    "interval": 60000
+    "interval": 60000,
+    "webhook": "http://localhost/report"
 }
 
 ### Bank
