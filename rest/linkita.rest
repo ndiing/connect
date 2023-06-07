@@ -209,11 +209,38 @@ GET http://localhost/api/linkita?method=emoney_payment&kode_produk=OVO&waktu=202
 ### METHOD emoney_payment_check
 GET http://localhost/api/linkita?method=emoney_payment_check&id_transaksi_pay=1-44&kode_produk=OVO&waktu=2022-12-14+10%3A11%3A00&id_pelanggan=0812345678910&id_member=&signature=&ref1=123
 
+
+
+
+
+
 ### METHOD cash_in_pay
-GET http://localhost/api/linkita?method=cash_in_pay&kode_produk=OVO&waktu=2022-12-13+08%3A53%3A00&id_transaksi_inq=1-44&id_pelanggan=0812345678910&nominal=10000&id_member=&signature=&ref1=123
+GET http://localhost/api/linkita
+?method=cash_in_pay
+&kode_produk=CIIMDOMARET
+&waktu=
+&id_transaksi_inq=
+&id_member=
+&nominal=10000
+&signature=
+&ref1=
 
 ### METHOD cash_in_pay_check
-GET http://localhost/api/linkita?method=cash_in_pay_check&kode_produk=OVO&waktu=2022-12-13+08%3A53%3A00&id_transaksi_inq=1-44&id_pelanggan=0812345678910&nominal=10000&id_member=&signature=&ref1=123
+GET http://localhost/api/linkita
+?method=cash_in_pay_check
+&kode_produk=DANA
+&waktu=
+&id_transaksi_inq=
+&id_pelanggan=
+&id_member=
+&nominal=10000
+&signature=
+&ref1=
+
+
+
+
+
 
 ### Request Saldo Transaksi
 GET http://localhost/api/linkita?request=saldo&id_member=

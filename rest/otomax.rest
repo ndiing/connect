@@ -331,9 +331,19 @@ Authorization: Bearer {{access_token}}
 GET http://localhost/api/otomax/inbox/transaksi29?kodeproduk=AIGO1&qty=&tujuan=&pin=1234
 Authorization: Bearer {{access_token}}
 
+
+
+
+
+
 ### Transaksi pengisian pulsa
 GET http://localhost/api/otomax/inbox/transaksi3?counter=1&kodeproduk=TEST&qty=12000&tujuan=081935155404&pin=1234
 Authorization: Bearer {{access_token}}
+
+
+
+
+
 
 ### Transaksi pengisian pulsa
 GET http://localhost/api/otomax/inbox/transaksi4?kodeproduk=TEST&nominal=10000&tujuan=081935155404&pin=1234&enduser=
