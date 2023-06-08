@@ -214,29 +214,27 @@ GET http://localhost/api/linkita?method=emoney_payment_check&id_transaksi_pay=1-
 
 
 
-### METHOD cash_in_pay
+### METHOD cash_in_pay | kode_produk=[CIINDOMARET, CIALFAMART, CIPERMATA, CIDANAMON, CICIMB, CIMANDIRI, CIBRI, CIBSI, CIBNC, CIBNI, ]
 GET http://localhost/api/linkita
 ?method=cash_in_pay
-&kode_produk=CIIMDOMARET
+&kode_produk=CIINDOMARET
 &waktu=
 &id_member=
-&nominal=10000
 &signature=
-&ref1=
+&ref1=123
+&nominal=10000
 &expired=
 
 ### METHOD cash_in_pay_check
 GET http://localhost/api/linkita
 ?method=cash_in_pay_check
-&kode_produk=DANA
+&kode_produk=CIINDOMARET
 &waktu=
-&id_transaksi_inq=
-&id_pelanggan=
 &id_member=
-&nominal=10000
 &signature=
-&ref1=
-&id_transaksi_pay=
+&ref1=123
+&nominal=10000
+&id_transaksi_pay=1-29096
 
 
 
