@@ -219,11 +219,11 @@ GET http://localhost/api/linkita
 ?method=cash_in_pay
 &kode_produk=CIIMDOMARET
 &waktu=
-&id_transaksi_inq=
 &id_member=
 &nominal=10000
 &signature=
 &ref1=
+&expired=
 
 ### METHOD cash_in_pay_check
 GET http://localhost/api/linkita
@@ -236,6 +236,7 @@ GET http://localhost/api/linkita
 &nominal=10000
 &signature=
 &ref1=
+&id_transaksi_pay=
 
 
 
