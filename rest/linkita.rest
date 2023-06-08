@@ -218,23 +218,16 @@ GET http://localhost/api/linkita?method=emoney_payment_check&id_transaksi_pay=1-
 GET http://localhost/api/linkita
 ?method=cash_in_pay
 &kode_produk=CIINDOMARET
-&waktu=
-&id_member=
-&signature=
-&ref1=123
-&nominal=10000
-&expired=
+&ref1=28
+&nominal=12000
 
 ### METHOD cash_in_pay_check
 GET http://localhost/api/linkita
 ?method=cash_in_pay_check
 &kode_produk=CIINDOMARET
-&waktu=
-&id_member=
-&signature=
-&ref1=123
-&nominal=10000
-&id_transaksi_pay=1-29096
+&ref1=28
+&nominal=12000
+&id_transaksi_pay=1-29124
 
 
 

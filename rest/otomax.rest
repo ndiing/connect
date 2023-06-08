@@ -337,7 +337,7 @@ Authorization: Bearer {{access_token}}
 
 
 ### Transaksi pengisian pulsa
-GET http://localhost/api/otomax/inbox/transaksi3?counter=1&kodeproduk=TEST&qty=12000&tujuan=081935155404&pin=1234
+GET http://localhost/api/otomax/inbox/transaksi3?counter=1&kodeproduk=DEPOCEK&qty=12000&tujuan=081935155404&pin=1234
 Authorization: Bearer {{access_token}}
 
 

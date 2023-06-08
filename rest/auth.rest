@@ -24,7 +24,7 @@ Content-Type: application/json
 
 {
     "username": "{{auth_username}}",
-    "password": "807548"
+    "password": "381561"
 }
 
 ### Refresh / Renew token
