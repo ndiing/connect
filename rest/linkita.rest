@@ -215,19 +215,10 @@ GET http://localhost/api/linkita?method=emoney_payment_check&id_transaksi_pay=1-
 
 
 ### METHOD cash_in_pay | kode_produk=[CIINDOMARET, CIALFAMART, CIPERMATA, CIDANAMON, CICIMB, CIMANDIRI, CIBRI, CIBSI, CIBNC, CIBNI, ]
-GET http://localhost/api/linkita
-?method=cash_in_pay
-&kode_produk=CIINDOMARET
-&ref1=28
-&nominal=12000
+GET http://localhost/api/linkita?method=cash_in_pay&kode_produk=CIINDOMARET&ref1=28&nominal=12000
 
 ### METHOD cash_in_pay_check
-GET http://localhost/api/linkita
-?method=cash_in_pay_check
-&kode_produk=CIINDOMARET
-&ref1=28
-&nominal=12000
-&id_transaksi_pay=1-29124
+GET http://localhost/api/linkita?method=cash_in_pay_check&kode_produk=CIINDOMARET&ref1=28&nominal=12000&id_transaksi_pay=1-29124
 
 
 

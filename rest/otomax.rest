@@ -264,7 +264,7 @@ GET http://localhost/api/otomax/inbox/transaksi13?tujuan=&kodeproduk=AIGO1&pin=1
 Authorization: Bearer {{access_token}}
 
 ### Transaksi pengisian pulsa 
-GET http://localhost/api/otomax/inbox/transaksi14?kodeproduk=TEST&counter=1&tujuan=0877758437457&pin=1234
+GET http://localhost/api/otomax/inbox/transaksi14?kodeproduk=LINKITA&counter=1&tujuan=081935155404&pin=1234
 Authorization: Bearer {{access_token}}
 
 ### Transaksi pengisian pulsa
@@ -307,9 +307,19 @@ Authorization: Bearer {{access_token}}
 GET http://localhost/api/otomax/inbox/transaksi23?kodeproduk=AIGO1&qty=&tujuan=&pin=1234
 Authorization: Bearer {{access_token}}
 
+
+
+
+
+
 ### Transaksi pengisian pulsa
-GET http://localhost/api/otomax/inbox/transaksi24?kodeproduk=AIGO1&qty=&tujuan=&pin=1234&counter=
+GET http://localhost/api/otomax/inbox/transaksi24?kodeproduk=LINKITA&qty=10000&tujuan=081935155404&pin=1234&counter=3
 Authorization: Bearer {{access_token}}
+
+
+
+
+
 
 ### Transaksi pengisian pulsa
 GET http://localhost/api/otomax/inbox/transaksi25?kodeproduk=AIGO1&tujuan=&pin=1234&trxid=
